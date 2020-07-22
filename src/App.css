@@ -18,3 +18,9 @@ body {
 .register{
   max-width: 30rem;
 }
+
+/* LectureLists area */
+.smart-phone-view{
+  width: 100%;
+  height: 20rem;
+}

@@ -12,7 +12,7 @@ const Banner = () => {
     <p>関心はあったのに「難しくて分からない」と途中で止めてしまった古典、読後もモヤモヤした理解を残したままになっている古典を、講師による分かりやすい講義と読者同士の議論を通じ、もう一度読み直してみませんか。</p>
   </div>
 
-  const lectureEx =
+  const lecture1 =
   <div className="top-lecture d-flex flex-column justify-content-center align-items-center flex-nowrap">
     <div className="book-img d-block">
       <img src="https://via.placeholder.com/150" alt="placeholder"/>
@@ -34,7 +34,7 @@ const Banner = () => {
       <Row>
         <Col md={6}>
         {message}</Col>
-        <Col md={6}>{lectureEx}</Col>
+        <Col md={6}>{lecture1}</Col>
       </Row>
       <Row>
         <Col>
