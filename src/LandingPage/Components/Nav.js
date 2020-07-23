@@ -1,5 +1,4 @@
 import React, {useState} from "react"
-import { Link } from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -23,7 +22,7 @@ const Nav = () => {
   )}
 
   let largeMenu =
-  <div className="d-none ml-auto d-sm-flex">
+  <div className="large-menu d-none ml-auto d-sm-flex">
     <p><a href="#">About</a></p>
     <p><a href="#">Courses</a></p>
     <p><a href="#">Contact</a></p>
