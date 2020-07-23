@@ -15,10 +15,10 @@ function App() {
   return (
     <Router>
       <Nav />
-      <Switch>
-        <Route exact path="/"> <Home /> </Route>
-        <Route path="/lecture/:id"> <LectureStyle /> </Route>
-      </Switch>
+        <Switch>
+          <Route exact path="/"> <Home /> </Route>
+          <Route path="/lecture/:id"> <LectureStyle /> </Route>
+        </Switch>
       <Footer />
     </Router>
   );

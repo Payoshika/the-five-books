@@ -1,5 +1,6 @@
 import React from "react"
-import {Register} from "./index.js"
+import {Register} from "./index.js";
+import {Lecture1, Lecture2} from "../../LecturePage/index"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,29 +13,15 @@ const Banner = () => {
     <p>関心はあったのに「難しくて分からない」と途中で止めてしまった古典、読後もモヤモヤした理解を残したままになっている古典を、講師による分かりやすい講義と読者同士の議論を通じ、もう一度読み直してみませんか。</p>
   </div>
 
-  const lecture1 =
-  <div className="top-lecture d-flex flex-column justify-content-center align-items-center flex-nowrap">
-    <div className="book-img d-block">
-      <img src="https://via.placeholder.com/150" alt="placeholder"/>
-    </div>
-    <div className="lecturer-info d-flex flex-row flex-nowrap">
-      <img className="lecturer-photo img-fluid rounded-circle"src="https://via.placeholder.com/150" alt="placeholder"/>
-      <div className="">
-          <p>講師: 〇〇〇〇</p>
-          <p>専門分野: 哲学</p>
-          <p>学位: 修士(哲学)</p>
-          <p>所属機関: 東京大学</p>
-          <p>所属書籍: プラトン</p>
-      </div>
-    </div>
-  </div>
-
   return(
     <Container fluid>
       <Row>
         <Col md={6}>
-        {message}</Col>
-        <Col md={6}>{lecture1}</Col>
+          {message}
+        </Col>
+        <Col md={6}>
+          <Lecture1 />
+        </Col>
       </Row>
       <Row>
         <Col>

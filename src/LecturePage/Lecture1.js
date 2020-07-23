@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import {Lecture1Info} from "./index"
 
 const Lecture1 = () => {
     const content =
@@ -11,11 +12,11 @@ const Lecture1 = () => {
         <div className="lecturer-info d-flex flex-row flex-nowrap">
           <img className="lecturer-photo img-fluid rounded-circle"src="https://via.placeholder.com/150" alt="placeholder"/>
           <div className="">
-              <p>講師: 〇〇〇〇</p>
-              <p>専門分野: 哲学</p>
-              <p>学位: 修士(哲学)</p>
-              <p>所属機関: 東京大学</p>
-              <p>所属書籍: プラトン</p>
+              <p>講師: {Lecture1Info["lecturer"]["name"]}</p>
+              <p>専門分野: {Lecture1Info["lecturer"]["expertise"]}</p>
+              <p>学位: {Lecture1Info["lecturer"]["degree"]}</p>
+              <p>所属機関: {Lecture1Info["lecturer"]["affiliation"]}</p>
+              <p>講義書籍: {Lecture1Info["lecturer"]["lecturableBooks"]}</p>
           </div>
         </div>
       </div>

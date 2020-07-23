@@ -24,3 +24,13 @@ body {
   width: 100%;
   height: 20rem;
 }
+
+.lecuture-date{
+  background-color: grey;
+  color: red;
+}
+
+.lecture-duration{
+  background-color: grey;
+  color: blue;
+}
