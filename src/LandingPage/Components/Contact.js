@@ -3,14 +3,19 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+
 
 const Contact = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [input, setInput] = useState("")
+  const submitInquiry = () => {
+    // to be determined
+  }
 
   const content =
-    <Form>
+    <Form className="form-input">
       <Form.Group controlId="name" required>
         <Form.Label>お名前</Form.Label>
         <Form.Control
@@ -47,13 +52,21 @@ const Contact = () => {
           onChange={(event)=>setInput(event.target.value)}
            />
       </Form.Group>
+      <Form.Group className="d-flex justify-content-center">
+        <Button
+          variant="outline-secondary"
+          type="submit"
+          onClick={()=>submitInquiry()}
+          >送信
+        </Button>
+      </Form.Group>
     </Form>
 
   return(
-    <Container>
+    <Container fluid>
       <Row>
-        <Col>
-          <h2>お問い合わせ</h2>
+        <Col className="d-flex flex-column align-items-center justify-content-center">
+          <h4 className="text-center">お問い合わせ</h4>
           {content}
         </Col>
       </Row>

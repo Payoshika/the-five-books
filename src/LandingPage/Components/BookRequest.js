@@ -13,19 +13,22 @@ const BookRequest = () => {
   const [searchResult, setSearchResult] = useState("")
 
   const searchArea =
-  <InputGroup className="register mb-3">
-    <Form.Control
-      type="text"
-      placeholder="書籍名を記入"
-      value={input}
-      onChange={(event)=>setInput(event.target.value)}/>
-    <InputGroup.Prepend>
-      <Button
-        variant="outline-secondary"
-        onClick={()=>searchBook()}
-        >探す</Button>
-    </InputGroup.Prepend>
-  </InputGroup>
+  <div className="d-flex justify-content-center">
+    <InputGroup className="register">
+      <Form.Control
+        type="text"
+        placeholder="書籍名を記入"
+        value={input}
+        onChange={(event)=>setInput(event.target.value)}/>
+      <InputGroup.Prepend>
+        <Button
+          variant="outline-secondary"
+          onClick={()=>searchBook()}
+          >探す</Button>
+      </InputGroup.Prepend>
+    </InputGroup>
+  </div>
+
 
 
   const searchBook = () => {
@@ -74,9 +77,10 @@ const BookRequest = () => {
 
 
   return(
-    <Container>
+    <Container fluid>
       <Row>
-        <Col>
+        <Col className="d-flex flex-column justify-content-center align-contents-center">
+          <h4 className="text-center">開講予定の古典</h4>
           {searchArea}
           {searchResultDisplay()}
         </Col>

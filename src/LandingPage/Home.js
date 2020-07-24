@@ -1,10 +1,11 @@
 import React from "react"
-import {Banner, ServiceDescription, ServiceFlow, LectureLists, BookRequest, Contact, About} from "./Components/index.js"
+import {Banner, Story, ServiceDescription, ServiceFlow, LectureLists, BookRequest, Contact, About} from "./Components/index.js"
 
 const Home = () => {
   return(
-    <div>
+    <div className="w-100">
       <Banner />
+      <Story />
       <ServiceDescription />
       <ServiceFlow />
       <LectureLists />

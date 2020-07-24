@@ -1,17 +1,25 @@
 import React from "react"
-import service from './img/service.jpeg'
-const ServiceFlow = () => {
+import Service_flow from './img/Service_flow.jpeg'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 
+const ServiceFlow = () => {
   const content =
-  <div className="title d-flex flex-column align-items-center">
-    <h2>サービスの流れ</h2>
-    <img src={service} alt="サービスの流れ" className="img-fluid"/>
+  <div className="service-flow-img d-flex flex-column align-items-center">
+    <h4>サービスの流れ</h4>
+    <Image src={Service_flow} rounded fluid alt="サービスの流れ"/>
   </div>
-  
+
   return(
-    <div>
-      {content}
-    </div>
+    <Container fluid>
+      <Row>
+        <Col>
+          {content}
+        </Col>
+      </Row>
+    </Container>
   )
 }
 

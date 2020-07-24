@@ -4,8 +4,11 @@ import {Lecture1Info, Lecture2} from "./index"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image'
+import bookImg from "./img/読書について.jpg"
+import lecturerPhoto from "./img/sample-lecturer-photo.png"
 import Calendar from 'react-calendar'
-import 'react-calendar/dist/Calendar.css';
+import './styles/calender.css';
 
 const LectureStyle = () => {
   const [value, onChange] = useState(new Date(2020, 8, 1));
@@ -20,7 +23,7 @@ const LectureStyle = () => {
     lectureDurationClass : "lecture-duration",
     lectureDate : {
       date: ["20200905", "20200912", "20200919", "20200926"],
-      text: "講義",
+      text: "講義 10:00-11:30",
       className: "lecuture-date"
     }
   }
@@ -32,7 +35,7 @@ const LectureStyle = () => {
   const getTileContent = (value) => {
     const day = getFormatDate(value);
     return(
-      <p>
+      <p className="text-break">
         {(lecturePeriod.lectureDate.date.includes(day))?
         lecturePeriod.lectureDate.text : ""}
       </p>
@@ -50,7 +53,7 @@ const LectureStyle = () => {
   }
 
   let schedule =
-  <div>
+  <div className="schedule d-flex justify-content-center">
     <Calendar
       onChange={onChange}
       value={value}
@@ -61,38 +64,53 @@ const LectureStyle = () => {
 
   if(parseInt(id) === 1){
     content =
-    <div className="d-flex justify-content-center flex-nowrap">
-      <div>
-        <img src={Lecture1Info["book"]["image"]} alt={Lecture1Info["book"]["title"]}/>
+    <div className="top-lecture d-flex justify-content-center align-items-center flex-wrap">
+      <div className="book-img-container">
+        <Image src={bookImg} fluid />
       </div>
-      <div className="d-flex flex-column align-contents-center flex-nowrap">
-        <div>
-          <img src={Lecture1Info["lecturer"]["lecturerPhoto"]} alt={Lecture1Info["lecturer"]["name"]}/>
+      <div className="lecturer-info d-flex justify-content-center align-items-center flex-nowrap">
+        <div className="lecturer-photo">
+          <Image src={lecturerPhoto} fluid roundedCircle/>
         </div>
-        <div className="">
+        <div className="lecturer-info">
             <p>講師: {Lecture1Info["lecturer"]["name"]}</p>
             <p>専門分野: {Lecture1Info["lecturer"]["expertise"]}</p>
             <p>学位: {Lecture1Info["lecturer"]["degree"]}</p>
             <p>所属機関: {Lecture1Info["lecturer"]["affiliation"]}</p>
-            <p>講義書籍: {Lecture1Info["lecturer"]["lecturableBooks"]}</p>
+            <p>講師プロフィール： {Lecture1Info["lecturer"]["profile-link"]}</p>
+            <p>講義書籍: {Lecture1Info["lecturer"]["lecturableBooks"].join(", ")}</p>
         </div>
       </div>
     </div>
 
     lectureDetail =
-    <div>説明が入る</div>
+    <div>
+      <div className="lecture-detail d-flex flex-column">
+        <p>講義の内容</p>
+        <p>講義の流れ</p>
+        <p>参加条件</p>
+        <p>参加料金</p>
+        <p>注意事項</p>
+      </div>
+      <div className="attend-lecture">
+        <p>講義に参加する</p>
+      </div>
+    </div>
   }
 
   return(
-    <Container>
+    <Container fluid>
       <Row>
         <Col>
-          {content}
-          {lectureDetail}
-          {schedule}
-        </Col>
-        <Col>
-          <Link to="/">to Home</Link>
+          <h4 className="text-center">{Lecture1Info.book.name} : {Lecture1Info.book.author}著</h4>
+          <h4 className="text-center">{Lecture1Info.lecture.lectureStartDate}開講 <br/>
+          {Lecture1Info.lecture.lectureEndDate}閉講
+          </h4>
+            {content}
+          <h4 className="text-center">講義スケジュール</h4>
+            {schedule}
+          <h4 className="text-center">講義概要</h4>
+            {lectureDetail}
         </Col>
       </Row>
     </Container>

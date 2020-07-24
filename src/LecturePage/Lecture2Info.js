@@ -3,9 +3,9 @@ import lecturerPhoto from "./img/sample-lecturer-photo.png"
 
 const Lecture1Info = {
   book : {
-    "name" : "読書について",
-    "author" : "ショーペンハウエル",
-    "publisher" : "岩波文庫/光文社新古典文庫",
+    "name" : "テアイテトス",
+    "author" : "プラトン",
+    "publisher" : "岩波文庫",
     "image" : {bookImg}
   },
 

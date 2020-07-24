@@ -4,6 +4,10 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+.container-fluid {
+  margin: 3rem 0;
+}
+
 a, a:hover {
   color: #222831eb;
   text-decoration: none;
@@ -29,35 +33,28 @@ a, a:hover {
   margin: 1.5rem 0.5rem;
   line-height: 2rem;
   word-break: break-all;
+  background-color: #c7c8ca99;
+
 }
+
 .banner-message h2{
   line-height: 4rem;
   margin-bottom: 2rem;
   white-space: nowrap;
 }
 
-.top-lecrure {
+.top-lecture {
   margin: 4rem 0.5rem;
 }
 
 .lecturer-info > * {
   flex-basis: 20em;
-  margin: 1rem 0.5rem;
+  margin: 1rem 1rem;
 }
 
 .lecturer-photo {
   max-width: 10rem;
   height: auto;
-}
-
-/* Regiser area */
-.register{
-  text-align: center;
-  max-width: 30rem;
-  padding: 1.3rem 0;
-  margin-bottom: 3rem;
-  border-top: 0.5px solid #222831eb;
-  border-bottom: 0.5px solid #222831eb;
 }
 
 /* LectureLists area */
@@ -66,14 +63,27 @@ a, a:hover {
   height: 20rem;
 }
 
+.react-calendar p {
+  margin-bottom: 0;
+}
+
 .lecuture-date{
-  background-color: grey;
-  color: red;
+  background-color: #63a6d1;
+  color: white;
+}
+
+.lecuture-date:enabled:hover{
+  background-color: #63a6d1;
+  color: white;
 }
 
 .lecture-duration{
-  background-color: grey;
-  color: blue;
+  background-color: #e4e3e3;
+  color: #222831eb;
+}
+.lecture-duration:enabled:hover{
+  background-color: #e4e3e3;
+  color: #222831eb;
 }
 
 /* ServiceDescription area */
@@ -86,4 +96,63 @@ a, a:hover {
   margin-left: 1rem;
   min-width: 5rem;
   max-width: 15rem;
+}
+
+.service-flow-img{
+  margin: 3rem 0;
+}
+
+/* Lecture list */
+.desktopDisplay >*{
+  margin: 3rem 1rem;
+  overflow: hidden;
+}
+
+/* Regiser area */
+.register{
+  max-width: 30rem;
+  padding: 1.3rem 0;
+  margin: 1rem 0 3rem 0;
+  border-top: 0.5px solid #222831eb;
+  border-bottom: 0.5px solid #222831eb;
+}
+
+/* Contact area */
+
+.form-input > * {
+  max-width: 30rem;
+}
+
+
+/* about area */
+.about {
+  margin: 1rem 0;
+}
+
+.leader-photo {
+  max-width: 20rem;
+  min-width: 10rem;
+  margin-right: 2rem;
+}
+
+.leader-info {
+  line-height: 2rem;
+  max-width: 30rem;
+}
+
+
+/* footer area*/
+.footer {
+  margin-top: 3rem;
+  height: 2.5rem;
+  background-color: #c7c8ca;
+}
+
+.react-calendar {
+  min-width: 20rem;
+  max-width: 35rem;
+  background: #f4f4f4;
+  border: 1px solid #f4f4f4;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.125em;
 }
