@@ -15,23 +15,27 @@ const Nav = () => {
       <div
         className = "hide-menu position-absolute"
         onClick ={() => setHide(true)} >
-        <p><a href="#">About</a></p>
-        <p><a href="#">Courses</a></p>
-        <p><a href="#">Contact</a></p>
+        <p><a href="/#home">Home</a></p>
+        <p><a href="/#course">Courses</a></p>
+        <p><a href="/#contact">Contact</a></p>
+        <p onClick ={() => setHide(true)}>
+        <u>Close</u></p>
       </div>
   )}
 
   let largeMenu =
   <div className="large-menu d-none ml-auto d-sm-flex">
-    <p><a href="#">About</a></p>
-    <p><a href="#">Courses</a></p>
-    <p><a href="#">Contact</a></p>
+    <p><a href="/#home">Home</a></p>
+    <p><a href="/#course">Courses</a></p>
+    <p><a href="/#contact">Contact</a></p>
   </div>
 
   return(
     <>
     <Navbar>
-      <Navbar.Brand href="#home">The Five Books</Navbar.Brand>
+      <Navbar.Brand
+        id="home"
+        href="/#home">The Five Books</Navbar.Brand>
         {largeMenu}
       <div className="d-flex ml-auto d-sm-none">
         {menuBar}

@@ -25,7 +25,8 @@ const Lecture1Info = {
     "lecturePurpose" : "テスト　テスト",
     "lectureStartDate" : 20200905,
     "lectureEndDate" : 20200926,
-    "liveLectureDate" : [20200905, 20200912, 20200919, 20200926],
+    "liveLectureDate" : ["20200905", "20200912", "20200919", "20200926"],
+    "lectureTime" : "10:00-11:30",
     "prerequisite": "特にありません",
     "courseMaterial": "書籍のみ"
   }

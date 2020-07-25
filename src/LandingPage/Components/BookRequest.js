@@ -29,8 +29,6 @@ const BookRequest = () => {
     </InputGroup>
   </div>
 
-
-
   const searchBook = () => {
     if (input && input.length >= 2){
       let searchUrl = encodeURI(`https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=1025599016601623375&title=${input}`)
@@ -42,21 +40,27 @@ const BookRequest = () => {
   const searchResultDisplay = () => {
     if (searchResult){
       return(
-        <ListGroup>
-          {searchResult.slice(0,11).map(books => { return(
-            <ListGroup.Item key={books["Item"]["title"]}>
-            書籍名：{books["Item"]["title"]}
-            著者:{books["Item"]["author"]}
-            出版社:{books["Item"]["publisherName"]}
-            <Button
-              variant="outline-secondary"
-              onClick={(event)　=> requestBook(event)}
-              >リクエストする
-            </Button>
-          </ListGroup.Item>
+        <div className="d-flex justify-content-center">
+          <ListGroup>
+            {searchResult.slice(0,8).map(books => { return(
+              <ListGroup.Item
+              key={books["Item"]["title"]}
+              className="searched-items d-flex justify-content-start flex-nowrap"
+              >
+              「{books["Item"]["title"]}」 &nbsp;
+              著者:{books["Item"]["author"]}　&nbsp;
+              {books["Item"]["publisherName"]}
+              <Button
+                variant="outline-secondary"
+                className="text-nowrap ml-auto"
+                onClick={(event)　=> requestBook(event)}
+                >リクエスト
+              </Button>
+            </ListGroup.Item>
+            )}
           )}
-        )}
-        </ListGroup>
+          </ListGroup>
+        </div>
         )
       }
       else {
@@ -72,7 +76,8 @@ const BookRequest = () => {
 
   const requestBook = (event) => {
     // request sent to rails
-    console.log(event);
+    event.target.parentNode.innerHTML = "リクエストしました。"
+    setTimeout((()=>{setSearchResult("")}), 1000);
   }
 
 
@@ -80,7 +85,7 @@ const BookRequest = () => {
     <Container fluid>
       <Row>
         <Col className="d-flex flex-column justify-content-center align-contents-center">
-          <h4 className="text-center">開講予定の古典</h4>
+          <h4 className="text-center">講義を受けたい古典をリクエストする</h4>
           {searchArea}
           {searchResultDisplay()}
         </Col>
