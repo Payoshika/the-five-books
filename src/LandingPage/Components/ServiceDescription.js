@@ -7,10 +7,18 @@ import lecture from "./img/lecture.png"
 import discussion from "./img/discussion.png"
 import output from "./img/output.png"
 import read from "./img/read.png"
+import understand from "./img/understand.png"
 
 const ServiceDescription = () => {
   const content =
     <div className="d-flex flex-column flex-nowrap justify-content-center align-items-center">
+      <div className="d-flex justify-between align-items-center mx-md-4 my-5">
+        <Image className="description-img order-1" src={read} rounded/>
+        <div className="description-text d-flex  order-0 flex-column justify-content-center align-items-center">
+          <h5>読む</h5>
+          <p>いつもより、時間をかけて一冊を読む。2~3週間をかけて一冊を読み続けていくことで、読みながら考え、考えた後にまた読む。本を消費するのではなく、本を起点に自分の思考を生み出していく。</p>
+        </div>
+      </div>
       <div className="d-flex justify-between align-items-center mx-md-4 my-5">
         <Image className="description-img" src={lecture} rounded/>
         <div className="description-text d-flex flex-column justify-content-center align-items-center">
@@ -33,9 +41,9 @@ const ServiceDescription = () => {
         </div>
       </div>
       <div className="d-flex justify-between align-items-center  mx-md-4 my-3">
-        <Image className="description-img order-1" src={discussion} rounded/>
+        <Image className="description-img order-1" src={understand} rounded/>
         <div className="description-text d-flex order-0 flex-column justify-content-center align-items-center">
-          <h5>身に付く</h5>
+          <h5>根付く</h5>
           <p>自分の考えが対話と講義を通じ、生まれ・更新され・変形されることで、書籍の内容を自分なりの形で、身に付くようになる。</p>
         </div>
       </div>

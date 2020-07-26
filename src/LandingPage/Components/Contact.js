@@ -10,8 +10,9 @@ const Contact = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [input, setInput] = useState("")
+
   const submitInquiry = () => {
-    // to be determined
+    // to be determined to BKEND
   }
 
   const content =
@@ -20,6 +21,7 @@ const Contact = () => {
         <Form.Label>お名前</Form.Label>
         <Form.Control
           type="text"
+          name="name"
           value={name}
           placeholder="お名前"
           onChange={(event) => setName(event.target.value)}
@@ -27,17 +29,18 @@ const Contact = () => {
       </Form.Group>
       <Form.Group controlId="contact-genre" required>
         <Form.Label>お問い合わせカテゴリ</Form.Label>
-        <Form.Control as="select">
+        <Form.Control as="select"  name="inquiry_genre">
           <option value="サービスの利用について">サービスの利用について</option>
           <option value="講師登録・講義実施について">講師登録・講義実施について</option>
           <option value="メディアについてのお問い合わせ">メディアについてのお問い合わせ</option>
           <option value="採用について">採用について</option>
         </Form.Control>
       </Form.Group>
-      <Form.Group controlId="email"  required>
+      <Form.Group controlId="email" required>
         <Form.Label>Email</Form.Label>
         <Form.Control
           type="email"
+          name="email"
           value={email}
           placeholder="email@gmail.com"
           onChange = {(event) => setEmail(event.target.value)}
@@ -48,6 +51,7 @@ const Contact = () => {
         <Form.Control
           as="textarea"
           rows="4"
+          name="inquiry"
           value={input}
           onChange={(event)=>setInput(event.target.value)}
            />

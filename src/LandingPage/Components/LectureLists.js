@@ -80,8 +80,8 @@ const LectureLists = () => {
   return(
     <Container fluid>
       <Row>
-        <Col>
-          <h4 className="text-center">開講予定の古典</h4>
+        <Col className="bookLists d-flex flex-column align-items-center justify-content-center">
+          <h4>開講予定の古典</h4>
           {smartPhoneDisplay}
           {desktopDisplay}
         </Col>
