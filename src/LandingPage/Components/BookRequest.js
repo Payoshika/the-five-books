@@ -47,9 +47,11 @@ const BookRequest = () => {
               key={books["Item"]["title"]}
               className="searched-items d-flex justify-content-start flex-nowrap"
               >
-              「{books["Item"]["title"]}」 &nbsp;
-              著者:{books["Item"]["author"]}　&nbsp;
-              {books["Item"]["publisherName"]}
+              <div className="book-name">「{books["Item"]["title"]}」</div>
+              <div className="book-author"> 著者:{books["Item"]["author"]}</div>
+              <div className="book-publisher">   {books["Item"]["publisherName"]}</div>
+              <div className="book-img-url d-none">{books["Item"]["largeImageUrl"]}</div>
+              <div className="book-url d-none">{books["Item"]["itemUrl"]}</div>
               <Button
                 variant="outline-secondary"
                 className="text-nowrap ml-auto"
@@ -76,10 +78,22 @@ const BookRequest = () => {
 
   const requestBook = (event) => {
     // request sent to rails
-    event.target.parentNode.innerHTML = "リクエストしました。"
-    setTimeout((()=>{setSearchResult("")}), 1000);
+    const apiUrl = "http://localhost:3001/book_request"
+    axios.post(apiUrl, {
+        book: {
+          name: event.target.parentNode.querySelector(".book-name").innerHTML,
+          author: event.target.parentNode.querySelector(".book-author").innerHTML,
+          publisher: event.target.parentNode.querySelector(".book-publisher").innerHTML,
+          img_url: event.target.parentNode.querySelector(".book-img-url").innerHTML,
+          book_url: event.target.parentNode.querySelector(".book-url").innerHTML
+        }
+    })
+    .then(
+      response => console.log(response.data),
+      event.target.parentNode.innerHTML = "リクエストしました。")
+    .then(
+      setTimeout((()=>{setSearchResult("")}), 1000))
   }
-
 
   return(
     <Container fluid>
