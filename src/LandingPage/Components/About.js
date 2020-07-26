@@ -15,7 +15,7 @@ const About = () => {
     <div className="leader-info d-flex flex-column align-items-center justify-content-center">
       <Image src={leaderphoto} className="d-block d-md-none" fluid roundedCircle alt="profile-photo"/>
       <h4 className="d-md-none">事業責任者：大石 航平</h4>
-      <p>日系スタートアップ企業で4年間、途上国向け新規事業開発・営業に従事し、インド及びフィリピンでの駐在を経験。<br/>その後国際協力機構(JICA)で3年間政府開発援助に携わり、途上国の貧困層の家計管理・金融サービス利用向上に関わるプロジェクトを実施。<br/>JICAを退職し、香港のオンラインプログラミングコースを修了後、The Five Booksを創業。<br/>愛読書は「自由論」, 「生物から見た世界」、「道徳感情論」、「二コマコス倫理学」、「コーダの世界」。
+      <p>日系スタートアップ企業で4年間、途上国向け新規事業開発・営業に従事し、インド及びフィリピンでの駐在を経験。<br/>その後国際協力機構(JICA)で3年間政府開発援助に携わり、途上国の貧困層の家計管理・金融サービス利用向上に関わるプロジェクトを実施。<br/>JICAを退職し、香港のオンラインプログラミングコースを修了後、The Five Booksを創業。<br/>愛読書は「生物から見た世界」、「道徳感情論」、「二コマコス倫理学」。
       神戸大学卒(2014年)
       </p>
     </div>

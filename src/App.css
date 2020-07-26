@@ -35,6 +35,20 @@ a, a:hover {
   border-bottom: 1px solid #222831eb;
 }
 
+.register-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vh;
+}
+.register-menu button{
+  margin: 1rem;
+}
 
 /* Banner area */
 .banner-message{
@@ -119,6 +133,10 @@ a, a:hover {
 .desktopDisplay > .lecture-list-content {
   display: inline-block !important;
   margin: 1rem 1.5rem;
+}
+
+.bookLists > *{
+  max-width: 60rem;
 }
 
 /* Lecture Page */
