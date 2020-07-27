@@ -5,8 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-
-const Nav = () => {
+const Nav = (props) => {
   const [hide, setHide] = useState(true);
   const [userRegisterHide, setUserRegisterHide] = useState(true);
   const [name, setName] = useState("")
@@ -64,7 +63,7 @@ const Nav = () => {
            <Button
              variant="dark"
              type="submit"
-             onClick={(event)=>userRegister(event)}
+             onClick={props.userRegister(name, email, password, password_confirmation)}
              >ユーザー登録する
            </Button>
            <Button
@@ -82,11 +81,6 @@ const Nav = () => {
   const openUserRegister = (event) => {
     setUserRegisterHide(false)
     setHide(true)
-  }
-
-  const userRegister = () => {
-      // backend api
-    setUserRegisterHide(true)
   }
 
   const cancel = () => {

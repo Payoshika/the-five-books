@@ -47,7 +47,7 @@ const BookRequest = () => {
               key={books["Item"]["title"]}
               className="searched-items d-flex justify-content-start flex-nowrap"
               >
-              <div className="book-name">「{books["Item"]["title"]}」</div>
+              <div className="book-name"　>「{books["Item"]["title"]}」</div>
               <div className="book-author"> 著者:{books["Item"]["author"]}</div>
               <div className="book-publisher">   {books["Item"]["publisherName"]}</div>
               <div className="book-img-url d-none">{books["Item"]["largeImageUrl"]}</div>
@@ -77,9 +77,8 @@ const BookRequest = () => {
      }, [searchResult]);
 
   const requestBook = (event) => {
-    // request sent to rails
-    const apiUrl = "http://localhost:3001/book_request"
-    axios.post(apiUrl, {
+    const url = "http://localhost:3001/book_request"
+    let data  = {
         book: {
           name: event.target.parentNode.querySelector(".book-name").innerHTML,
           author: event.target.parentNode.querySelector(".book-author").innerHTML,
@@ -87,12 +86,14 @@ const BookRequest = () => {
           img_url: event.target.parentNode.querySelector(".book-img-url").innerHTML,
           book_url: event.target.parentNode.querySelector(".book-url").innerHTML
         }
-    })
+      }
+    axios.post(url, data)
     .then(
       response => console.log(response.data),
       event.target.parentNode.innerHTML = "リクエストしました。")
-    .then(
-      setTimeout((()=>{setSearchResult("")}), 1000))
+    // .then(
+    //   setTimeout((()=>{setSearchResult("")}), 1000))
+    .catch(error => console.log(error))
   }
 
   return(
