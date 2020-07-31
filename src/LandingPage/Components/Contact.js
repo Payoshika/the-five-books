@@ -4,15 +4,38 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-
+import axios from "axios"
 
 const Contact = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [input, setInput] = useState("")
 
-  const submitInquiry = () => {
-    // to be determined to BKEND
+  const submitInquiry = (event) => {
+    const url = "http://localhost:3000/contact"
+    axios.post(url, {user:{
+      name: name,
+      email: email,
+      content: input,
+      contact_genre: document.getElementById("contact-genre").value
+    }})
+    .then(response => {
+        if (response.data.contacted === true) {
+          document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "お問い合わせを送信いたしました"
+          setName("")
+          setEmail("")
+          setInput("")
+        }
+        else if (response.data.subscribed === false){
+            document.querySelector(".register-text").innerHTML = `</p>${response.data.message}<p>`
+        }
+      }
+    )
+    .catch(error =>{
+      console.log(error);
+    })
+    event.preventDefault()
+    event.stopPropagation()
   }
 
   const content =
@@ -59,8 +82,7 @@ const Contact = () => {
       <Form.Group className="d-flex justify-content-center">
         <Button
           variant="outline-secondary"
-          type="submit"
-          onClick={()=>submitInquiry()}
+          onClick={(event)=>submitInquiry(event)}
           >送信
         </Button>
       </Form.Group>

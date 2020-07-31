@@ -14,6 +14,7 @@ const Register = () => {
     const url = "http://localhost:3000/subscribe"
     axios.post(url, {email:{email: email}})
     .then(response => {
+      console.log(response.data.subscribed);
         if (response.data.subscribed === true) {
           document.querySelector(".register-text").innerHTML = "<p>ニュースレーターの登録が完了しました。</p>"
           setEmail("")

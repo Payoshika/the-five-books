@@ -9,7 +9,11 @@ const ServiceFlow = () => {
   const content =
   <div className="service-flow-img d-flex flex-column align-items-center justify-content-center">
     <p>
-      The Five Booksは、「古典の読書をより容易で、豊かな体験にする」ことを目指す、人文社会科学分野の専門性を持つ講師による、各分野の古典を題材にした対話型のオンラインライブ講義サービスです。<br/>本サービスを通じ、自分の人生に欠かせない5冊に出会って欲しい、という思いでThe Five Booksという名前を付けました。
+      各々のペースで古典を読み進め、週に一度のライブ講義を受ける、というのが基本的な流れです。
+      <br/>
+      講義期間中は、Slackの期間限定の読者グループへ参加し、講義の間に、他の読者と疑問点を共有したり、講師の議題に対する回答を投稿したりします。
+      <br/>
+
     </p>
     <div>
       <Image src={Service_flow} rounded fluid alt="サービスの流れ"/>

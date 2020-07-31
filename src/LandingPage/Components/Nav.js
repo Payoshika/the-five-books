@@ -6,7 +6,14 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = (props) => {
   const [hide, setHide] = useState(true);
-  let name = props.user.name
+
+  let registerMenu = <p><Link to="./user">User Register</Link></p>
+  let name = <div></div>
+
+  if (props.user.name) {
+    name = <div><Link to="./userpage">{props.user.name}さん</Link></div>
+    registerMenu = <div></div>
+  }
 
   let menuBar =
     <FontAwesomeIcon icon={faBars}
@@ -16,10 +23,10 @@ const Nav = (props) => {
   if (hide === false){
     hideMenu = (
       <div
-        className = "hide-menu position-absolute"
+        className = "hide-menu position-absolute rounded"
          >
-        <p>{name}さん</p>
-        <p onClick ={() => setHide(true)}><Link to="./user">User Register</Link></p>
+        <p onClick ={() => setHide(true)}>{registerMenu}</p>
+          {name}
         <p onClick ={() => setHide(true)}><a href="/#home">Home</a></p>
         <p onClick ={() => setHide(true)}><a href="/#course">Courses</a></p>
         <p onClick ={() => setHide(true)}><a href="/#contact">Contact</a></p>
@@ -29,11 +36,11 @@ const Nav = (props) => {
 
   let largeMenu =
   <div className="large-menu d-none ml-auto d-sm-flex">
-    <p>{name}さん</p>
-    <p><Link to="./user">User Register</Link></p>
+    {registerMenu}
     <p><a href="/#home">Home</a></p>
     <p><a href="/#course">Courses</a></p>
     <p><a href="/#contact">Contact</a></p>
+      {name}
   </div>
 
   return(

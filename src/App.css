@@ -20,7 +20,7 @@ a, a:hover {
 .hide-menu{
   right: 1rem;
   background-color: #f4f4f4;
-  width: 5rem;
+  width: 6rem;
   padding: 0 0.5rem;
   z-index: 10;
 }
@@ -117,14 +117,14 @@ a, a:hover {
 
 .description-text{
   min-width: 5rem;
-  max-width: 15rem;
+  max-width: 25rem;
   margin: 0 2rem;
 }
 
 /* LectureLists area */
-.smartPhoneDisplay > .carousel-item {
+/* .smartPhoneDisplay > .carousel-item {
   text-align: center;
-}
+} */
 
 .desktopDisplay {
   width: 100%;
@@ -132,6 +132,10 @@ a, a:hover {
   overflow-x: scroll;
   overflow-y: none;
   white-space: nowrap;
+}
+
+.desktopDisplay > a {
+  margin:1rem 2rem;
 }
 
 .desktopDisplay > .lecture-list-content {
@@ -237,4 +241,28 @@ a, a:hover {
 .lecture-detail{
   min-width: 20rem;
   max-width: 45rem;
+}
+
+/* ComingLectures area */
+.coming-lecture-list{
+  min-width: 12rem;
+  margin:1rem 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-lecture-list img{
+  width: 10rem;
+}
+
+.coming-lecture-list .description{
+  width: 10rem;
+  min-height: 10rem;
+}
+
+.coming-lecture-list button{
+  min-height:4rem;
+  max-height:6rem;
+  max-width: 10rem;
+  min-width: 5rem;
 }

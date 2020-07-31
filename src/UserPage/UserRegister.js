@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import {BrowserRouter as Router, Switch, Route, withRouter} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, withRouter, Link} from 'react-router-dom';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import axios from "axios"
@@ -72,7 +72,7 @@ const UserRegister = (props) => {
         <Button
           variant="outline-secondary"
           type="submit"
-          >キャンセル
+          ><Link to="./">キャンセル</Link>
         </Button>
       </Form.Group>
     </Form>

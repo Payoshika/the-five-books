@@ -15,9 +15,10 @@ import Carousel from "react-bootstrap/Carousel"
 const Banner = () => {
   const message =
   <div className="banner-message d-flex flex-column align-items-center justify-content-center flex-nowrap">
-    <h2>古典の読書をより容易に、<br/>より豊かな体験に。</h2>
-    <p>各分野の古典書籍について、週に1度、専門家である講師のLive講義で、著作の要点や背景を学ぶ新しいオンライン読書体験</p>
-    <p>関心はあったのに「難しくて分からない」と途中で止めてしまった古典、読後もモヤモヤした理解を残したままになっている古典を、講師による分かりやすい講義と読者同士の議論を通じ、もう一度読み直してみませんか。</p>
+    <h2>古典の読書をもっと容易に、<br/>より豊かな体験に。</h2>
+    <p>様々な分野の古典作品を、2~3週間かけて専門家のライブ講義を受けながらじっくりと学ぶ、"おそい" 読書体験。</p>
+    <p>関心はあったのに難しくて途中で止めてしまった、一通り読んだものの曖昧な理解に留まっている、何度も読み返す程気に入っているが周りにはなかなか理解者がいない。そんな本はないでしょうか。</p>
+    <p>The Five Booksは、古典について 1)深く理解する、2)自分の言葉にする、3) 他者と対話する、を通じ読書の体験をより豊かにするサービスです。</p>
   </div>
 
   const content1 =
@@ -32,11 +33,11 @@ const Banner = () => {
         </div>
         <div className="lecturer-info">
             <p>講師: {Lecture1Info["lecturer"]["name"]}</p>
-            <p>専門分野: {Lecture1Info["lecturer"]["expertise"]}</p>
+            <p>専門: {Lecture1Info["lecturer"]["expertise"]}</p>
             <p>学位: {Lecture1Info["lecturer"]["degree"]}</p>
-            <p>所属機関: {Lecture1Info["lecturer"]["affiliation"]}</p>
-            <p>講師プロフィール： <a href={Lecture1Info["lecturer"]["profile-link"]}>reseachmap Profile</a></p>
-            <p>講義書籍: {Lecture1Info["lecturer"]["lecturableBooks"].join(", ")}</p>
+            <p>所属: {Lecture1Info["lecturer"]["affiliation"]}</p>
+            <p>参加人数: 最大25名</p>
+            <p>開講期間: 9月5日~9月26日</p>
         </div>
       </div>
     </div>
@@ -53,12 +54,12 @@ const Banner = () => {
           <Image src={lecturerPhoto} fluid roundedCircle/>
         </div>
         <div className="lecturer-info">
-            <p>講師: {Lecture2Info["lecturer"]["name"]}</p>
-            <p>専門分野: {Lecture2Info["lecturer"]["expertise"]}</p>
-            <p>学位: {Lecture2Info["lecturer"]["degree"]}</p>
-            <p>所属機関: {Lecture2Info["lecturer"]["affiliation"]}</p>
-            <p>講師プロフィール： <a href={Lecture2Info["lecturer"]["profile-link"]}>reseachmap Profile</a></p>
-            <p>講義書籍: {Lecture2Info["lecturer"]["lecturableBooks"].join(", ")}</p>
+          <p>講師: {Lecture2Info["lecturer"]["name"]}</p>
+          <p>専門: {Lecture2Info["lecturer"]["expertise"]}</p>
+          <p>学位: {Lecture2Info["lecturer"]["degree"]}</p>
+          <p>所属: {Lecture2Info["lecturer"]["affiliation"]}</p>
+          <p>参加人数: 最大25名</p>
+          <p>開講期間: 9月30日~10月15日</p>
         </div>
       </div>
     </div>
@@ -71,7 +72,7 @@ const Banner = () => {
           className="banner-margin d-flex justify-content-center mb-5">
           {message}
         </Col>
-        <Col lg={6} >
+        <Col lg={6} className="d-flex flex-column justify-content-center align-items-center">
           <h4 className="banner-margin text-center">9月開講予定の講義</h4>
           <Carousel>
            <Carousel.Item>

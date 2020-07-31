@@ -19,7 +19,9 @@ const BookRequest = () => {
         type="text"
         placeholder="書籍名を記入"
         value={input}
-        onChange={(event)=>setInput(event.target.value)}/>
+        onChange={(event)=>setInput(event.target.value)}
+        onKeyPress= {(event)=>checkEnter(event)}
+        />
       <InputGroup.Prepend>
         <Button
           variant="outline-secondary"
@@ -29,6 +31,15 @@ const BookRequest = () => {
     </InputGroup>
   </div>
 
+  const checkEnter = (event) => {
+    event.preventDefault()
+    event.stopPropagation()
+    console.log("checking", event);
+    if (event.keyCode === 13 ){
+      searchBook()
+    }
+  }
+
   const searchBook = () => {
     if (input && input.length >= 2){
       let searchUrl = encodeURI(`https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=1025599016601623375&title=${input}`)
@@ -37,13 +48,13 @@ const BookRequest = () => {
         response.data["Items"].slice(0,8).map(books => { return(
           <ListGroup.Item
           key={books["Item"]["title"]}
-          className="searched-items d-flex justify-content-start flex-nowrap"
+          className="searched-items d-flex justify-content-start flex-nowrap　overflow-hidden"
           >
-          <div className="book-name">「{books["Item"]["title"]}」</div>
-          <div className="book-author"> 著者:{books["Item"]["author"]}</div>
-          <div className="book-publisher">   {books["Item"]["publisherName"]}</div>
-          <div className="book-img-url d-none">{books["Item"]["largeImageUrl"]}</div>
-          <div className="book-url d-none">{books["Item"]["itemUrl"]}</div>
+          <div className="book-name"><p>「{books["Item"]["title"]}」</p></div>
+          <div className="book-author"><p>{books["Item"]["author"]}</p></div>
+          <div className="book-publisher"><p>{books["Item"]["publisherName"]}</p></div>
+          <div className="book-img-url d-none"><p>{books["Item"]["largeImageUrl"]}</p></div>
+          <div className="book-url d-none"><p>{books["Item"]["itemUrl"]}</p></div>
           <Button
             variant="outline-secondary"
             className="text-nowrap ml-auto"
