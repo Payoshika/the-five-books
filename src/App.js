@@ -52,7 +52,7 @@ export default class App extends React.Component {
     console.log("ログアウトできました");
   }
 
-  componentWillMount(){
+  componentDidMount(){
     this.checkLoginStatus()
   }
 
