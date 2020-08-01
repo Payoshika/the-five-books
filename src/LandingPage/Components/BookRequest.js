@@ -70,7 +70,7 @@ const BookRequest = () => {
 
   const requestBook = (event) => {
     event.preventDefault();
-    const url = "http://localhost:3000/book_create"
+    const url = "https://the-five-books-backend.herokuapp.com/book_create"
     let book  = {
           name: ` ${event.target.parentNode.querySelector(".book-name").innerHTML}`,
           author: `${event.target.parentNode.querySelector(".book-author").innerHTML}`,

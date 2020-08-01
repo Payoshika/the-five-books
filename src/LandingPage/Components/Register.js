@@ -11,7 +11,7 @@ const Register = () => {
   const [email, setEmail] = useState("")
 
   const subscribe = () => {
-    const url = "http://localhost:3000/subscribe"
+    const url = "https://the-five-books-backend.herokuapp.com/subscribe"
     axios.post(url, {email:{email: email}})
     .then(response => {
       console.log(response.data.subscribed);

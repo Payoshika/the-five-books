@@ -12,7 +12,7 @@ const Contact = () => {
   const [input, setInput] = useState("")
 
   const submitInquiry = (event) => {
-    const url = "http://localhost:3000/contact"
+    const url = "https://the-five-books-backend.herokuapp.com/contact"
     axios.post(url, {user:{
       name: name,
       email: email,
