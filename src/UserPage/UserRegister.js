@@ -79,7 +79,7 @@ const UserRegister = (props) => {
   </div>
 
   const userRegistration = (event) => {
-    const url = "http://localhost:3000/user"
+    const url = "https://the-five-books-backend.herokuapp.com/user"
     axios.post(
       url,
       {user: {
@@ -104,7 +104,7 @@ const UserRegister = (props) => {
   }
 
   const userLogin = (event) =>{
-    const url = "http://localhost:3000/session"
+    const url = "https://the-five-books-backend.herokuapp.com/session"
     axios.post(
       url,
       {user: {
