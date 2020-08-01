@@ -7,13 +7,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Nav = (props) => {
   const [hide, setHide] = useState(true);
 
-  let registerMenu = <p><Link to="./user">User Register</Link></p>
-  let name = <div></div>
+  let registerMenu = (props.name === "")? <p><Link to="./user">User Register</Link></p> : <div></div>
 
-  if (props.user.name) {
-    name = <div><Link to="./userpage">{props.user.name}さん</Link></div>
-    registerMenu = <div></div>
-  }
+  let name = (props.name === "")? <div></div> :<div><Link to="./userpage">{props.name}さん</Link></div>
 
   let menuBar =
     <FontAwesomeIcon icon={faBars}

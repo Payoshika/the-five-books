@@ -18,7 +18,8 @@ export default class App extends React.Component {
     super(props)
     this.state = {
       loggedInStatus : "not_logged_in",
-      user : {}
+      name : "",
+      email : ""
     }
     this.checkLoginStatus = this.checkLoginStatus.bind(this)
     this.handleLogin = this.handleLogin.bind(this)
@@ -28,16 +29,19 @@ export default class App extends React.Component {
   checkLoginStatus(){
     const url = "http://localhost:3000/logged_in"
     axios.get(url, {withCredentials: true})
-    .then(response => this.handleLogin(response.data))
+    .then(response => {
+      this.handleLogin(response.data)
+    }
+    )
     .catch(error => console.log("ログインチェックエラー", error))
   }
 
   handleLogin(data){
     this.setState({
       loggedInStatus : "logged_in",
-      user: data.user
+      name: data.user.name,
+      email: data.user.email
     })
-    console.log("ログインできました", this.state.user);
   }
 
   handleLogout() {
@@ -57,7 +61,8 @@ export default class App extends React.Component {
       <Router>
         <div className="wrap">
           <Nav
-            user = {this.state.user}
+            name = {this.state.name}
+            email = {this.state.email}
             />
             <Switch>
               <Route
@@ -65,7 +70,8 @@ export default class App extends React.Component {
                 path="/"
                 render = {props => (<Home {...props}
                 loggedInStatus= {this.state.loggedInStatus}
-                user = {this.state.user}
+                name = {this.state.name}
+                email = {this.state.email}
                 handleLogin = {this.handleLogin}
                 handleLogout={this.handleLogout}/>)}
                 >
@@ -75,7 +81,8 @@ export default class App extends React.Component {
                 render = {props => (<UserRegister {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
-                user = {this.state.user}
+                name = {this.state.name}
+                email = {this.state.email}
                 handleLogin = {this.handleLogin}
                 />)}
                 >
@@ -85,7 +92,8 @@ export default class App extends React.Component {
                 render = {props => (<UserPage {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
-                user = {this.state.user}
+                name = {this.state.name}
+                email = {this.state.email}
                 handleLogin = {this.handleLogin}
                 />)}
                 >
@@ -95,7 +103,8 @@ export default class App extends React.Component {
                 render = {props => (<Lecture1 {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
-                user = {this.state.user}
+                name = {this.state.name}
+                email = {this.state.email}
                 />)}
                 >
               </Route>
@@ -104,7 +113,8 @@ export default class App extends React.Component {
                 render = {props => (<Lecture2 {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
-                user = {this.state.user}
+                name = {this.state.name}
+                email = {this.state.email}
                 />)}
                 >
               </Route>
@@ -113,7 +123,8 @@ export default class App extends React.Component {
                 render = {props => (<ComingLectures {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
-                user = {this.state.user}
+                name = {this.state.name}
+                email = {this.state.email}
                 />)}
                 >
               </Route>
