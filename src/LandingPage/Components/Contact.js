@@ -53,10 +53,10 @@ const Contact = () => {
       <Form.Group controlId="contact-genre" required>
         <Form.Label>お問い合わせカテゴリ</Form.Label>
         <Form.Control as="select"  name="inquiry_genre">
-          <option value="サービスの利用について">サービスの利用について</option>
-          <option value="講師登録・講義実施について">講師登録・講義実施について</option>
-          <option value="メディアについてのお問い合わせ">メディアについてのお問い合わせ</option>
-          <option value="採用について">採用について</option>
+          <option value="サービスの利用に関して">サービスの利用に関して</option>
+          <option value="講師登録について">講師登録に関して</option>
+          <option value="メディアからのお問い合わせ">メディアからのお問い合わせ</option>
+          <option value="採用に関して">採用に関して</option>
         </Form.Control>
       </Form.Group>
       <Form.Group controlId="email" required>

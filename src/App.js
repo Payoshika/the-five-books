@@ -95,6 +95,7 @@ export default class App extends React.Component {
                 name = {this.state.name}
                 email = {this.state.email}
                 handleLogin = {this.handleLogin}
+                handleLogout = {this.handleLogout}
                 />)}
                 >
               </Route>

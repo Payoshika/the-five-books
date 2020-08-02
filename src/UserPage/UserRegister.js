@@ -1,5 +1,9 @@
-import React, {useState, useEffect} from "react"
-import {BrowserRouter as Router, Switch, Route, withRouter, Link} from 'react-router-dom';
+import React, {useState} from "react"
+import {Link} from 'react-router-dom';
+import Tabs from 'react-bootstrap/Tabs'
+import Tab from 'react-bootstrap/Tab'
+import TabContainer from 'react-bootstrap/TabContainer'
+import TabContent from 'react-bootstrap/TabContent'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import axios from "axios"
@@ -9,14 +13,11 @@ const UserRegister = (props) => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [password_confirmation, setPasswordConfirmation] = useState("")
-  const [radioValue, setRadioValue] = useState('1');
-  const [hide, setHide] = useState("")
 
-  const content =
+  const register =
   <div className="register-menu w-100">
-    <h4 className="text-center"><u>新規ご登録/ログイン</u></h4>
     <Form className="form-input">
-      <Form.Group controlId="name" className={hide} required>
+      <Form.Group controlId="name" required>
         <Form.Label>お名前</Form.Label>
         <Form.Control
           type="text"
@@ -46,7 +47,7 @@ const UserRegister = (props) => {
           onChange = {(event) => setPassword(event.target.value)}
            />
       </Form.Group>
-      <Form.Group controlId="password_confirmation" className={hide} required>
+      <Form.Group controlId="password_confirmation" required>
         <Form.Label>パスワードの再確認</Form.Label>
         <Form.Control
           type="password"
@@ -56,13 +57,46 @@ const UserRegister = (props) => {
           onChange = {(event) => setPasswordConfirmation(event.target.value)}
            />
       </Form.Group>
-      <Form.Group className= {`d-flex justify-content-center  ${hide}`}>
+      <Form.Group className= {`d-flex justify-content-center`}>
         <Button
           variant="dark"
           type="submit"
           onClick={(event)=>userRegistration(event)}
           >登録する
         </Button>
+        <Button
+          variant="outline-secondary"
+          type="submit"
+          ><Link to="./">キャンセル</Link>
+        </Button>
+      </Form.Group>
+    </Form>
+  </div>
+
+  const login =
+    <div className="register-menu w-100">
+    <Form className="form-input">
+      <Form.Group controlId="email"  required>
+        <Form.Label>Email</Form.Label>
+        <Form.Control
+          type="email"
+          name="email"
+          value={email}
+          placeholder="email@gmail.com"
+          onChange = {(event) => setEmail(event.target.value)}
+           />
+      </Form.Group>
+      <Form.Group controlId="password" required>
+        <Form.Label>パスワード</Form.Label>
+        <Form.Control
+          type="password"
+          name="password"
+          value={password}
+          placeholder="アルファベットと数字双方を含めてください"
+          onChange = {(event) => setPassword(event.target.value)}
+           />
+      </Form.Group>
+      <Form.Group className= {`d-flex justify-content-center`}>
         <Button
           variant="light"
           type="submit"
@@ -127,9 +161,19 @@ const UserRegister = (props) => {
     event.preventDefault()
   }
   return(
-   <div>
-     {content}
-   </div>
+    <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+      <Tabs
+        defaultActiveKey="register"
+        id="uncontrolled-tab-example"
+        >
+        <Tab eventKey="register" title="新規登録">
+          {register}
+        </Tab>
+        <Tab eventKey="login" title="ログイン">
+          {login}
+        </Tab>
+      </Tabs>
+    </div>
   )
 }
 

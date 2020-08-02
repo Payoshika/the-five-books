@@ -7,7 +7,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Nav = (props) => {
   const [hide, setHide] = useState(true);
 
-  let registerMenu = (props.name === "")? <p><Link to="./user">User Register</Link></p> : <div></div>
+  let registerMenu = (props.name === "")? <Link to="./user">Register/Login</Link> : <div></div>
 
   let name = (props.name === "")? <div></div> :<div><Link to="./userpage">{props.name}さん</Link></div>
 
@@ -32,7 +32,7 @@ const Nav = (props) => {
 
   let largeMenu =
   <div className="large-menu d-none ml-auto d-sm-flex">
-    {registerMenu}
+    <p>{registerMenu}</p>
     <p><a href="/#home">Home</a></p>
     <p><a href="/#course">Courses</a></p>
     <p><a href="/#contact">Contact</a></p>

@@ -174,7 +174,7 @@ const LectureLists = () => {
     <Container fluid>
       <Row>
         <Col className="bookLists d-flex flex-column align-items-center justify-content-center">
-          <h4>開講予定の古典</h4>
+          <h4>今後開講可能の古典</h4>
           {smartPhoneDisplay}
           {desktopDisplay}
         </Col>

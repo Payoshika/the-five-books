@@ -50,7 +50,7 @@ const BookRequest = () => {
           key={books["Item"]["title"]}
           className="searched-items d-flex justify-content-start flex-nowrap　overflow-hidden"
           >
-          <div className="book-name"><p>「{books["Item"]["title"]}」</p></div>
+          <div className="book-name"><p>{books["Item"]["title"]}</p></div>
           <div className="book-author"><p>{books["Item"]["author"]}</p></div>
           <div className="book-publisher"><p>{books["Item"]["publisherName"]}</p></div>
           <div className="book-img-url d-none"><p>{books["Item"]["largeImageUrl"]}</p></div>
@@ -72,17 +72,17 @@ const BookRequest = () => {
     event.preventDefault();
     const apiURL = process.env.REACT_APP_API_URL
     let book  = {
-          name: ` ${event.target.parentNode.querySelector(".book-name").innerHTML}`,
-          author: `${event.target.parentNode.querySelector(".book-author").innerHTML}`,
-          publisher: `${event.target.parentNode.querySelector(".book-publisher").innerHTML}`,
-          img_url: `${event.target.parentNode.querySelector(".book-img-url").innerHTML}`,
-          book_url: `${event.target.parentNode.querySelector(".book-url").innerHTML
+          name: ` ${event.target.parentNode.querySelector(".book-name").innerText}`,
+          author: `${event.target.parentNode.querySelector(".book-author").innerText}`,
+          publisher: `${event.target.parentNode.querySelector(".book-publisher").innerText}`,
+          img_url: `${event.target.parentNode.querySelector(".book-img-url").innerText}`,
+          book_url: `${event.target.parentNode.querySelector(".book-url").innerText
           }`
         }
     axios.post(`${apiURL}/book_create`, {book: book})
     .then(
       response => console.log(response.data),
-      event.target.parentNode.innerHTML = "リクエストしました。")
+      event.target.parentNode.innerText = "リクエストしました。")
     .then(
       setTimeout((()=>{setSearchResult(<div></div>)}), 1000))
     .catch(error => console.log(error))
