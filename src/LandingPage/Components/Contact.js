@@ -12,8 +12,8 @@ const Contact = () => {
   const [input, setInput] = useState("")
 
   const submitInquiry = (event) => {
-    const url = "https://the-five-books-backend.herokuapp.com/contact"
-    axios.post(url, {user:{
+    const apiURL = process.env.REACT_APP_API_URL
+    axios.post(`${apiURL}/contact`, {user:{
       name: name,
       email: email,
       content: input,

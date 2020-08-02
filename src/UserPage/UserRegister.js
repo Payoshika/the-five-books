@@ -79,9 +79,9 @@ const UserRegister = (props) => {
   </div>
 
   const userRegistration = (event) => {
-    const url = "https://the-five-books-backend.herokuapp.com/user"
+    const apiURL = process.env.REACT_APP_API_URL
     axios.post(
-      url,
+      `${apiURL}/user`,
       {user: {
           name: name,
           email: email,
@@ -104,9 +104,9 @@ const UserRegister = (props) => {
   }
 
   const userLogin = (event) =>{
-    const url = "https://the-five-books-backend.herokuapp.com/session"
+    const apiURL = process.env.REACT_APP_API_URL
     axios.post(
-      url,
+      `${apiURL}/session`,
       {user: {
           email: email,
           password: password,

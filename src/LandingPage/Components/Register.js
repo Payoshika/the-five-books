@@ -11,8 +11,8 @@ const Register = () => {
   const [email, setEmail] = useState("")
 
   const subscribe = () => {
-    const url = "https://the-five-books-backend.herokuapp.com/subscribe"
-    axios.post(url, {email:{email: email}})
+    const apiURL = process.env.REACT_APP_API_URL
+    axios.post(`${apiURL}/subscribe`, {email:{email: email}})
     .then(response => {
       console.log(response.data.subscribed);
         if (response.data.subscribed === true) {

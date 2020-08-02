@@ -70,7 +70,7 @@ const BookRequest = () => {
 
   const requestBook = (event) => {
     event.preventDefault();
-    const url = "https://the-five-books-backend.herokuapp.com/book_create"
+    const apiURL = process.env.REACT_APP_API_URL
     let book  = {
           name: ` ${event.target.parentNode.querySelector(".book-name").innerHTML}`,
           author: `${event.target.parentNode.querySelector(".book-author").innerHTML}`,
@@ -79,7 +79,7 @@ const BookRequest = () => {
           book_url: `${event.target.parentNode.querySelector(".book-url").innerHTML
           }`
         }
-    axios.post(url, {book: book})
+    axios.post(`${apiURL}/book_create`, {book: book})
     .then(
       response => console.log(response.data),
       event.target.parentNode.innerHTML = "リクエストしました。")

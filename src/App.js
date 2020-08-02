@@ -27,8 +27,8 @@ export default class App extends React.Component {
   }
 
   checkLoginStatus(){
-    const url = "https://the-five-books-backend.herokuapp.com/logged_in"
-    axios.get(url, {withCredentials: true})
+    const apiURL = process.env.REACT_APP_API_URL
+    axios.get(`${apiURL}/logged_in`, {withCredentials: true})
     .then(response => {
       this.handleLogin(response.data)
     }

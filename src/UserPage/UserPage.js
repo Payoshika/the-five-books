@@ -6,8 +6,7 @@ import Button from 'react-bootstrap/Button'
 import ListGroup from 'react-bootstrap/ListGroup'
 
 const UserPage = (props) =>{
-
-  let {name, email, lectures} = props.user
+  let {name, email, lectures} = props
   if (!lectures){
     lectures = "登録済みの講座はありません"
   }
