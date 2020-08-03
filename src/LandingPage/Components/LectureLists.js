@@ -27,82 +27,82 @@ import Image from 'react-bootstrap/Image'
 const LectureLists = () => {
   const content1 =
     <Link to="/coming_lectures" >
-      <Image src={bookImg1}/>
+      <Image src={bookImg1} width="200" height="280"/>
     </Link>
   const content2 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg2}/>
+    <Image src={bookImg2} width="200" height="280"/>
   </Link>
   const content3 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg3}/>
+    <Image src={bookImg3} width="200" height="280"/>
   </Link>
   const content4 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg4}/>
+    <Image src={bookImg4} width="200" height="280"/>
   </Link>
   const content5 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg5} />
+    <Image src={bookImg5} width="200" height="280" />
   </Link>
   const content6 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg6} />
+    <Image src={bookImg6} width="200" height="280" />
   </Link>
   const content7 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg7} />
+    <Image src={bookImg7} width="200" height="280" />
   </Link>
   const content8 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg8} />
+    <Image src={bookImg8} width="200" height="280" />
   </Link>
   const content9 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg9} />
+    <Image src={bookImg9} width="200" height="280" />
   </Link>
   const content10 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg10} />
+    <Image src={bookImg10} width="200" height="280" />
   </Link>
   const content11 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg11} />
+    <Image src={bookImg11} width="200" height="280" />
   </Link>
   const content12 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg12} />
+    <Image src={bookImg12} width="200" height="280" />
   </Link>
   const content13 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg13} />
+    <Image src={bookImg13} width="200" height="280" />
   </Link>
   const content14 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg14} />
+    <Image src={bookImg14} width="200" height="280" />
   </Link>
   const content15 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg15} />
+    <Image src={bookImg15} width="200" height="280" />
   </Link>
   const content16 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg16} />
+    <Image src={bookImg16} width="200" height="280" />
   </Link>
   const content17 =
   <Link to="/coming_lectures" >
-    <Image src={bookImg17} />
+    <Image src={bookImg17} width="200" height="280" />
   </Link>
 
   const smartPhoneDisplay =
   <Carousel className="smartPhoneDisplay d-md-none">
-   <Carousel.Item >
+   <Carousel.Item>
      {content4}
    </Carousel.Item>
-   <Carousel.Item >
+   <Carousel.Item>
      {content5}
    </Carousel.Item>
-   <Carousel.Item >
+   <Carousel.Item>
      {content6}
    </Carousel.Item>
    <Carousel.Item >

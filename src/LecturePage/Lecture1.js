@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {useParams, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {Lecture1Info} from "./index"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -64,7 +64,7 @@ const Lecture1 = () => {
       <div className="book-img-container">
         <Image src={bookImg} fluid />
       </div>
-      <div className="lecturer-info d-flex justify-content-center align-items-center flex-nowrap">
+      <div className="lecturer-info d-flex flex-column flex-md-row justify-content-center align-items-center flex-nowrap">
         <div className="lecturer-photo">
           <Image src={lecturer_yamano_hiroki} fluid roundedCircle/>
         </div>
@@ -97,10 +97,10 @@ const Lecture1 = () => {
     <Container fluid>
       <Row>
         <Col xs={12}>
-          <h4 className="text-center"><b>{Lecture1Info.book.name} : {Lecture1Info.book.author}著</b></h4>
+          <h4 className="text-center"><b>「{Lecture1Info.book.name} 」<br/> {Lecture1Info.book.author}&nbsp;著</b></h4>
           <h4 className="text-center">
-          <b>開講:{Lecture1Info.lecture.lectureStartDate.slice(5,6)}月{Lecture1Info.lecture.lectureStartDate.slice(7,9)}日&nbsp;~&nbsp;
-          閉講:{Lecture1Info.lecture.lectureEndDate.slice(5,6)}月{Lecture1Info.lecture.lectureEndDate.slice(7,9)}日
+          <b>講座期間:&nbsp;{Lecture1Info.lecture.lectureStartDate.slice(5,6)}月{Lecture1Info.lecture.lectureStartDate.slice(7,9)}日&nbsp;~&nbsp;
+          {Lecture1Info.lecture.lectureEndDate.slice(5,6)}月{Lecture1Info.lecture.lectureEndDate.slice(6,9)}日
           </b>
           </h4>
         </Col>
@@ -111,18 +111,18 @@ const Lecture1 = () => {
           <h4 className="text-center">講義スケジュール</h4>
             {schedule}
         </Col>
-        <Col xs={12} className="d-flex flex-column align-items-center justify-content-center">
+        <Col xs={12} className="d-flex flex-column align-items-center justify-content-center mt-3">
           <h4 className="text-center">講義概要</h4>
             {lectureDetail}
         </Col>
-        <Col xs={12} className="d-flex flex-column align-items-center justify-content-center">
+        <Col xs={12} className="d-flex flex-column align-items-center justify-content-center mt-3">
           <h4 className="text-center">注意事項</h4>
             <p></p>
         </Col>
         <Col>
-          <div className="buy-button d-flex justify-content-center">
+          <div className="buy-button d-flex justify-content-center mt-3">
             <Button variant="dark" size="lg" block>
-            <a href="#" className="text-white">講義に登録する<br/>(peatixページに遷移します。)</a>
+            <a href="#" className="text-white">参加する<br/>(peatixページに遷移します)</a>
             </Button>
           </div>
         </Col>
