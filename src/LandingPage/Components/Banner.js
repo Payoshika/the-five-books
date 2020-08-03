@@ -15,7 +15,7 @@ import Carousel from "react-bootstrap/Carousel"
 const Banner = () => {
   const message =
   <div className="banner-message d-flex flex-column align-items-center justify-content-center flex-nowrap">
-    <h2>古典の読書をより身近に、<br/>より豊かな体験に。</h2>
+    <h2>古典の読書を<br/>より身近に、より豊かに。</h2>
     <p>多様な分野の古典作品を、専門家のライブ講義を受けながら2~4週間かけてじっくりと学ぶ、"おそい" 読書体験。</p>
     <p>関心はあったのに難しくて途中で止めてしまった、一通り読んだものの曖昧な理解に留まっている、愛読書にして何度も読み返しているが周りにはなかなか理解者がいない。そんな本はないでしょうか。</p>
     <p>The Five Booksは、古典について &nbsp;1)&nbsp;深く理解する、2)&nbsp;自分の言葉にする、3)&nbsp;対話の中で消化する、ことを通して読書の体験をより豊かにするサービスです。</p>
