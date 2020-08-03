@@ -17,6 +17,9 @@ import bookImg14 from "../../LecturePage/img/形而上学.jpg"
 import bookImg15 from "../../LecturePage/img/政治学.jpg"
 import bookImg16 from "../../LecturePage/img/弁論術.jpg"
 import bookImg17 from "../../LecturePage/img/アテナイ人の国制.jpg"
+import bookImg18 from "../../LecturePage/img/哲学原理.jpg"
+import bookImg19 from "../../LecturePage/img/Theaitetos.jpg"
+
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -93,11 +96,26 @@ const LectureLists = () => {
   <Link to="/coming_lectures" >
     <Image src={bookImg17} width="200" height="280" />
   </Link>
+  const content18 =
+  <Link to="/coming_lectures" >
+    <Image src={bookImg18} width="200" height="280" />
+  </Link>
+
+  const content19 =
+  <Link to="/coming_lectures" >
+    <Image src={bookImg19} width="200" height="280" />
+  </Link>
 
   const smartPhoneDisplay =
   <Carousel className="smartPhoneDisplay d-md-none">
+    <Carousel.Item>
+      {content19}
+    </Carousel.Item>
    <Carousel.Item>
      {content4}
+   </Carousel.Item>
+   <Carousel.Item>
+     {content18}
    </Carousel.Item>
    <Carousel.Item>
      {content5}
@@ -151,12 +169,14 @@ const LectureLists = () => {
 
   const desktopDisplay =
     <div className="desktopDisplay d-none d-md-block">
+      {content19}
+      {content4}
       {content5}
       {content6}
+      {content18}
       {content7}
       {content8}
       {content9}
-      {content4}
       {content10}
       {content11}
       {content12}

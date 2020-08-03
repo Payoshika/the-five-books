@@ -21,6 +21,8 @@ import bookImg14 from "./img/形而上学.jpg"
 import bookImg15 from "./img/政治学.jpg"
 import bookImg16 from "./img/弁論術.jpg"
 import bookImg17 from "./img/アテナイ人の国制.jpg"
+import bookImg18 from "./img/哲学原理.jpg"
+import bookImg19 from "./img/Theaitetos.jpg"
 
 const ComingLectures = () => {
 
@@ -44,9 +46,21 @@ const ComingLectures = () => {
   const content =
   <div className="coming-lectures d-flex flex-column flex-lg-row align-items-center justify-content-center flex-lg-wrap">
     <div className="coming-lecture-list d-flex flex-row flex-lg-column">
+      <img src={bookImg19} className="img-fluid" alt=""/>
+      <div className="description">
+        <p><span className="book-title">テアイテトス </span></p>
+        <p>著者：<span className="book-author">プラトン</span></p>
+      </div>
+      <Button
+        variant="outline-secondary"
+        onClick={(event)=>requestBook(event)}
+        >この書籍をリクエスト
+      </Button>
+    </div>
+    <div className="coming-lecture-list d-flex flex-row flex-lg-column">
       <img src={bookImg1} className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">幸福について</span></p>
+        <p><span className="book-title">幸福について</span></p>
         <p>著者：<span className="book-author">ショーペンハウエル</span></p>
       </div>
       <Button
@@ -58,7 +72,7 @@ const ComingLectures = () => {
     <div className="coming-lecture-list d-flex flex-row flex-lg-column">
       <img src={bookImg2}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">知性について</span></p>
+        <p><span className="book-title">知性について</span></p>
         <p>著者：<span className="book-author">ショーペンハウエル</span></p>
       </div>
       <Button
@@ -70,7 +84,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg3} className="img-fluid"  alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">自殺について</span></p>
+        <p><span className="book-title">自殺について</span></p>
         <p>著者：<span className="book-author">ショーペンハウエル</span></p>
       </div>
       <Button
@@ -82,7 +96,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg4} className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">メノン</span></p>
+        <p><span className="book-title">メノン</span></p>
         <p>著者：<span className="book-author">プラトン</span></p>
       </div>
       <Button
@@ -94,7 +108,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg5}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">饗宴</span></p>
+        <p><span className="book-title">饗宴</span></p>
         <p>著者：<span className="book-author">プラトン</span></p>
       </div>
       <Button
@@ -106,7 +120,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg6}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">国家</span></p>
+        <p><span className="book-title">国家</span></p>
         <p>著者：<span className="book-author">プラトン</span></p>
       </div>
       <Button
@@ -118,7 +132,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg7}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">プロタゴラス</span></p>
+        <p><span className="book-title">プロタゴラス</span></p>
         <p>著者：<span className="book-author">プラトン</span></p>
       </div>
       <Button
@@ -130,7 +144,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg8}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">ソクラテスの弁明・クリトン</span></p>
+        <p><span className="book-title">ソクラテスの弁明・クリトン</span></p>
         <p>著者：<span className="book-author">プラトン</span></p>
       </div>
       <Button
@@ -142,7 +156,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg9} className="img-fluid"  alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">ゴルギアス</span></p>
+        <p><span className="book-title">ゴルギアス</span></p>
         <p>著者：<span className="book-author">プラトン</span></p>
       </div>
       <Button
@@ -154,7 +168,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg10}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">法律</span></p>
+        <p><span className="book-title">法律</span></p>
         <p>著者：<span className="book-author">プラトン</span></p>
       </div>
       <Button
@@ -166,7 +180,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg11}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">パイドン</span></p>
+        <p><span className="book-title">パイドン</span></p>
         <p>著者：<span className="book-author">プラトン</span></p>
       </div>
       <Button
@@ -178,7 +192,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg12}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">パイドロス</span></p>
+        <p><span className="book-title">パイドロス</span></p>
         <p>著者：<span className="book-author">プラトン</span></p>
       </div>
       <Button
@@ -190,7 +204,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg13} className="img-fluid"  alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">二コマコス倫理学</span></p>
+        <p><span className="book-title">二コマコス倫理学</span></p>
         <p>著者：<span className="book-author">アリストテレス</span></p>
       </div>
       <Button
@@ -202,7 +216,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg14}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">形而上学</span></p>
+        <p><span className="book-title">形而上学</span></p>
         <p>著者：<span className="book-author">アリストテレス</span></p>
       </div>
       <Button
@@ -214,7 +228,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg15}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">政治学</span></p>
+        <p><span className="book-title">政治学</span></p>
         <p>著者：<span className="book-author">アリストテレス</span></p>
       </div>
       <Button
@@ -226,7 +240,7 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg16}  className="img-fluid" alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">弁論術</span></p>
+        <p><span className="book-title">弁論術</span></p>
         <p>著者：<span className="book-author">アリストテレス</span></p>
       </div>
       <Button
@@ -238,8 +252,20 @@ onClick={(event)=>requestBook(event)}
     <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
       <img src={bookImg17} className="img-fluid"  alt=""/>
       <div className="description">
-        <p>著作：<span className="book-title">アテナイ人の国制</span></p>
+        <p><span className="book-title">アテナイ人の国制</span></p>
         <p>著者：<span className="book-author">アリストテレス</span></p>
+      </div>
+      <Button
+        variant="outline-secondary"
+        onClick={(event)=>requestBook(event)}
+        >この書籍をリクエスト
+      </Button>
+    </div>
+    <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
+      <img src={bookImg18}  className="img-fluid" alt=""/>
+      <div className="description">
+        <p><span className="book-title">哲学原理</span></p>
+        <p>著者：<span className="book-author">デカルト</span></p>
       </div>
       <Button
         variant="outline-secondary"

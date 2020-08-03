@@ -69,10 +69,10 @@ const Lecture1 = () => {
         </div>
         <div className="lecturer-info">
             <p>講師: {Lecture2Info["lecturer"]["name"]}</p>
-            <p>専門分野: {Lecture2Info["lecturer"]["expertise"]}</p>
+            <p>専門: {Lecture2Info["lecturer"]["expertise"]}</p>
             <p>学位: {Lecture2Info["lecturer"]["degree"]}</p>
-            <p>所属機関: {Lecture2Info["lecturer"]["affiliation"]}</p>
-            <p>講師プロフィール： {Lecture2Info["lecturer"]["profile-link"]}</p>
+            <p>所属: {Lecture2Info["lecturer"]["affiliation"]}</p>
+            <p>経歴： <a href={Lecture2Info["lecturer"]["profile-link"]}><u>researchmap</u>を見る</a></p>
             <p>講義書籍: {Lecture2Info["lecturer"]["lecturableBooks"].join(", ")}</p>
         </div>
       </div>
@@ -107,7 +107,7 @@ const Lecture1 = () => {
           <h4 className="text-center">講義スケジュール</h4>
             {schedule}
         </Col>
-        <Col xs={12} className="d-flex flex-column align-items-center justify-content-center">
+        <Col xs={12} className="d-none">
           <h4 className="text-center">講義概要</h4>
             {lectureDetail}
         </Col>

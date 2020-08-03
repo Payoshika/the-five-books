@@ -93,6 +93,28 @@ const Lecture1 = () => {
       </div>
     </div>
 
+  const disclaimer =
+  <div>
+    <p>
+      ・書籍は参加者各自でご用意いただきますようお願いいたします。<br/>
+    ・「読書について」は光文社、岩波書店より刊行されていますが、どちらの書籍を読んでいただいても構いません。<br/>
+      ・第一回講義参加に際し、書籍を通読している必須はありません。
+    </p>
+    <p>
+      ・講義にはWeb会議サービスのZoomを使用いたします。<br/>
+    ・講義では、受講者の方に質問や受講者同士の対話を強要することはありません。講義中のご質問は、Zoomのチャット機能或いは音声で行うことができます。<br/>
+      ・各講義は、録画のうえ受講者の方へ講義後に共有いたします。
+    </p>
+    <p>
+      ・受講期間の対話ツールには、Slackを使用いたします。<br/>
+      ・Zoom, Slack共に、本名・ニックネームいずれの形でご参加いただいても構いません。
+    </p>
+    <p>
+      ・参加登録、お支払いは、peatixページにて行っていただきますようお願い申し上げます。<br/>
+    ・その他のお問い合わせについては、トップページのお問い合わせ欄よりご連絡いただきますようお願い致します。
+    </p>
+  </div>
+
   return(
     <Container fluid>
       <Row>
@@ -117,7 +139,7 @@ const Lecture1 = () => {
         </Col>
         <Col xs={12} className="d-flex flex-column align-items-center justify-content-center mt-3">
           <h4 className="text-center">注意事項</h4>
-            <p></p>
+            {disclaimer}
         </Col>
         <Col>
           <div className="buy-button d-flex justify-content-center mt-3">

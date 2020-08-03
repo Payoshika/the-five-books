@@ -16,35 +16,37 @@ const ServiceDescription = () => {
         <Image className="description-img order-md-1" src={read} rounded/>
         <div className="description-text d-flex order-md-0 flex-column justify-content-center align-items-center">
           <h5><u>読む</u></h5>
-          <p>いつもより、時間をかけて一冊を読む。<br/>2~3週間をかけて一冊を読み続けていく中で、読みながら考え、考えた後にまた読む。<br/>本を消費するのではなく、本を起点に自分の思考を生み出していく。</p>
+          <p>いつもより、時間をかけて一冊を読む。<br/>2~4週間をかけて一冊を読み続けていく中で、読みながら考え、考えた後にまた読む。<br/>本を消費するのではなく、自分の思考を生み出す起点にする。</p>
         </div>
       </div>
       <div className="d-flex flex-column flex-md-row justify-between align-items-center mx-md-4">
         <Image className="description-img" src={lecture} rounded/>
         <div className="description-text d-flex flex-column justify-content-center align-items-center mb-md-4">
           <h5><u>理解する</u></h5>
-          <p>当該分野の専門家による、週に一度のオンラインライブ講義を受ける。<br/>読書の過程で疑問に思った点や、理解が足りない点を明らかにすると共に、著書の歴史背景や専門家の解釈を聞くことで、著作について理解を深める。</p>
+          <p>その分野の専門家による、週に一度のオンラインライブ講義を受ける。<br/>読書の過程で疑問に思った点や、理解が足りない点を明らかにすると共に、その書籍の歴史背景や専門家の解釈を聞くことで理解を深める。</p>
         </div>
       </div>
       <div className="d-flex flex-column flex-md-row justify-between align-items-center mx-md-4 mb-md-4">
         <Image className="description-img order-md-1" src={output} rounded/>
         <div className="description-text order-md-0 d-flex flex-column justify-content-center align-items-center">
-          <h5><u>理解する</u></h5>
-          <p>講師から提示される著作に関する議題について、考えを整理し、自らの言葉としてアウトプットすることを通じ、著作について自分なりに消化する。</p>
+          <h5><u>言葉にする</u></h5>
+          <p>講師から提示される書籍に関する問いかけについて、考えを整理し、自らの言葉で表現する。
+          </p>
         </div>
       </div>
       <div className="d-flex flex-column flex-md-row justify-between align-items-center mx-md-4 mb-md-4">
         <Image className="description-img" src={discussion} rounded/>
         <div className="description-text d-flex flex-column justify-content-center align-items-center">
           <h5><u>対話する</u></h5>
-          <p>講座期間中、チャットツールを用い、他の読者や講師と著作について対話する。<br/>互いに疑問点を共有しあうことや、自分の考えについて発信し・議論することで、自分とは異なる他の読み方を知り、自らの思考を更新する。</p>
+          <p>講座期間中、チャットツールを用い、他の読者や講師と対話する。<br/>読者同士で疑問点を共有しあい、自分の考えについて発信・議論することで、多様な読み方を知り、自らの思考をアップデートするきっかけにする。
+          </p>
         </div>
       </div>
       <div className="d-flex flex-column flex-md-row justify-between align-items-center mx-md-4 mb-md-4">
         <Image className="description-img order-md-1" src={understand} rounded/>
         <div className="description-text d-flex order-md-0 flex-column justify-content-center align-items-center">
           <h5><u>根付く</u></h5>
-          <p>読書と講義、思考と対話を繰り返すことで、自分の中で言葉が生まれ・変形し・更新されていく。<br/>著作の全てを理解するのは難しくとも、自分の言葉で消化し、自分の中に根付かせていく。</p>
+          <p>読書⇔講義、思考⇔対話を繰り返すことで、読者の中で考えが生まれ、形を変え、深まっていく。 </p>
         </div>
       </div>
     </div>
