@@ -6,12 +6,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
 import bookImg from "./img/Theaitetos.jpg"
-import lecturerPhoto from "./img/sample-lecturer-photo.png"
+import lecturer_yamano_hiroki from "./img/lecturer_yamano_hiroki.jpg"
 import Calendar from 'react-calendar'
 import './styles/calender.css';
 
 const Lecture1 = () => {
-  const [value, onChange] = useState(new Date(2020, 8, 1));
+  const [value, onChange] = useState(new Date(2020, 9, 1));
 
   const lecturePeriod = {
     startDate: Lecture2Info.lecture.lectureStartDate,
@@ -65,7 +65,7 @@ const Lecture1 = () => {
       </div>
       <div className="lecturer-info d-flex justify-content-center align-items-center flex-nowrap">
         <div className="lecturer-photo">
-          <Image src={lecturerPhoto} fluid roundedCircle/>
+          <Image src={lecturer_yamano_hiroki} fluid roundedCircle/>
         </div>
         <div className="lecturer-info">
             <p>講師: {Lecture2Info["lecturer"]["name"]}</p>
@@ -96,9 +96,8 @@ const Lecture1 = () => {
     <Container fluid>
       <Row>
         <Col xs={12}>
-          <h4 className="text-center">{Lecture2Info.book.name} : {Lecture2Info.book.author}著</h4>
-          <h4 className="text-center">{Lecture2Info.lecture.lectureStartDate}開講 <br/>
-          {Lecture2Info.lecture.lectureEndDate}閉講
+          <h4 className="text-center"><b>{Lecture2Info.book.name} : {Lecture2Info.book.author}著</b></h4>
+          <h4 className="text-center"><b>10月開講予定</b>
           </h4>
         </Col>
         <Col xs={12}>

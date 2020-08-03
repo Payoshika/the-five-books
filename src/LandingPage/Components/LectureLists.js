@@ -95,7 +95,7 @@ const LectureLists = () => {
   </Link>
 
   const smartPhoneDisplay =
-  <Carousel className="d-md-none">
+  <Carousel className="smartPhoneDisplay d-md-none">
    <Carousel.Item >
      {content4}
    </Carousel.Item>
@@ -174,7 +174,7 @@ const LectureLists = () => {
     <Container fluid>
       <Row>
         <Col className="bookLists d-flex flex-column align-items-center justify-content-center">
-          <h4>今後開講可能の古典</h4>
+          <h4 className="mb-3">今後開講予定の古典</h4>
           {smartPhoneDisplay}
           {desktopDisplay}
         </Col>

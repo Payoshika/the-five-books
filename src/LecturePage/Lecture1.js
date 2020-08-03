@@ -5,8 +5,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
+import Button from 'react-bootstrap/Button'
 import bookImg from "./img/読書について.jpg"
-import lecturerPhoto from "./img/sample-lecturer-photo.png"
+import lecturer_yamano_hiroki from "./img/lecturer_yamano_hiroki.jpg"
 import Calendar from 'react-calendar'
 import './styles/calender.css';
 
@@ -65,14 +66,14 @@ const Lecture1 = () => {
       </div>
       <div className="lecturer-info d-flex justify-content-center align-items-center flex-nowrap">
         <div className="lecturer-photo">
-          <Image src={lecturerPhoto} fluid roundedCircle/>
+          <Image src={lecturer_yamano_hiroki} fluid roundedCircle/>
         </div>
         <div className="lecturer-info">
             <p>講師: {Lecture1Info["lecturer"]["name"]}</p>
-            <p>専門分野: {Lecture1Info["lecturer"]["expertise"]}</p>
+            <p>専門: {Lecture1Info["lecturer"]["expertise"]}</p>
             <p>学位: {Lecture1Info["lecturer"]["degree"]}</p>
-            <p>所属機関: {Lecture1Info["lecturer"]["affiliation"]}</p>
-            <p>講師プロフィール： {Lecture1Info["lecturer"]["profile-link"]}</p>
+            <p>所属: {Lecture1Info["lecturer"]["affiliation"]}</p>
+            <p>経歴： <a href={Lecture1Info["lecturer"]["profile-link"]}><u>researchmap</u>を見る</a></p>
             <p>講義書籍: {Lecture1Info["lecturer"]["lecturableBooks"].join(", ")}</p>
         </div>
       </div>
@@ -96,9 +97,11 @@ const Lecture1 = () => {
     <Container fluid>
       <Row>
         <Col xs={12}>
-          <h4 className="text-center">{Lecture1Info.book.name} : {Lecture1Info.book.author}著</h4>
-          <h4 className="text-center">{Lecture1Info.lecture.lectureStartDate}開講 <br/>
-          {Lecture1Info.lecture.lectureEndDate}閉講
+          <h4 className="text-center"><b>{Lecture1Info.book.name} : {Lecture1Info.book.author}著</b></h4>
+          <h4 className="text-center">
+          <b>開講:{Lecture1Info.lecture.lectureStartDate.slice(5,6)}月{Lecture1Info.lecture.lectureStartDate.slice(7,9)}日&nbsp;~&nbsp;
+          閉講:{Lecture1Info.lecture.lectureEndDate.slice(5,6)}月{Lecture1Info.lecture.lectureEndDate.slice(7,9)}日
+          </b>
           </h4>
         </Col>
         <Col xs={12}>
@@ -111,6 +114,17 @@ const Lecture1 = () => {
         <Col xs={12} className="d-flex flex-column align-items-center justify-content-center">
           <h4 className="text-center">講義概要</h4>
             {lectureDetail}
+        </Col>
+        <Col xs={12} className="d-flex flex-column align-items-center justify-content-center">
+          <h4 className="text-center">注意事項</h4>
+            <p></p>
+        </Col>
+        <Col>
+          <div className="buy-button d-flex justify-content-center">
+            <Button variant="dark" size="lg" block>
+            <a href="#" className="text-white">講義に登録する<br/>(peatixページに遷移します。)</a>
+            </Button>
+          </div>
         </Col>
       </Row>
     </Container>

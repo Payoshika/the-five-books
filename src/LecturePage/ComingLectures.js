@@ -255,7 +255,7 @@ onClick={(event)=>requestBook(event)}
       <Row>
         <Col>
           <h4 className="text-center">今後講義予定の古典</h4>
-          <p className="text-center mt-3">以下の古典については、皆様からのリクエストに応じ、順次開講する予定です。開講希望の古典がありましたら、以下よりリクエストをお送りください。</p>
+          <p className="text-center mt-3">以下の古典については、皆様からのリクエストに応じ順次開講を予定しています。開講希望の古典がありましたら、以下よりリクエストをお送りください。</p>
           <div>
             {content}
           </div>

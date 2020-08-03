@@ -91,7 +91,7 @@ const BookRequest = () => {
   return(
     <Container fluid>
       <Row>
-        <Col className="d-flex flex-column justify-content-center align-contents-center">
+        <Col className="d-flex flex-column justify-content-center align-contents-center mt-3">
           <h4 className="text-center">講義を受けたい古典をリクエストする</h4>
             {searchArea}
           <div className="d-flex justify-content-center">

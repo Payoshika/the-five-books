@@ -72,8 +72,9 @@ a, a:hover {
   height: auto;
 }
 .lecturer-info > * {
-  max-width: 15rem;
+  max-width: 20rem;
   margin: 1rem 1rem;
+  max-height: 24rem;
 }
 
 .lecturer-photo {
@@ -118,12 +119,13 @@ a, a:hover {
   min-width: 5rem;
   max-width: 25rem;
   margin: 0 2rem;
+  line-height: 2.5rem;
 }
 
 /* LectureLists area */
-/* .smartPhoneDisplay > .carousel-item {
-  text-align: center;
-} */
+.smartPhoneDisplay {
+  height: 20rem;
+}
 
 .desktopDisplay {
   width: 100%;
@@ -264,4 +266,20 @@ a, a:hover {
   max-height:6rem;
   max-width: 10rem;
   min-width: 5rem;
+}
+
+/* Userpage area */
+.delete-hide {
+  display: none !important;
+}
+
+.delete-show {
+  display: block;
+  height: 100%;
+  background-color: #f4f4f4;
+  top: 0;
+}
+
+.buy-button >* {
+  max-width: 45rem;
 }
