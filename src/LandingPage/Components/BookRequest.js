@@ -14,7 +14,7 @@ const BookRequest = () => {
 
   const searchArea =
   <div className="d-flex justify-content-center">
-    <InputGroup className="register">
+    <InputGroup className="register bottom-border">
       <Form.Control
         type="text"
         placeholder="書籍名を記入"

@@ -16,7 +16,7 @@ const Register = () => {
     .then(response => {
       console.log(response.data.subscribed);
         if (response.data.subscribed === true) {
-          document.querySelector(".register-text").innerHTML = "<p>ニュースレーターの登録が完了しました。</p>"
+          document.querySelector(".register-text").innerHTML = "<p>ニュースレターの登録が完了しました。メールをご確認ください。</p>"
           setEmail("")
         }
         else if (response.data.subscribed === false){
@@ -32,7 +32,7 @@ const Register = () => {
 
   const formArea =
   <div className="d-flex flex-column align-items-center">
-    <div className="register">
+    <div className="register bottom-border">
       <div className="register-text text-center">
         <p>ニュースレターに登録して最新の講義情報を受け取る。</p>
       </div>

@@ -24,7 +24,7 @@ const Nav = (props) => {
         <p onClick ={() => setHide(true)}>{registerMenu}</p>
           {name}
         <p onClick ={() => setHide(true)}><a href="/#home">Home</a></p>
-        <p onClick ={() => setHide(true)}><a href="/#course">Courses</a></p>
+        <p onClick ={() => setHide(true)}><a href="/lecture/1">Course</a></p>
         <p onClick ={() => setHide(true)}><a href="/#contact">Contact</a></p>
         <p onClick ={() => setHide(true)}> <u>Close</u></p>
       </div>
