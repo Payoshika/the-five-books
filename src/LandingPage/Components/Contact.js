@@ -12,6 +12,7 @@ const Contact = () => {
   const [input, setInput] = useState("")
 
   const submitInquiry = (event) => {
+    document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "送信しています..."
     const apiURL = process.env.REACT_APP_API_URL
     axios.post(`${apiURL}/contact`, {user:{
       name: name,

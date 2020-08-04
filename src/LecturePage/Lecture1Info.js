@@ -12,7 +12,7 @@ const Lecture1Info = {
   lecturer:{
     "name" : "山野 弘樹",
     "expertise" : "現代フランス哲学",
-    "degree" : "修士(哲学)",
+    "degree" : "東京大学 大学院総合文化研究科 博士課程",
     "affiliation" : "東京大学総合文化研究科",
     "profile-link" : "https://researchmap.jp/HirokiYamano/?lang=english",
     "lecturableBooks" : ["プラトン", "アリストテレス", "ショーペンハウエル", "デカルト"],

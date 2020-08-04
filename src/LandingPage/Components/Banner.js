@@ -31,8 +31,7 @@ const Banner = () => {
         <div className="lecturer-info order-xl-1">
             <p>講師: {Lecture1Info["lecturer"]["name"]}</p>
             <p>専門: {Lecture1Info["lecturer"]["expertise"]}</p>
-            <p>学位: {Lecture1Info["lecturer"]["degree"]}</p>
-            <p>所属: {Lecture1Info["lecturer"]["affiliation"]}</p>
+            <p>所属: {Lecture1Info["lecturer"]["degree"]}</p>
             <p>参加人数: 最大30名</p>
             <p><b>受講期間: 9月5日~9月26日</b></p>
         </div>
@@ -53,8 +52,7 @@ const Banner = () => {
         <div className="lecturer-info order-xl-1">
           <p>講師: {Lecture2Info["lecturer"]["name"]}</p>
           <p>専門: {Lecture2Info["lecturer"]["expertise"]}</p>
-          <p>学位: {Lecture2Info["lecturer"]["degree"]}</p>
-          <p>所属: {Lecture2Info["lecturer"]["affiliation"]}</p>
+          <p>所属: {Lecture2Info["lecturer"]["degree"]}</p>
           <p>参加人数: 最大25名</p>
           <p><b>開講期間: 10月初旬~</b></p>
         </div>

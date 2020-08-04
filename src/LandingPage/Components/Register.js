@@ -11,6 +11,8 @@ const Register = () => {
   const [email, setEmail] = useState("")
 
   const subscribe = () => {
+    document.querySelector(".register-text").innerHTML =
+    "<p>登録しています...</p>"
     const apiURL = process.env.REACT_APP_API_URL
     axios.post(`${apiURL}/subscribe`, {email:{email: email}})
     .then(response => {

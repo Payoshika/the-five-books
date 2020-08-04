@@ -44,8 +44,15 @@ const BookRequest = () => {
     if (input && input.length >= 2){
       let searchUrl = encodeURI(`https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=1025599016601623375&title=${input}`)
       axios.get(searchUrl)
-      .then(response => setSearchResult(
-        response.data["Items"].slice(0,8).map(books => { return(
+      .then(response => {
+        (response.data["Items"].length === 0)? setSearchResult(
+          <div>
+            <p>お探しの書籍が見つかりません。別のキーワードで検索してください。</p>
+          </div>
+        ):
+        setSearchResult(
+        response.data["Items"].slice(0,8).map(books => {
+          return(
           <ListGroup.Item
           key={books["Item"]["title"]}
           className="searched-items d-flex justify-content-start flex-nowrap　overflow-hidden"
@@ -64,6 +71,7 @@ const BookRequest = () => {
         </ListGroup.Item>
       )})
       )
+      }
       )
     }
   }
@@ -84,6 +92,7 @@ const BookRequest = () => {
       response => console.log(response.data),
       event.target.parentNode.innerText = "リクエストしました。")
     .then(
+      setInput(""),
       setTimeout((()=>{setSearchResult(<div></div>)}), 1000))
     .catch(error => console.log(error))
   }
