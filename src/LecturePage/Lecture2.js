@@ -1,5 +1,4 @@
 import React, {useState} from "react"
-import {useParams, Link} from "react-router-dom";
 import {Lecture2Info} from "./index"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
