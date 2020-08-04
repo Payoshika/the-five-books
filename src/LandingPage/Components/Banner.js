@@ -68,11 +68,11 @@ const Banner = () => {
   return(
     <Container fluid>
       <Row>
-        <Col lg={6}
+        <Col xl={6}
           className="banner-margin d-flex justify-content-center mb-5">
           {message}
         </Col>
-        <Col lg={6} className="d-flex flex-column justify-content-center align-items-center">
+        <Col xl={6} className="d-flex flex-column justify-content-center align-items-center">
           <Carousel interval={null}>
            <Carousel.Item interval={null}>
              <h4 className="banner-margin text-center"><b>9月開講予定の古典</b></h4>

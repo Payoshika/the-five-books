@@ -92,7 +92,7 @@ const Contact = () => {
     <Container fluid>
       <Row>
         <Col id="contact" className="contact d-flex flex-column align-items-center justify-content-center">
-          <h4 className="text-center">お問い合わせ</h4>
+          <h4 className="text-center"><u>お問い合わせ</u></h4>
           {content}
         </Col>
       </Row>

@@ -16,8 +16,12 @@ a, a:hover {
   text-decoration: none;
 }
 
-.bottom-border{
-  border-bottom: 0.5px solid #222831eb !important;
+hr {
+ height: 0.5px;
+ background-color: #222831eb;
+ width: 60%;
+ border: none;
+ margin-top: 3rem;
 }
 
 /* Menu area */
@@ -202,6 +206,7 @@ a, a:hover {
   padding: 1.3rem 0;
   margin: 1rem 0 3rem 0;
   border-top: 0.5px solid #222831eb;
+  border-bottom: 0.5px solid #222831eb;
 }
 
 /* Contact area */

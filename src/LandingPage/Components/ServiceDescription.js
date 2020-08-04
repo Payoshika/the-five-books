@@ -57,6 +57,7 @@ const ServiceDescription = () => {
           <Col>
             <h4 className="text-center"><u>サービスの特徴</u></h4>
             {content}
+            <hr/>
           </Col>
         </Row>
       </Container>

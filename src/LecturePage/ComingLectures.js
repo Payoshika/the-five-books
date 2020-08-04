@@ -23,6 +23,7 @@ import bookImg16 from "./img/弁論術.jpg"
 import bookImg17 from "./img/アテナイ人の国制.jpg"
 import bookImg18 from "./img/哲学原理.jpg"
 import bookImg19 from "./img/Theaitetos.jpg"
+import bookImg20 from "./img/詩学.jpg"
 
 const ComingLectures = () => {
 
@@ -39,7 +40,8 @@ const ComingLectures = () => {
     axios.post(`${apiURL}/book_create`, {book: book})
     .then(
       response => console.log(response.data),
-      event.target.innerText = "リクエストしました。")
+      event.target.innerText = "リクエストしました。",
+    )
     .catch(error => console.log(error))
   }
 
@@ -58,10 +60,34 @@ const ComingLectures = () => {
       </Button>
     </div>
     <div className="coming-lecture-list d-flex flex-row flex-lg-column">
+      <img src={bookImg20} className="img-fluid" alt=""/>
+      <div className="description">
+        <p><span className="book-title">詩学 </span></p>
+        <p>著者：<span className="book-author">アリストテレス</span></p>
+      </div>
+      <Button
+        variant="outline-secondary"
+        onClick={(event)=>requestBook(event)}
+        >この書籍をリクエスト
+      </Button>
+    </div>
+    <div className="coming-lecture-list d-flex flex-row flex-lg-column">
       <img src={bookImg1} className="img-fluid" alt=""/>
       <div className="description">
         <p><span className="book-title">幸福について</span></p>
         <p>著者：<span className="book-author">ショーペンハウエル</span></p>
+      </div>
+      <Button
+        variant="outline-secondary"
+        onClick={(event)=>requestBook(event)}
+        >この書籍をリクエスト
+      </Button>
+    </div>
+    <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
+      <img src={bookImg18}  className="img-fluid" alt=""/>
+      <div className="description">
+        <p><span className="book-title">哲学原理</span></p>
+        <p>著者：<span className="book-author">デカルト</span></p>
       </div>
       <Button
         variant="outline-secondary"
@@ -261,18 +287,7 @@ onClick={(event)=>requestBook(event)}
         >この書籍をリクエスト
       </Button>
     </div>
-    <div className="coming-lecture-list  d-flex flex-row flex-lg-column">
-      <img src={bookImg18}  className="img-fluid" alt=""/>
-      <div className="description">
-        <p><span className="book-title">哲学原理</span></p>
-        <p>著者：<span className="book-author">デカルト</span></p>
-      </div>
-      <Button
-        variant="outline-secondary"
-        onClick={(event)=>requestBook(event)}
-        >この書籍をリクエスト
-      </Button>
-    </div>
+
 
   </div>
 

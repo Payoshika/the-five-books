@@ -29,6 +29,7 @@ const ServiceFlow = () => {
         <Col>
           <h4 className="text-center"><u>サービスの流れ</u></h4>
           {content}
+          <hr/>
         </Col>
       </Row>
     </Container>

@@ -24,6 +24,7 @@ const Story = () => {
         <Col>
           <h4 className="text-center"><u>The Five Booksとは</u></h4>
           {content}
+          <hr />
         </Col>
       </Row>
     </Container>
