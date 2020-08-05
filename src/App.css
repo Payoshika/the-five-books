@@ -79,7 +79,7 @@ hr {
   height: auto;
 }
 .lecturer-info > * {
-  max-width: 25rem;
+  max-width: 20rem;
   margin: 1rem 1rem;
   max-height: 30rem;
 }
@@ -180,6 +180,30 @@ hr {
   color: #222831eb;
 }
 
+.lecturer-message{
+  background-color: #fafafa;
+  border-radius: 0.5rem;
+  position: relative;
+  padding: 0.8rem;
+}
+
+/* アイコンを左に表示 */
+@media screen and (min-width: 992px) {
+.lecturer-message::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -15px;
+  top: 15%;
+  border-right: 15px solid #fafafa;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-radius: 0.5rem;
+  }
+}
+
 
 /* ServiceFlow area */
 
@@ -251,6 +275,7 @@ hr {
 .lecture-detail{
   min-width: 20rem;
   max-width: 45rem;
+  margin-bottom: 2rem;
 }
 
 /* ComingLectures area */

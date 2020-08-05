@@ -69,8 +69,7 @@ const Lecture1 = () => {
         <div className="lecturer-info">
             <p>講師: {Lecture2Info["lecturer"]["name"]}</p>
             <p>専門: {Lecture2Info["lecturer"]["expertise"]}</p>
-            <p>学位: {Lecture2Info["lecturer"]["degree"]}</p>
-            <p>所属: {Lecture2Info["lecturer"]["affiliation"]}</p>
+            <p>所属: {Lecture2Info["lecturer"]["degree"]}</p>
             <p>経歴： <a href={Lecture2Info["lecturer"]["profile-link"]}><u>researchmap</u>を見る</a></p>
             <p>講義書籍: {Lecture2Info["lecturer"]["lecturableBooks"].join(", ")}</p>
         </div>

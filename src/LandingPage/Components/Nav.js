@@ -24,7 +24,9 @@ const Nav = (props) => {
         <p onClick ={() => setHide(true)}>{registerMenu}</p>
           {name}
         <p onClick ={() => setHide(true)}><a href="/#home">Home</a></p>
-        <p onClick ={() => setHide(true)}><a href="/lecture/1">Course</a></p>
+        <p onClick ={() => setHide(true)}>
+          <Link to="/lecture/1">Course</Link>
+        </p>
         <p onClick ={() => setHide(true)}><a href="/#contact">Contact</a></p>
         <p onClick ={() => setHide(true)}> <u>Close</u></p>
       </div>
@@ -34,7 +36,9 @@ const Nav = (props) => {
   <div className="large-menu d-none ml-auto d-sm-flex">
     <p>{registerMenu}</p>
     <p><a href="/#home">Home</a></p>
-    <p><a href="/#course">Courses</a></p>
+    <p onClick ={() => setHide(true)}>
+      <Link to="/lecture/1">Course</Link>
+    </p>
     <p><a href="/#contact">Contact</a></p>
       {name}
   </div>

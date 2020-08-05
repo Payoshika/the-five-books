@@ -57,6 +57,7 @@ const UserRegister = (props) => {
       </Form.Group>
       <Form.Group className= {`d-flex justify-content-center`}>
         <Button
+          className="register-btn"
           variant="dark"
           type="submit"
           onClick={(event)=>userRegistration(event)}
@@ -96,6 +97,7 @@ const UserRegister = (props) => {
       </Form.Group>
       <Form.Group className= {`d-flex justify-content-center`}>
         <Button
+          className="login-btn"
           variant="light"
           type="submit"
           onClick={(event)=>userLogin(event)}
@@ -111,6 +113,7 @@ const UserRegister = (props) => {
   </div>
 
   const userRegistration = (event) => {
+    event.target.innerText = "登録しています..."
     const apiURL = process.env.REACT_APP_API_URL
     axios.post(
       `${apiURL}/user`,
@@ -125,17 +128,20 @@ const UserRegister = (props) => {
     )
     .then(response => {
       if (response.data.status === "created" ){
-        console.log("ユーザー登録が完了しました。");
         userLogin()
       }
     })
     .catch(error => {
-      console.log("ユーザー登録エラー", error)}
+      console.log("ユーザー登録エラー", error)
+      document.querySelector(".register-btn").innerText= "登録に失敗しました。"
+    }
     )
     event.preventDefault()
   }
 
   const userLogin = (event) =>{
+    event.target.innerText = "ログインしています..."
+
     const apiURL = process.env.REACT_APP_API_URL
     axios.post(
       `${apiURL}/session`,
@@ -148,13 +154,14 @@ const UserRegister = (props) => {
     )
     .then(response => {
       if(response.data.logged_in === true){
-        console.log("ログインが完了しました。", response.data.user);
         props.handleLogin(response.data)
         props.history.push("./")
       }
     })
     .catch(error => {
-      console.log("ログインエラー", error)}
+      console.log("ログインエラー", error)
+      document.querySelector(".login-btn").innerText= "ログインできませんでした。"
+    }
     )
     event.preventDefault()
   }

@@ -73,11 +73,11 @@ const Banner = () => {
         <Col xl={6} className="d-flex flex-column justify-content-center align-items-center">
           <Carousel interval={null}>
            <Carousel.Item interval={null}>
-             <h4 className="banner-margin text-center"><b>9月開講予定の古典</b></h4>
+             <h4 className="banner-margin text-center"><b>9月開講の講座</b></h4>
              {content1}
            </Carousel.Item>
            <Carousel.Item interval={null}>
-             <h4 className="banner-margin text-center"><b>10月開講予定の古典</b></h4>
+             <h4 className="banner-margin text-center"><b>10月開講予定の講座</b></h4>
              {content2}
            </Carousel.Item>
           </Carousel>
