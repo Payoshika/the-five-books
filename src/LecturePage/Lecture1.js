@@ -189,9 +189,7 @@ const Lecture1 = () => {
         </Col>
         <Col>
           <div className="buy-button d-flex justify-content-center mt-3">
-            <Button variant="dark" size="lg" block>
-            <a href="https://the-five-books-schopenhauer.peatix.com/" className="text-white">申し込む<br/>(peatixイベントページに遷移します)</a>
-            </Button>
+            <a href="https://the-five-books-schopenhauer.peatix.com/" className="text-white">  <Button variant="dark" size="lg" block>申し込む<br/>(peatixイベントページに遷移します)  </Button></a>
           </div>
         </Col>
       </Row>
