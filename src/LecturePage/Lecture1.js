@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
+import ListGroup from 'react-bootstrap/ListGroup'
 import bookImg from "./img/読書について.jpg"
 import lecturer_yamano_hiroki from "./img/lecturer_yamano_hiroki.jpg"
 import Calendar from 'react-calendar'
@@ -47,9 +48,17 @@ const Lecture1 = () => {
         : ""
      )
   }
+  let simpleSchedule =
+  <ListGroup className="mini-schedule d-block d-md-none">
+  <ListGroup.Item>第一回講義:　{Lecture1Info["lecture"].liveLectureDate[0].slice(5,6)}月 {Lecture1Info["lecture"].liveLectureDate[0].slice(6,9)}日 10:00-11:30 (オンライン開催)
+</ListGroup.Item>
+  <ListGroup.Item>第二回講義:　{Lecture1Info["lecture"].liveLectureDate[1].slice(5,6)}月 {Lecture1Info["lecture"].liveLectureDate[1].slice(6,9)}日 10:00-11:30 (オンライン開催)</ListGroup.Item>
+  <ListGroup.Item>第三回講義:　{Lecture1Info["lecture"].liveLectureDate[2].slice(5,6)}月 {Lecture1Info["lecture"].liveLectureDate[2].slice(6,9)}日 10:00-11:30 (オンライン開催)</ListGroup.Item>
+  <ListGroup.Item>第四回講義:　{Lecture1Info["lecture"].liveLectureDate[3].slice(5,6)}月 {Lecture1Info["lecture"].liveLectureDate[3].slice(6,9)}日 10:00-11:30 (オンライン開催)</ListGroup.Item>
+</ListGroup>
 
   let schedule =
-    <div className="schedule d-flex justify-content-center">
+    <div className="schedule d-none d-md-flex justify-content-center">
       <Calendar
         onChange={onChange}
         value={value}
@@ -165,6 +174,7 @@ const Lecture1 = () => {
         <Col xs={12}>
           <h4 className="text-center">講義スケジュール</h4>
             {schedule}
+            {simpleSchedule}
         </Col>
         <Col xs={12} className="d-flex flex-column align-items-center justify-content-center mt-3">
           <h4 className="text-center">講義概要</h4>

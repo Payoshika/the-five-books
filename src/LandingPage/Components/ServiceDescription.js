@@ -16,7 +16,7 @@ const ServiceDescription = () => {
         <Image className="description-img order-md-1" src={read} rounded/>
         <div className="description-text d-flex order-md-0 flex-column justify-content-center align-items-center">
           <h5><b>読む</b></h5>
-          <p>いつもより、時間をかけて一冊を読む。<br/>2~4週間に渡って一冊を読み続けていく中で、読みながら考え、考えた後にまた読むことで、本を消費するのではなく、自分の思考を生み出す起点にする。</p>
+          <p>いつもより、時間をかけて一冊を読む。<br/>2~4週間に渡って一冊を読み続けていく中で、読みながら考え、考えた後にまた読むことができる。読書を消費にするのではなく、自分の思考を生み出す起点にする。</p>
         </div>
       </div>
       <div className="d-flex flex-column flex-md-row justify-between align-items-center mx-md-4">

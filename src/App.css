@@ -278,6 +278,15 @@ hr {
   margin-bottom: 2rem;
 }
 
+.mini-schedule > * {
+  background-color: #f4f4f4;
+  text-align: center;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0 !important; 
+
+}
+
 /* ComingLectures area */
 .coming-lecture-list{
   min-width: 12rem;

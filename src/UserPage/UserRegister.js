@@ -128,6 +128,7 @@ const UserRegister = (props) => {
     )
     .then(response => {
       if (response.data.status === "created" ){
+        document.querySelector(".register-btn").innerText= "登録が完了しました。"
         userLogin()
       }
     })
