@@ -190,7 +190,7 @@ const Lecture1 = () => {
         <Col>
           <div className="buy-button d-flex justify-content-center mt-3">
             <Button variant="dark" size="lg" block>
-            <a href="#" className="text-white">申し込む<br/>(peatixページに遷移します)</a>
+            <a href="https://peatix.com/event/create2/1579065/edit#/advanced" className="text-white">申し込む<br/>(peatixイベントページに遷移します)</a>
             </Button>
           </div>
         </Col>
