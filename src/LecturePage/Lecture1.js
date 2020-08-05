@@ -142,6 +142,9 @@ const Lecture1 = () => {
   const disclaimer =
   <div className="lecture-detail d-flex flex-column">
     <ul>
+      <li>書籍は、参加者各自でご用意ください。</li>
+      <li>「読書について」は岩波書店、光文社より発刊されていますが、どちらを読んでいただいても構いません。
+      </li>
       <li>講義にはWeb会議サービスの<a href="https://zoom.us/jp-jp/meetings.html"><u>Zoom</u></a>を使用いたします。
       </li>
       <li>講義では、受講者の方に質問や受講者同士の対話を強要することはありません。講義中のご質問は、Zoomのチャットまたは音声で行うことができます。
