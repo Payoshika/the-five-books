@@ -5,11 +5,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Lectures = (props) => {
-  let pageNum = props.name
-
+const {id} = props.match.params
   return(
     <div>
-      <p>Lecture {pageNum}'s content is HHHHHHH</p>
+      <p>Lecture content is {id}</p>
     </div>
   )
 }

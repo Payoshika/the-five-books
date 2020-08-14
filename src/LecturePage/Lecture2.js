@@ -133,11 +133,6 @@ const Lecture1 = () => {
         </Col>
         <Col>
           <div className="buy-button d-flex justify-content-center mt-3">
-          <Button
-            variant="dark"
-            size="lg"
-            onClick = {(event) => stripePayment(event)}
-            block>申し込む</Button>
           </div>
         </Col>
       </Row>
