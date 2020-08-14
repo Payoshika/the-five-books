@@ -114,6 +114,19 @@ hr {
   max-width: 40rem;
 }
 
+/* reviews area */
+.reviews > *{
+  max-width: 40rem;
+}
+
+.review-content {
+  height: 15rem;
+}
+
+.review-content > * {
+  max-width: 30rem;
+}
+
 /* ServiceDescription area */
 .description-img {
   min-width: 5rem;
@@ -258,7 +271,8 @@ hr {
 /* footer area*/
 .footer {
   margin-top: 3rem;
-  height: 2.5rem;
+  min-height: 2.5rem;
+  max-height: 5.5rem;
   background-color: #c7c8ca;
 }
 
@@ -283,7 +297,7 @@ hr {
   text-align: center;
   border-left: none !important;
   border-right: none !important;
-  border-radius: 0 !important; 
+  border-radius: 0 !important;
 
 }
 

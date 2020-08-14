@@ -1,13 +1,19 @@
 import React, {useState} from "react"
+import ReactDOM from 'react-dom';
 import {Lecture2Info} from "./index"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
+import Button from 'react-bootstrap/Button'
 import bookImg from "./img/Theaitetos.jpg"
 import lecturer_yamano_hiroki from "./img/lecturer_yamano_hiroki.jpg"
 import Calendar from 'react-calendar'
 import './styles/calender.css';
+import { loadStripe } from '@stripe/stripe-js';
+import axios from "axios"
+
+const stripePromise = loadStripe('pk_test_51H6qTHKu07P8WqmRl9iLKVCNAvq582vfORpsMwBXe5D0tKyvjdNyse5W3rmuDarSfEX7JcA6otvmW8PcJXHir5Ys00bqyudH0R');
 
 const Lecture1 = () => {
   const [value, onChange] = useState(new Date(2020, 9, 1));
@@ -90,6 +96,22 @@ const Lecture1 = () => {
       </div>
     </div>
 
+  async function createCheckoutSession () {
+    const apiURL = process.env.REACT_APP_API_URL
+    const response = await fetch(`${apiURL}/payment/create`);
+    const sessionID = await response.json()
+    console.log(sessionID.session_id);
+    return sessionID
+  }
+
+  const stripePayment = async (event) => {
+    const session_Id = await createCheckoutSession();
+    const stripe = await stripePromise;
+    stripe.redirectToCheckout({
+      sessionId: session_Id.session_id
+    })
+}
+
   return(
     <Container fluid>
       <Row>
@@ -108,6 +130,15 @@ const Lecture1 = () => {
         <Col xs={12} className="d-none">
           <h4 className="text-center">講義概要</h4>
             {lectureDetail}
+        </Col>
+        <Col>
+          <div className="buy-button d-flex justify-content-center mt-3">
+          <Button
+            variant="dark"
+            size="lg"
+            onClick = {(event) => stripePayment(event)}
+            block>申し込む</Button>
+          </div>
         </Col>
       </Row>
     </Container>
