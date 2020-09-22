@@ -48,7 +48,7 @@ const LectureLists = () => {
   </Link>
   const content4 =
   <Link to="/future_lectures" >
-    <Image src={bookImg1} width="200" height="280"/>
+    <Image src={bookImg22} width="200" height="280"/>
   </Link>
   const content5 =
   <Link to="/future_lectures" >
@@ -89,10 +89,6 @@ const LectureLists = () => {
   const content14 =
   <Link to="/future_lectures" >
     <Image src={bookImg13} width="200" height="280" />
-  </Link>
-  const content15 =
-  <Link to="/future_lectures" >
-    <Image src={bookImg22} width="200" height="280" />
   </Link>
 
   const smartPhoneDisplay =
@@ -139,9 +135,6 @@ const LectureLists = () => {
    <Carousel.Item >
      {content14}
    </Carousel.Item>
-   <Carousel.Item >
-     {content15}
-   </Carousel.Item>
   </Carousel>
 
   const desktopDisplay =
@@ -160,7 +153,6 @@ const LectureLists = () => {
       {content12}
       {content13}
       {content14}
-      {content15}
     </div>
 
   return(
