@@ -78,8 +78,9 @@ hr {
   width: 200px;
   height: auto;
 }
+
 .lecturer-info > * {
-  max-width: 20rem;
+  max-width: 25rem;
   margin: 1rem 1rem;
   max-height: 30rem;
 }
@@ -307,6 +308,11 @@ hr {
   margin:1rem 0;
   align-items: center;
   justify-content: center;
+}
+
+.coming-lectures >*:hover{
+  background-color:rgba(199,200,202,0.3);
+  transition: 0.5s;
 }
 
 .coming-lecture-list img{

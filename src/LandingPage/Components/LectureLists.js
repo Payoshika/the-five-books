@@ -20,9 +20,13 @@ import bookImg17 from "../../LecturePage/img/アテナイ人の国制.jpg"
 import bookImg18 from "../../LecturePage/img/哲学原理.jpg"
 import bookImg19 from "../../LecturePage/img/Theaitetos.jpg"
 import bookImg20 from "../../LecturePage/img/詩学.jpg"
-
-
-
+import bookImg21 from "../../LecturePage/img/精神のエネルギー.jpg"
+import bookImg22 from "../../LecturePage/img/思考と動き.jpg"
+import bookImg23 from "../../LecturePage/img/道徳形而上学原論.jpg"
+import bookImg24 from "../../LecturePage/img/プロレゴメナ.jpg"
+import bookImg25 from "../../LecturePage/img/社会学の根本問題.jpg"
+import bookImg26 from "../../LecturePage/img/まなざしの地獄.jpg"
+import bookImg27 from "../../LecturePage/img/タクシーダンス・ホール.jpg"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -31,106 +35,80 @@ import Image from 'react-bootstrap/Image'
 
 const LectureLists = () => {
   const content1 =
-    <Link to="/coming_lectures" >
+    <Link to="/future_lectures" >
       <Image src={bookImg1} width="200" height="280"/>
     </Link>
   const content2 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg2} width="200" height="280"/>
+  <Link to="/future_lectures" >
+    <Image src={bookImg27} width="200" height="280"/>
   </Link>
   const content3 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg3} width="200" height="280"/>
+  <Link to="/future_lectures" >
+    <Image src={bookImg20} width="200" height="280"/>
   </Link>
   const content4 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg4} width="200" height="280"/>
+  <Link to="/future_lectures" >
+    <Image src={bookImg1} width="200" height="280"/>
   </Link>
   const content5 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg5} width="200" height="280" />
+  <Link to="/future_lectures" >
+    <Image src={bookImg21} width="200" height="280" />
   </Link>
   const content6 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg6} width="200" height="280" />
-  </Link>
-  const content7 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg7} width="200" height="280" />
-  </Link>
-  const content8 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg8} width="200" height="280" />
-  </Link>
-  const content9 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg9} width="200" height="280" />
-  </Link>
-  const content10 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg10} width="200" height="280" />
-  </Link>
-  const content11 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg11} width="200" height="280" />
-  </Link>
-  const content12 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg12} width="200" height="280" />
-  </Link>
-  const content13 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg13} width="200" height="280" />
-  </Link>
-  const content14 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg14} width="200" height="280" />
-  </Link>
-  const content15 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg15} width="200" height="280" />
-  </Link>
-  const content16 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg16} width="200" height="280" />
-  </Link>
-  const content17 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg17} width="200" height="280" />
-  </Link>
-  const content18 =
-  <Link to="/coming_lectures" >
+  <Link to="/future_lectures" >
     <Image src={bookImg18} width="200" height="280" />
   </Link>
-
-  const content19 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg19} width="200" height="280" />
+  const content7 =
+  <Link to="/future_lectures" >
+    <Image src={bookImg23} width="200" height="280" />
   </Link>
-
-  const content20 =
-  <Link to="/coming_lectures" >
-    <Image src={bookImg20} width="200" height="280" />
+  const content8 =
+  <Link to="/future_lectures" >
+    <Image src={bookImg2} width="200" height="280" />
+  </Link>
+  const content9 =
+  <Link to="/future_lectures" >
+    <Image src={bookImg24} width="200" height="280" />
+  </Link>
+  const content10 =
+  <Link to="/future_lectures" >
+    <Image src={bookImg26} width="200" height="280" />
+  </Link>
+  const content11 =
+  <Link to="/future_lectures" >
+    <Image src={bookImg4} width="200" height="280" />
+  </Link>
+  const content12 =
+  <Link to="/future_lectures" >
+    <Image src={bookImg5} width="200" height="280" />
+  </Link>
+  const content13 =
+  <Link to="/future_lectures" >
+    <Image src={bookImg6} width="200" height="280" />
+  </Link>
+  const content14 =
+  <Link to="/future_lectures" >
+    <Image src={bookImg13} width="200" height="280" />
   </Link>
 
   const smartPhoneDisplay =
   <Carousel className="smartPhoneDisplay d-md-none">
-  <Carousel.Item>
-    {content19}
-  </Carousel.Item>
-  <Carousel.Item>
-    {content20}
-  </Carousel.Item>
    <Carousel.Item>
+     {content1}
+   </Carousel.Item>
+   <Carousel.Item>
+     {content2}
+   </Carousel.Item>
+   <Carousel.Item >
+     {content3}
+   </Carousel.Item>
+   <Carousel.Item >
      {content4}
    </Carousel.Item>
-   <Carousel.Item>
-     {content18}
-   </Carousel.Item>
-   <Carousel.Item>
+   <Carousel.Item >
      {content5}
    </Carousel.Item>
-   <Carousel.Item>
+   <Carousel.Item >
      {content6}
    </Carousel.Item>
    <Carousel.Item >
@@ -145,7 +123,7 @@ const LectureLists = () => {
    <Carousel.Item >
      {content10}
    </Carousel.Item>
-   <Carousel.Item >
+   <Carousel.Item>
      {content11}
    </Carousel.Item>
    <Carousel.Item >
@@ -157,31 +135,13 @@ const LectureLists = () => {
    <Carousel.Item >
      {content14}
    </Carousel.Item>
-   <Carousel.Item >
-     {content15}
-   </Carousel.Item>
-   <Carousel.Item >
-     {content16}
-   </Carousel.Item>
-   <Carousel.Item >
-     {content17}
-   </Carousel.Item>
-   <Carousel.Item>
-     {content1}
-   </Carousel.Item>
-   <Carousel.Item >
-     {content2}
-   </Carousel.Item>
-   <Carousel.Item >
-     {content3}
-   </Carousel.Item>
   </Carousel>
 
   const desktopDisplay =
     <div className="desktopDisplay d-none d-md-block">
-      {content19}
-      {content20}
-      {content18}
+      {content1}
+      {content2}
+      {content3}
       {content4}
       {content5}
       {content6}
@@ -193,12 +153,6 @@ const LectureLists = () => {
       {content12}
       {content13}
       {content14}
-      {content15}
-      {content16}
-      {content17}
-      {content1}
-      {content2}
-      {content3}
     </div>
 
   return(

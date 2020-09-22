@@ -36,11 +36,11 @@ const Nav = (props) => {
   let largeMenu =
   <div className="large-menu d-none ml-auto d-sm-flex">
     <p>{registerMenu}</p>
-    <p><a href="/#home">Home</a></p>
+    <p><a href="/#home">Top</a></p>
     <p onClick ={() => setHide(true)}>
-      <Link to="/lecture/1">Course</Link>
+      <Link to="/coming_lectures">講義一覧</Link>
     </p>
-    <p><a href="/#contact">Contact</a></p>
+    <p><a href="/#contact">お問い合わせ</a></p>
       {name}
   </div>
 

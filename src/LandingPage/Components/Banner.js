@@ -2,10 +2,13 @@ import React from "react"
 import {Register} from "./index.js";
 import {Link} from "react-router-dom"
 import Lecture1Info from "../../LecturePage/Lecture1Info"
+import Lecture2Info from "../../LecturePage/Lecture2Info"
+import Lecture3Info from "../../LecturePage/Lecture3Info"
 import bookImg from "../../LecturePage/img/読書について.jpg"
 import bookImg2 from "../../LecturePage/img/Theaitetos.jpg"
+import bookImg3 from "../../LecturePage/img/タクシーダンス・ホール.jpg"
 import lecturer_yamano_hiroki from "../../LecturePage/img/lecturer_yamano_hiroki.jpg"
-import Lecture2Info from "../../LecturePage/Lecture2Info"
+import lecturer_seki_shumpei from "../../LecturePage/img/lecturer_seki_shumpei.jpg"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -33,7 +36,7 @@ const Banner = () => {
             <p>専門: {Lecture1Info["lecturer"]["expertise"]}</p>
             <p>所属: {Lecture1Info["lecturer"]["degree"]}</p>
             <p>参加人数: 最大30名</p>
-            <p><b>受講期間: 9月5日~9月26日</b></p>
+            <p><b>開講期間: 9月5日~9月26日</b></p>
         </div>
         <div className="lecturer-photo order-xl-0">
           <Image src={lecturer_yamano_hiroki} fluid roundedCircle/>
@@ -52,12 +55,33 @@ const Banner = () => {
         <div className="lecturer-info order-xl-1">
           <p>講師: {Lecture2Info["lecturer"]["name"]}</p>
           <p>専門: {Lecture2Info["lecturer"]["expertise"]}</p>
-          <p>所属: {Lecture2Info["lecturer"]["degree"]}</p>
-          <p>参加人数: 最大25名</p>
-          <p><b>開講期間: 10月初旬~</b></p>
+          <p>所属: {Lecture2Info["lecturer"]["affiliation"]}</p>
+          <p>参加人数: 最大30名</p>
+          <p><b>開講期間: 10月10日~10月31日</b></p>
         </div>
         <div className="lecturer-photo order-xl-0">
           <Image src={lecturer_yamano_hiroki} fluid roundedCircle/>
+        </div>
+      </div>
+    </div>
+  </Link>
+
+  const content3 =
+  <Link to="/lecture/3">
+    <div className="top-lecture d-flex flex-column flex-xl-row justify-content-center align-items-center">
+      <div className="book-img-container d-flex align-contents-center">
+        <Image src={bookImg3} fluid />
+      </div>
+      <div className="lecturer-info d-flex flex-column flex-xl-row justify-content-center align-items-center flex-nowrap">
+        <div className="lecturer-info order-xl-1">
+          <p>講師: {Lecture3Info["lecturer"]["name"]}</p>
+          <p>専門: {Lecture3Info["lecturer"]["expertise"]}</p>
+          <p>所属: {Lecture3Info["lecturer"]["affiliation"]}</p>
+          <p>参加人数: 最大30名</p>
+          <p><b>開講期間: 11月4日~11月25日</b></p>
+        </div>
+        <div className="lecturer-photo order-xl-0">
+          <Image src={lecturer_seki_shumpei} fluid roundedCircle/>
         </div>
       </div>
     </div>
@@ -73,12 +97,16 @@ const Banner = () => {
         <Col xl={6} className="d-flex flex-column justify-content-center align-items-center">
           <Carousel interval={null}>
            <Carousel.Item interval={null}>
-             <h4 className="banner-margin text-center"><b>9月開講の講座</b></h4>
+             <h4 className="banner-margin text-center"><b>開講中の講座</b></h4>
              {content1}
            </Carousel.Item>
            <Carousel.Item interval={null}>
-             <h4 className="banner-margin text-center"><b>10月開講予定の講座</b></h4>
+             <h4 className="banner-margin text-center"><b>10月開講の講座</b></h4>
              {content2}
+           </Carousel.Item>
+           <Carousel.Item interval={null}>
+             <h4 className="banner-margin text-center"><b>11月開講の講座</b></h4>
+             {content3}
            </Carousel.Item>
           </Carousel>
         </Col>

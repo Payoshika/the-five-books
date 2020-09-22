@@ -3,7 +3,7 @@ import Home from "./LandingPage/Home"
 import {Nav, Footer} from "./LandingPage/Components/index.js"
 import UserRegister from "./UserPage/UserRegister.js"
 import UserPage from "./UserPage/UserPage.js"
-import {Lecture1, Lecture2, ComingLectures, Lectures} from "./LecturePage/index.js"
+import {Lecture1, Lecture2, Lecture3, FutureLectures, ComingLectures} from "./LecturePage/index.js"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import axios from "axios"
@@ -120,8 +120,8 @@ export default class App extends React.Component {
                 >
               </Route>
               <Route
-                path="/coming_lectures"
-                render = {props => (<ComingLectures {...props}
+                path="/lecture/3"
+                render = {props => (<Lecture3 {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
                 name = {this.state.name}
@@ -130,8 +130,18 @@ export default class App extends React.Component {
                 >
               </Route>
               <Route
-                path="/lectures/:id"
-                render = {props => (<Lectures {...props}
+                path="/future_lectures"
+                render = {props => (<FutureLectures {...props}
+                checkLoginStatus={this.checkLoginStatus}
+                loggedInStatus= {this.state.loggedInStatus}
+                name = {this.state.name}
+                email = {this.state.email}
+                />)}
+                >
+              </Route>
+              <Route
+                path="/coming_lectures"
+                render = {props => (<ComingLectures {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
                 name = {this.state.name}

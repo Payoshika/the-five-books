@@ -1,7 +1,7 @@
 import bookImg from "./img/読書について.jpg"
 import lecturer_yamano_hiroki from "./img/lecturer_yamano_hiroki.jpg"
 
-const Lecture1Info = {
+const Lecture2Info = {
   book : {
     "name" : "テアイテトス",
     "author" : "プラトン",
@@ -23,12 +23,13 @@ const Lecture1Info = {
     "lectureName" : "テスト　テスト",
     "lectureSubtitle" :"テスト　テスト",
     "lecturePurpose" : "テスト　テスト",
-    "lectureStartDate" : "20201001",
-    "lectureEndDate" : "20201030",
-    "liveLectureDate" : [20200905, 20200912, 20200919, 20200926],
+    "lectureStartDate" : "20201010",
+    "lectureEndDate" : "20201107",
+    "liveLectureDate" : ["20201010", "20201017", "20201024", "20201031","20201107"],
+    "lectureTime" : "10:00-11:30",
     "prerequisite": "特にありません",
     "courseMaterial": "書籍のみ"
   }
 }
 
-export default Lecture1Info
+export default Lecture2Info

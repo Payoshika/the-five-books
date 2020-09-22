@@ -69,7 +69,7 @@ const Lecture1 = () => {
 
   const content =
     <div className="top-lecture d-flex justify-content-center align-items-center flex-wrap">
-      <div className="book-img-container">
+      <div className="book-img-container mr-none mr-md-3">
         <Image src={bookImg} fluid />
       </div>
       <div className="lecturer-info d-flex flex-column flex-md-row justify-content-center align-items-center flex-nowrap">
@@ -189,7 +189,7 @@ const Lecture1 = () => {
         </Col>
         <Col>
           <div className="buy-button d-flex justify-content-center mt-3">
-            <a href="https://the-five-books-schopenhauer.peatix.com/" className="text-white">  <Button variant="dark" size="lg" block>申し込む<br/>(peatixイベントページに遷移します)  </Button></a>
+            <a href="https://the-five-books-schopenhauer.peatix.com/" className="text-white">  <Button variant="dark" size="lg" block>申込受付を終了しました。<br/>(クリックでpeatixイベントページに遷移します)  </Button></a>
           </div>
         </Col>
       </Row>
