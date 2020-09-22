@@ -26,7 +26,7 @@ const Lecture2Info = {
     "lectureStartDate" : "20201010",
     "lectureEndDate" : "20201107",
     "liveLectureDate" : ["20201010", "20201017", "20201024", "20201031","20201107"],
-    "lectureTime" : "10:00-11:30",
+    "lectureTime" : "11:00-12:30",
     "prerequisite": "特にありません",
     "courseMaterial": "書籍のみ"
   }
