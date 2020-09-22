@@ -71,11 +71,11 @@ const Lecture3 = () => {
     }
     let simpleSchedule =
     <ListGroup className="mini-schedule d-block d-md-none">
-    <ListGroup.Item>第一回講義:　{Lecture3Info["lecture"].liveLectureDate[0].slice(4,6)}月 {Lecture3Info["lecture"].liveLectureDate[0].slice(6,9)}日 10:00-11:30 (オンライン開催)
+    <ListGroup.Item>第一回講義:　{Lecture3Info["lecture"].liveLectureDate[0].slice(4,6)}月 {Lecture3Info["lecture"].liveLectureDate[0].slice(6,9)}日 20:00-21:30 (オンライン開催)
   </ListGroup.Item>
-    <ListGroup.Item>第二回講義:　{Lecture3Info["lecture"].liveLectureDate[1].slice(4,6)}月 {Lecture3Info["lecture"].liveLectureDate[1].slice(6,9)}日 10:00-11:30 (オンライン開催)</ListGroup.Item>
-    <ListGroup.Item>第三回講義:　{Lecture3Info["lecture"].liveLectureDate[2].slice(4,6)}月 {Lecture3Info["lecture"].liveLectureDate[2].slice(6,9)}日 10:00-11:30 (オンライン開催)</ListGroup.Item>
-    <ListGroup.Item>第四回講義:　{Lecture3Info["lecture"].liveLectureDate[3].slice(4,6)}月 {Lecture3Info["lecture"].liveLectureDate[3].slice(6,9)}日 10:00-11:30 (オンライン開催)</ListGroup.Item>
+    <ListGroup.Item>第二回講義:　{Lecture3Info["lecture"].liveLectureDate[1].slice(4,6)}月 {Lecture3Info["lecture"].liveLectureDate[1].slice(6,9)}日 20:00-21:30 (オンライン開催)</ListGroup.Item>
+    <ListGroup.Item>第三回講義:　{Lecture3Info["lecture"].liveLectureDate[2].slice(4,6)}月 {Lecture3Info["lecture"].liveLectureDate[2].slice(6,9)}日 20:00-21:30 (オンライン開催)</ListGroup.Item>
+    <ListGroup.Item>第四回講義:　{Lecture3Info["lecture"].liveLectureDate[3].slice(4,6)}月 {Lecture3Info["lecture"].liveLectureDate[3].slice(6,9)}日 20:00-21:30 (オンライン開催)</ListGroup.Item>
   </ListGroup>
 
     let schedule =
