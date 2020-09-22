@@ -6,7 +6,7 @@ import Lecture2Info from "../../LecturePage/Lecture2Info"
 import Lecture3Info from "../../LecturePage/Lecture3Info"
 import bookImg from "../../LecturePage/img/読書について.jpg"
 import bookImg2 from "../../LecturePage/img/Theaitetos.jpg"
-import bookImg3 from "../../LecturePage/img/タクシーダンスホール.jpg"
+import bookImg3 from "../../LecturePage/img/taxidancehall.jpg"
 import lecturer_yamano_hiroki from "../../LecturePage/img/lecturer_yamano_hiroki.jpg"
 import lecturer_seki_shumpei from "../../LecturePage/img/lecturer_seki_shumpei.jpg"
 import Container from 'react-bootstrap/Container';
@@ -96,15 +96,11 @@ const Banner = () => {
         </Col>
         <Col xl={6} className="d-flex flex-column justify-content-center align-items-center">
           <Carousel interval={null}>
-           <Carousel.Item interval={null}>
-             <h4 className="banner-margin text-center"><b>開講中の講座</b></h4>
-             {content1}
-           </Carousel.Item>
-           <Carousel.Item interval={null}>
+           <Carousel.Item>
              <h4 className="banner-margin text-center"><b>10月開講の講座</b></h4>
              {content2}
            </Carousel.Item>
-           <Carousel.Item interval={null}>
+           <Carousel.Item>
              <h4 className="banner-margin text-center"><b>11月開講の講座</b></h4>
              {content3}
            </Carousel.Item>

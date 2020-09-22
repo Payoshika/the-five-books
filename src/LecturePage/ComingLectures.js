@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
 import bookImg1 from "./img/読書について.jpg"
 import bookImg2 from "./img/Theaitetos.jpg"
-import bookImg3 from "./img/タクシーダンスホール.jpg"
+import bookImg3 from "./img/taxidancehall.jpg"
 import {Lecture1Info, Lecture2Info, Lecture3Info} from "./index.js"
 
 const ComingLectures = () => {

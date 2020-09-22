@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
-import bookImg from "./img/タクシーダンスホール.jpg"
+import taxidancehall from "./img/taxidancehall.jpg"
 import ListGroup from 'react-bootstrap/ListGroup'
 import lecturer_seki_shumpei from "./img/lecturer_seki_shumpei.jpg"
 import Calendar from 'react-calendar'
@@ -91,7 +91,7 @@ const Lecture3 = () => {
     const content =
       <div className="top-lecture d-flex justify-content-center align-items-center flex-wrap">
         <div className="book-img-container mr-none mr-md-3">
-          <Image src={bookImg} fluid />
+          <Image src={taxidancehall} fluid />
         </div>
         <div className="lecturer-info d-flex flex-column flex-md-row justify-content-center align-items-center flex-nowrap">
           <div className="lecturer-photo">
