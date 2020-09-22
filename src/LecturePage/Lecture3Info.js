@@ -1,4 +1,4 @@
-import bookImg from "./img/読書について.jpg"
+import bookImg from "./img/タクシーダンスホール.jpg"
 import lecturer_seki_shumpei from "./img/lecturer_seki_shumpei.jpg"
 
 const Lecture3Info = {

@@ -30,7 +30,7 @@ import bookImg23 from "./img/道徳形而上学原論.jpg"
 import bookImg24 from "./img/プロレゴメナ.jpg"
 import bookImg25 from "./img/社会学の根本問題.jpg"
 import bookImg26 from "./img/まなざしの地獄.jpg"
-import bookImg27 from "./img/タクシーダンス・ホール.jpg"
+import bookImg27 from "./img/タクシーダンスホール.jpg"
 
 
 const FutureLectures = () => {

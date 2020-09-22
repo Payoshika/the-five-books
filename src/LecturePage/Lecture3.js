@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
-import bookImg from "./img/タクシーダンス・ホール.jpg"
+import bookImg from "./img/タクシーダンスホール.jpg"
 import ListGroup from 'react-bootstrap/ListGroup'
 import lecturer_seki_shumpei from "./img/lecturer_seki_shumpei.jpg"
 import Calendar from 'react-calendar'

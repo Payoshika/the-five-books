@@ -6,7 +6,7 @@ import Lecture2Info from "../../LecturePage/Lecture2Info"
 import Lecture3Info from "../../LecturePage/Lecture3Info"
 import bookImg from "../../LecturePage/img/読書について.jpg"
 import bookImg2 from "../../LecturePage/img/Theaitetos.jpg"
-import bookImg3 from "../../LecturePage/img/タクシーダンス・ホール.jpg"
+import bookImg3 from "../../LecturePage/img/タクシーダンスホール.jpg"
 import lecturer_yamano_hiroki from "../../LecturePage/img/lecturer_yamano_hiroki.jpg"
 import lecturer_seki_shumpei from "../../LecturePage/img/lecturer_seki_shumpei.jpg"
 import Container from 'react-bootstrap/Container';

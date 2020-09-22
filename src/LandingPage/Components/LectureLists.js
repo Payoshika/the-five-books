@@ -26,7 +26,7 @@ import bookImg23 from "../../LecturePage/img/道徳形而上学原論.jpg"
 import bookImg24 from "../../LecturePage/img/プロレゴメナ.jpg"
 import bookImg25 from "../../LecturePage/img/社会学の根本問題.jpg"
 import bookImg26 from "../../LecturePage/img/まなざしの地獄.jpg"
-import bookImg27 from "../../LecturePage/img/タクシーダンス・ホール.jpg"
+import bookImg27 from "../../LecturePage/img/タクシーダンスホール.jpg"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
