@@ -164,7 +164,7 @@ const Lecture1 = () => {
     <Container fluid>
       <Row>
         <Col xs={12}>
-          <h4 className="text-center"><b>「{Lecture1Info.book.name} 」<br/> {Lecture1Info.book.author}&nbsp;著</b></h4>
+          <h4 className="text-center"><b>『{Lecture1Info.book.name} 』<br/> {Lecture1Info.book.author}&nbsp;著</b></h4>
           <h4 className="text-center">
           <b>開講期間:&nbsp;{Lecture1Info.lecture.lectureStartDate.slice(5,6)}月{Lecture1Info.lecture.lectureStartDate.slice(7,9)}日&nbsp;~&nbsp;
           {Lecture1Info.lecture.lectureEndDate.slice(5,6)}月{Lecture1Info.lecture.lectureEndDate.slice(6,9)}日
