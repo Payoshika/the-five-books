@@ -1,4 +1,5 @@
 import React from "react"
+import BookRequest from "../LandingPage/Components/BookRequest"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -255,9 +256,12 @@ onClick={(event)=>requestBook(event)}
       <Row>
         <Col>
           <h4 className="text-center">今後講義予定の古典</h4>
-          <p className="text-center mt-3">以下の古典については、皆様からのリクエストに応じ順次開講を予定しています。開講希望の古典がありましたら、以下よりリクエストをお送りください。</p>
+          <p className="text-center mt-3">以下の古典については、皆様からのリクエストに応じ順次開講を予定しています。開講希望の古典がありましたら、以下よりリクエストをお送りください。以下リストにご希望の書籍がない場合は、ページ最下部より書籍名を検索し、リクエストをお送りください。</p>
           <div>
             {content}
+          </div>
+          <div>
+            <BookRequest />
           </div>
         </Col>
       </Row>

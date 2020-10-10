@@ -19,9 +19,9 @@ const Banner = () => {
   const message =
   <div className="banner-message d-flex flex-column align-items-center justify-content-center flex-nowrap">
     <h2>古典の読書を<br/>より身近に、<br/>より豊かに。</h2>
-    <p>多様な分野の古典作品を、専門家のライブ講義を受けながら2~4週間かけてじっくりと学ぶ、"おそい" 読書体験。</p>
-    <p>関心はあったのに難しくて途中で止めてしまった、一通り読んだもののあまり腑に落ちていない、愛読書にして何度も読み返しているが周りにはなかなか理解者がいない。そんな本はないでしょうか。</p>
-    <p>The Five Booksは、古典を &nbsp;1)&nbsp;深く理解する、2)&nbsp;自分の言葉にする、3)&nbsp;対話の中で消化する、ことを通じ、古典の読書をより身近に、より豊かにするサービスです。</p>
+    <p>多様な分野の古典を、専門家のオンライン講義を受けながら、30人の読者と共に2~4週間かけてじっくりと読む、"おそい" 読書体験。</p>
+    <p>一人ではなかなか手が出ない、関心はあったのに難しくて途中で止めてしまった、一通り読んだもののあまり腑に落ちていない、そんな本はないでしょうか。</p>
+    <p>講師から学び、他の読者と一緒に考えながら読む。The Five Booksの講義を通じて、1冊の古典を自分なりに消化してみませんか。</p>
   </div>
 
   const content1 =
@@ -57,7 +57,7 @@ const Banner = () => {
           <p>専門: {Lecture2Info["lecturer"]["expertise"]}</p>
           <p>所属: {Lecture2Info["lecturer"]["affiliation"]}</p>
           <p>参加人数: 最大30名</p>
-          <p><b>開講期間: 10月10日~10月31日</b></p>
+          <p><b>開講期間: 10月10日~11月7日</b></p>
         </div>
         <div className="lecturer-photo order-xl-0">
           <Image src={lecturer_yamano_hiroki} fluid roundedCircle/>

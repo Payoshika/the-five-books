@@ -76,7 +76,7 @@ const ComingLectures = () => {
             {content3}
             <hr/>
           </div>
-          <h4 className="text-center">開講済みの講座</h4>
+          <h4 className="text-center">過去の講座</h4>
           <div className="d-flex flex-column justify-content-center">
             {content1}
           </div>

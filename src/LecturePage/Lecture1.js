@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {Lecture1Info} from "./index"
+import {Lecture1Info, Review} from "./index"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -184,8 +184,8 @@ const Lecture1 = () => {
             {lectureDetail}
         </Col>
         <Col xs={12} className="d-flex flex-column align-items-center justify-content-center mt-3">
-          <h4 className="text-center"><u>注意事項</u></h4>
-            {disclaimer}
+          <h4 className="text-center"><u>参加者のレビュー</u></h4>
+            <Review />
         </Col>
         <Col>
           <div className="buy-button d-flex justify-content-center mt-3">
