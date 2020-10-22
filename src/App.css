@@ -354,3 +354,75 @@ hr {
 .buy-button >* {
   max-width: 45rem;
 }
+
+/* Book_GUide */
+.book_guide_banner {
+  background-image: url("./LecturePage/LectureApplication/img/book_guide_banner.png");
+  background-size: cover;
+  width: 100%;
+  padding-top: 30%;
+  position: relative;
+}
+
+.book_guide_banner::before{
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: rgba(0,0,0,0.1);
+z-index: 0;
+}
+
+.book_guide_banner h3{
+  font-size: 1.5rem;
+  position: absolute;
+  top:15%;
+  left:8%;
+}
+
+/* Book_Guide_Features */
+.feature-contents {
+  height: 26rem;
+  max-width: 25rem;
+  border-radius: 1rem;
+  background-color: #fafafa;
+}
+
+.step-container > div{
+  height: 14rem;
+  width: 20rem;
+  background-color: #fafafa;
+  border-radius: 4rem;
+}
+
+@media screen and (min-width: 720px) {
+  .book_guide_banner h3{
+    font-size: 2.5rem;
+    position: absolute;
+    top:17%;
+    left:10%;
+  }
+  .feature-contents {
+    height: 23rem;
+  }
+  .step-container > div{
+    height: 10rem;
+    width: 40rem;
+  }
+}
+
+.requirements  {
+  max-width: 40rem;
+  min-width: 10rem;
+}
+
+.requirements-detail {
+  height: 10rem;
+  max-width: 15rem;
+}
+
+.contact-area > * {
+  max-width: 40rem;
+}

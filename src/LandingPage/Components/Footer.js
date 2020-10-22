@@ -2,7 +2,7 @@ import React from "react"
 
 const Footer = () => {
   const content =
-  <div className="footer d-flex flex-column align-items-center justify-content-center">
+  <div className="d-flex flex-column align-items-center justify-content-center">
     <div className="mx-2">Copyright &copy; 2020 &nbsp;The Five Books.com</div>
     <div className="d-flex flex-wrap align-items-center justify-content-center">
       <span>Icons made by</span>
@@ -18,7 +18,7 @@ const Footer = () => {
   </div>
 
   return(
-    <div>
+    <div className="footer">
       {content}
     </div>
   )

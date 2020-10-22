@@ -95,9 +95,9 @@ const Banner = () => {
           {message}
         </Col>
         <Col xl={6} className="d-flex flex-column justify-content-center align-items-center">
-          <Carousel interval={null}>
+          <Carousel interval={5000}>
            <Carousel.Item>
-             <h4 className="banner-margin text-center"><b>10月開講の講座</b></h4>
+             <h4 className="banner-margin text-center"><b>開講中の講座</b></h4>
              {content2}
            </Carousel.Item>
            <Carousel.Item>

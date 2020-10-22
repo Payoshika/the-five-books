@@ -8,9 +8,9 @@ import logo from "./img/logo.png"
 const Nav = (props) => {
   const [hide, setHide] = useState(true);
 
-  let registerMenu = (props.name === "")? <Link to="./user">Register/Login</Link> : <div></div>
+  let registerMenu = (props.name === "")? <Link to="/user">Register/Login</Link> : <div></div>
 
-  let name = (props.name === "")? <div></div> :<div><Link to="./userpage">{props.name}さん</Link></div>
+  let name = (props.name === "")? <div></div> :<div><Link to="/userpage">{props.name}さん</Link></div>
 
   let menuBar =
     <FontAwesomeIcon icon={faBars}
@@ -28,17 +28,23 @@ const Nav = (props) => {
         <p onClick ={() => setHide(true)}>
           <Link to="/coming_lectures">講義一覧</Link>
         </p>
+        <p onClick ={() => setHide(true)}>
+          <Link to="/book_guide">講師になる</Link>
+        </p>
         <p onClick ={() => setHide(true)}><a href="/#contact">お問い合わせ</a></p>
         <p onClick ={() => setHide(true)}> <u>Close</u></p>
       </div>
   )}
 
   let largeMenu =
-  <div className="large-menu d-none ml-auto d-sm-flex">
+  <div className="large-menu d-none ml-auto d-md-flex">
     <p>{registerMenu}</p>
     <p><a href="/#home">Top</a></p>
-    <p onClick ={() => setHide(true)}>
+    <p>
       <Link to="/coming_lectures">講義一覧</Link>
+    </p>
+    <p>
+      <Link to="/book_guide">講師になる</Link>
     </p>
     <p><a href="/#contact">お問い合わせ</a></p>
       {name}
@@ -54,7 +60,7 @@ const Nav = (props) => {
           The Five Books
         </Navbar.Brand>
           {largeMenu}
-        <div className="d-flex ml-auto d-sm-none">
+        <div className="d-flex ml-auto d-md-none">
           {menuBar}
           {hideMenu}
         </div>
