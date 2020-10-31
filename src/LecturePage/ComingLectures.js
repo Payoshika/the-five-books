@@ -7,14 +7,15 @@ import Image from 'react-bootstrap/Image'
 import bookImg1 from "./img/読書について.jpg"
 import bookImg2 from "./img/Theaitetos.jpg"
 import bookImg3 from "./img/taxidancehall.jpg"
-import {Lecture1Info, Lecture2Info, Lecture3Info} from "./index.js"
+import bookImg4 from "./img/精神のエネルギー.jpg"
+import {Lecture1Info, Lecture2Info, Lecture3Info, Lecture4Info} from "./index.js"
 
 const ComingLectures = () => {
 
   const content1 =
     <Link to="/lecture/1">
       <div className="coming-lectures top-lecture d-flex flex-column flex-md-row justify-content-center align-items-center">
-        <div className="book-img-container d-flex align-contents-center">
+        <div className="book-img-container d-flex  justify-content-center align-contents-center">
           <Image src={bookImg1} fluid />
         </div>
         <div className="lecturer-info d-flex flex-row justify-content-center align-items-center flex-nowrap">
@@ -32,7 +33,7 @@ const ComingLectures = () => {
     const content2 =
       <Link to="/lecture/2">
         <div className="coming-lectures top-lecture d-flex flex-column flex-md-row justify-content-center align-items-center">
-          <div className="book-img-container d-flex align-contents-center">
+          <div className="book-img-container d-flex  justify-content-center align-contents-center">
             <Image src={bookImg2} fluid />
           </div>
           <div className="lecturer-info d-flex flex-row justify-content-center align-items-center flex-nowrap">
@@ -50,7 +51,7 @@ const ComingLectures = () => {
       const content3 =
         <Link to="/lecture/3">
           <div className="coming-lectures top-lecture d-flex flex-column flex-md-row justify-content-center align-items-center">
-            <div className="book-img-container d-flex align-contents-center">
+            <div className="book-img-container d-flex  justify-content-center align-contents-center">
               <Image src={bookImg3} fluid />
             </div>
             <div className="lecturer-info d-flex flex-row justify-content-center align-items-center flex-nowrap">
@@ -65,15 +66,37 @@ const ComingLectures = () => {
           </div>
         </Link>
 
+      const content4 =
+        <Link to="/lecture/4">
+          <div className="coming-lectures top-lecture d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <div className="book-img-container d-flex justify-content-center align-contents-center">
+              <Image src={bookImg4} fluid />
+            </div>
+            <div className="lecturer-info d-flex flex-row justify-content-center align-items-center flex-nowrap">
+              <div className="lecturer-info">
+                  <p>書籍：{Lecture4Info["book"]["name"]}</p>
+                  <p>著者：{Lecture4Info["book"]["author"]}</p>
+                  <p>講師：{Lecture4Info["lecturer"]["name"]}( {Lecture4Info["lecturer"]["affiliation"]})</p>
+                  <p><b>開講期間：&nbsp;{Lecture4Info.lecture.lectureStartDate.slice(4,6)}月{Lecture4Info.lecture.lectureStartDate.slice(6,9)}日&nbsp;~&nbsp;
+                  {Lecture4Info.lecture.lectureEndDate.slice(4,6)}月{Lecture4Info.lecture.lectureEndDate.slice(6,9)}日</b></p>
+              </div>
+            </div>
+          </div>
+        </Link>
+
   return(
     <Container fluid>
       <Row>
         <Col>
           <h4 className="text-center">開講予定の講座</h4>
           <div className="d-flex flex-column justify-content-center my-3">
-            {content2}
-            <hr/>
             {content3}
+            {content4}
+            <hr/>
+          </div>
+          <h4 className="text-center">開講中の講座</h4>
+          <div className="d-flex flex-column justify-content-center my-3">
+            {content2}
             <hr/>
           </div>
           <h4 className="text-center">過去の講座</h4>

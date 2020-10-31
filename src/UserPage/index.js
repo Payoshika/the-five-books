@@ -1,0 +1,6 @@
+export {default as UserPage} from "./UserPage"
+export {default as UserPage9999} from "./UserPage9999"
+export {default as UserPasswordUpdate} from "./UserPasswordUpdate"
+export {default as UserProfileEdit} from "./UserProfileEdit"
+export {default as UserRegister} from "./UserRegister"
+export {default as UserPasswordRegeneration} from "./UserPasswordRegeneration"

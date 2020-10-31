@@ -1,15 +1,32 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Carousel from "react-bootstrap/Carousel"
 import Image from 'react-bootstrap/Image'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+import Pagination from 'react-bootstrap/Pagination'
+import PageItem from 'react-bootstrap/PageItem'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import axios from "axios"
+
 import user1 from "./img/user1.jpeg"
 import user2 from "./img/user2.jpeg"
 import user3 from "./img/user3.jpeg"
 import user4 from "./img/user4.jpeg"
 
 const Review = () => {
+
+  const [rating, setRating] = useState(null)
+  const [hover, setHover] = useState(null)
+  const [input, setInput] = useState("")
+
+  const [posts, setPosts] = useState([])
+  const [loading, setLoading] = useState(false)
+  const [currentPage, setCurrentPage] = useState(1)
+  const [postsPerPage, setPostsPerPage] = useState(5)
 
   const review1 =
   <div className="review-content d-flex justify-content-center align-items-center">
@@ -43,6 +60,154 @@ const Review = () => {
     </div>
   </div>
 
+  const ratingArea =
+  <div className="my-3">
+    {[...Array(5)].map((star, i) => {
+      const ratingValue = i + 1
+      return (
+        <label>
+          <input
+            type="radio"
+            name="rating"
+            value={ratingValue}
+            onClick ={() => setRating(ratingValue)}
+            />
+          <FontAwesomeIcon
+            className="star"
+            icon={faStar}
+            size={"2x"}
+            color={ratingValue <= (hover ||rating) ? "#ffc107": "#e4e3e3" }
+            onMouseEnter ={() => setHover(ratingValue)}
+            onMouseLeave ={() => setHover(null)}
+            />
+        </label>
+      )
+      })}
+      <span className="mx-3 rating-number">
+        {rating}/5
+      </span>
+    </div>
+
+    const reviewArea =
+    <div>
+      <Form className="w-100 form-input">
+        <p className="my-3">あなたの満足度を教えてください。</p>
+        {ratingArea}
+        <Form.Group controlId="input-content" className="my-3">
+          <Form.Label>レビューコメントをご記入ください</Form.Label>
+          <Form.Control
+            as="textarea"
+            rows="4"
+            name="inquiry"
+            value={input}
+            onChange={(event)=>setInput(event.target.value)}
+             />
+        </Form.Group>
+        <Form.Group className="d-flex justify-content-center">
+          <Button
+            variant="outline-secondary"
+            >レビューを保存
+          </Button>
+        </Form.Group>
+      </Form>
+    </div>
+
+    const reviewDone =
+    <div>
+      <Form className="w-100 form-input">
+        <p className="my-3">本講義のあなたの満足度</p>
+        {ratingArea}
+        <div>
+          <p>レビュー内容</p>
+          <p>とても面白かった。また受けたい。今度は詩学も受けてみたい。とても面白かった。また受けたい。今度は詩学も受けてみたい。</p>
+        </div>
+        <Form.Group className="d-flex justify-content-center">
+          <Button
+            variant="outline-secondary"
+            >レビューを修正
+          </Button>
+        </Form.Group>
+      </Form>
+    </div>
+
+    const reviewEdit =
+    <div>
+      <Form className="w-100 form-input">
+        <p className="my-3">あなたの満足度を教えてください。</p>
+        {ratingArea}
+        <Form.Group controlId="input-content" className="my-3">
+          <Form.Label>レビューコメントをご記入ください</Form.Label>
+          <Form.Control
+            as="textarea"
+            rows="4"
+            name="inquiry"
+            value={input}
+            onChange={(event)=>setInput(event.target.value)}
+             />
+        </Form.Group>
+        <Form.Group className="d-flex justify-content-center">
+          <Button
+            variant="outline-secondary"
+            >レビューを修正
+          </Button>
+        </Form.Group>
+      </Form>
+    </div>
+
+  useEffect(()=>{
+    const fetchPosts = async () => {
+      setLoading(true)
+      const response = await axios.get("https://jsonplaceholder.typicode.com/posts")
+      setPosts(response.data.slice(0,50))
+      setLoading(false)
+    }
+    fetchPosts()
+  },[])
+
+  const indexOfLastPost = currentPage * postsPerPage
+  const indexOfFirstPost = indexOfLastPost - postsPerPage
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost)
+
+  let reviewResult =
+    <div><p>loading...</p></div>
+
+  if (posts.length > 1){
+    reviewResult =
+      <ul className="list-group mb-4">
+        {currentPosts.map(post => {
+          return(
+            <li key={post.id} className="list-group-item">
+              <p>〇〇さん</p>
+              <p>{post.body}</p>
+              <p>コメント日:10月1日</p>
+            </li>
+        )})
+        }
+      </ul>
+  }
+
+  const pageNation = (postPerPage, totalPosts) => {
+    const pageNumbers = []
+     for(let i = 1; i<=Math.ceil(totalPosts / postsPerPage); i++){
+       pageNumbers.push(i)
+     }
+     return(
+       <nav className="pagination">
+         {pageNumbers.map(number => {
+           return(
+             <li key={number} className="page-item">
+               <span
+                 onClick={()=>setCurrentPage(number)}
+                 className="page-link">
+                 {number}
+               </span>
+             </li>
+           )
+         })}
+       </nav>
+     )
+  }
+
   const content =
   <Carousel>
     <Carousel.Item>
@@ -61,7 +226,12 @@ const Review = () => {
 
   return(
     <div className="reviews d-flex flex-column align-items-center justify-content-center">
+      {reviewArea}
+      {reviewDone}
+      {reviewEdit}
       {content}
+      {reviewResult}
+      {pageNation(postsPerPage, posts.length)}
     </div>
   )
 }

@@ -6,12 +6,13 @@ import {Link} from 'react-router-dom';
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import Image from 'react-bootstrap/Image'
-
+import InputGroup from 'react-bootstrap/InputGroup';
+import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'
 import ListGroup from 'react-bootstrap/ListGroup'
 import axios from "axios"
 
-const UserPage = (props) =>{
+const UserPage9999 = (props) =>{
   let {name, email, lectures} = props
   const [popup, setPopup] = useState("delete-hide")
   const deleteConfirm = () => {
@@ -73,7 +74,7 @@ const UserPage = (props) =>{
 
 
 const nameArea =
-<div className="d-flex flex-start mb-3">
+<div className="d-flex flex-start mx-3 mb-3">
   <h2 className="text-center">{name} さん</h2>
 </div>
 
@@ -87,71 +88,33 @@ const nameArea =
       <Button
         variant="outline-secondary"
         className="mx-2"
-        onClick= {()=>logout()}
-        >ログアウト
+        onClick= {
+          ()=>props.history.push("./UserProfileEdit")
+        }
+        >登録内容修正
+      </Button>
+      <Button
+        variant="outline-secondary"
+        className="mx-2"
+        onClick= {
+          ()=>props.history.push("./UserPasswordUpdate")
+        }
+        >パスワード変更
       </Button>
       <Button
         variant="outline-secondary"
         className="mx-2"
         onClick= {()=>deleteConfirm()}
-        >登録内容を削除
+        >登録内容削除
       </Button>
     </div>
-  </div>
-
-  const now_taking =
-  <div className="w-100 d-flex flex-column justify-content-center align-items-start">
-    <div className="d-flex justify-content-center align-items-center my-3">
-      <Image className="mr-3"src={"https://via.placeholder.com/150"} width="130" height="180"/>
-      <div>
-        <p>書籍：『読書について』</p>
-        <p>著者：ショーペンハウエル</p>
-        <p>期間：20年9月5日 ~ 20年9月26日</p>
-        <p>講師：山野弘樹(哲学者)</p>
-      </div>
-    </div>
-    <div className="d-flex justify-content-center align-items-center my-3">
-      <Image className="mr-3"src={"https://via.placeholder.com/150"} width="130" height="180"/>
-      <div>
-        <p>書籍：『読書について』</p>
-        <p>著者：ショーペンハウエル</p>
-        <p>期間：20年9月5日 ~ 20年9月26日</p>
-        <p>講師：山野弘樹(哲学者)</p>
-      </div>
-    </div>
-    <div className="d-flex justify-content-center align-items-center my-3">
-      <Image className="mr-3"src={"https://via.placeholder.com/150"} width="130" height="180"/>
-      <div>
-        <p>書籍：『読書について』</p>
-        <p>著者：ショーペンハウエル</p>
-        <p>期間：20年9月5日 ~ 20年9月26日</p>
-        <p>講師：山野弘樹(哲学者)</p>
-      </div>
-    </div>
-  </div>
-
-  const lecrureInfo =
-  <div >
-    <Tabs
-      defaultActiveKey="now_taking"
-      id="uncontrolled-tab-example"
-      >
-      <Tab eventKey="now_taking" title="　受講中　">
-        {now_taking}
-      </Tab>
-      <Tab eventKey="will_take" title="　受講予定　">
-        {now_taking}
-      </Tab>
-      <Tab eventKey="has_taken" title="　受講後　">
-        {now_taking}
-      </Tab>
-    </Tabs>
   </div>
 
   return(
     <Container fluid>
       <Row>
         <Col>
+          {nameArea}
           {content}
         </Col>
       </Row>
@@ -159,4 +122,4 @@ const nameArea =
   )
 }
 
-export default UserPage
+export default UserPage9999

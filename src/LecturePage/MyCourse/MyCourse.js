@@ -11,7 +11,7 @@ import Button from 'react-bootstrap/Button'
 import ListGroup from 'react-bootstrap/ListGroup'
 import axios from "axios"
 
-const UserPage = (props) =>{
+const MyCourse = (props) =>{
   let {name, email, lectures} = props
   const [popup, setPopup] = useState("delete-hide")
   const deleteConfirm = () => {
@@ -142,7 +142,7 @@ const nameArea =
       <Tab eventKey="will_take" title="　受講予定　">
         {now_taking}
       </Tab>
-      <Tab eventKey="has_taken" title="　受講後　">
+      <Tab eventKey="has_taken" title="　受講済み　">
         {now_taking}
       </Tab>
     </Tabs>
@@ -151,12 +151,18 @@ const nameArea =
   return(
     <Container fluid>
       <Row>
-        <Col>
-          {content}
+        <Col sm={12}
+          className="book_guide_banner position-relative">
+          <h3>あなたの講義</h3>
+        </Col>
+        <div className="w-100 my-3">
+        </div>
+        <Col sm={12}>
+          {lecrureInfo}
         </Col>
       </Row>
     </Container>
   )
 }
 
-export default UserPage
+export default MyCourse

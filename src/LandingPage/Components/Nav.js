@@ -10,7 +10,7 @@ const Nav = (props) => {
 
   let registerMenu = (props.name === "")? <Link to="/user">Register/Login</Link> : <div></div>
 
-  let name = (props.name === "")? <div></div> :<div><Link to="/userpage">{props.name}さん</Link></div>
+let name = (props.name === "")? <div></div> :<div ><Link to="/userpage">{props.name}さん</Link></div>
 
   let menuBar =
     <FontAwesomeIcon icon={faBars}
@@ -20,19 +20,22 @@ const Nav = (props) => {
   if (hide === false){
     hideMenu = (
       <div
-        className = "hide-menu position-absolute rounded"
+        className = "hide-menu position-absolute d-flex flex-column justify-content-center align-items-center"
+        onClick ={() => setHide(true)}
          >
-        <p onClick ={() => setHide(true)}>{registerMenu}</p>
-          {name}
-        <p onClick ={() => setHide(true)}><a href="/#home">Home</a></p>
-        <p onClick ={() => setHide(true)}>
-          <Link to="/coming_lectures">講義一覧</Link>
-        </p>
-        <p onClick ={() => setHide(true)}>
-          <Link to="/book_guide">講師になる</Link>
-        </p>
-        <p onClick ={() => setHide(true)}><a href="/#contact">お問い合わせ</a></p>
-        <p onClick ={() => setHide(true)}> <u>Close</u></p>
+         <div className = "hide-menu-box d-flex flex-column justify-content-center align-items-center">
+           <p onClick ={() => setHide(true)}>{registerMenu}</p>
+             {name}
+           <p onClick ={() => setHide(true)}><a href="/#home">Top</a></p>
+           <p onClick ={() => setHide(true)}>
+             <Link to="/coming_lectures">講義一覧</Link>
+           </p>
+           <p onClick ={() => setHide(true)}>
+             <Link to="/book_guide">講師になる</Link>
+           </p>
+           <p onClick ={() => setHide(true)}><a href="/#contact">お問い合わせ</a></p>
+           <p onClick ={() => setHide(true)}> <u>Close</u></p>
+         </div>
       </div>
   )}
 
