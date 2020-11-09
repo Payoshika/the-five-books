@@ -8,7 +8,8 @@ import bookImg1 from "./img/読書について.jpg"
 import bookImg2 from "./img/Theaitetos.jpg"
 import bookImg3 from "./img/taxidancehall.jpg"
 import bookImg4 from "./img/精神のエネルギー.jpg"
-import {Lecture1Info, Lecture2Info, Lecture3Info, Lecture4Info} from "./index.js"
+import bookImg5 from "./img/詩学.jpg"
+import {Lecture1Info, Lecture2Info, Lecture3Info, Lecture4Info, Lecture5Info} from "./index.js"
 
 const ComingLectures = () => {
 
@@ -84,23 +85,42 @@ const ComingLectures = () => {
           </div>
         </Link>
 
+        const content5 =
+          <Link to="/lecture/5">
+            <div className="coming-lectures top-lecture d-flex flex-column flex-md-row justify-content-center align-items-center">
+              <div className="book-img-container d-flex  justify-content-center align-contents-center">
+                <Image src={bookImg5} fluid />
+              </div>
+              <div className="lecturer-info d-flex flex-row justify-content-center align-items-center flex-nowrap">
+                <div className="lecturer-info">
+                    <p>書籍：{Lecture5Info["book"]["name"]}</p>
+                    <p>著者：{Lecture5Info["book"]["author"]}</p>
+                    <p>講師：{Lecture5Info["lecturer"]["name"]}( {Lecture5Info["lecturer"]["affiliation"]})</p>
+                    <p><b>開講期間：&nbsp;{Lecture5Info.lecture.lectureStartDate.slice(4,6)}月{Lecture5Info.lecture.lectureStartDate.slice(6,9)}日&nbsp;~&nbsp;
+                    {Lecture5Info.lecture.lectureEndDate.slice(4,6)}月{Lecture5Info.lecture.lectureEndDate.slice(6,9)}日</b></p>
+                </div>
+              </div>
+            </div>
+          </Link>
+
   return(
     <Container fluid>
       <Row>
         <Col>
           <h4 className="text-center">開講予定の講座</h4>
           <div className="d-flex flex-column justify-content-center my-3">
-            {content3}
             {content4}
+            {content5}
             <hr/>
           </div>
           <h4 className="text-center">開講中の講座</h4>
           <div className="d-flex flex-column justify-content-center my-3">
-            {content2}
+            {content3}
             <hr/>
           </div>
           <h4 className="text-center">過去の講座</h4>
           <div className="d-flex flex-column justify-content-center">
+            {content2}
             {content1}
           </div>
         </Col>

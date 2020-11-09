@@ -214,7 +214,7 @@ const Lecture2 = () => {
           </Col>
           <Col>
             <div className="buy-button d-flex justify-content-center mt-3">
-              <a href="https://the-five-books-theaetetus.peatix.com/" className="text-white">  <Button variant="dark" size="lg" block>申し込む<br/>(peatixイベント申込ページへ遷移します)  </Button></a>
+              <a href="https://the-five-books-theaetetus.peatix.com/" className="text-white">  <Button variant="dark" size="lg" block>申込受付を終了しました。<br/>(peatixイベント申込ページへ遷移します)  </Button></a>
             </div>
           </Col>
         </Row>
