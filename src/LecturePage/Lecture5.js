@@ -73,9 +73,9 @@ const Lecture5 = () => {
     <ListGroup className="mini-schedule d-block d-md-none">
     <ListGroup.Item>第一回講義:　{Lecture5Info["lecture"].liveLectureDate[0].slice(4,6)}月 {Lecture5Info["lecture"].liveLectureDate[0].slice(6,9)}日 11:00-12:30 (オンライン開催)
   </ListGroup.Item>
-    <ListGroup.Item>第二回講義:　{Lecture5Info["lecture"].liveLectureDate[1].slice(4,6)}月 {Lecture5Info["lecture"].liveLectureDate[1].slice(6,9)}日 11:00-12:30 (オンライン開催)</ListGroup.Item>
-    <ListGroup.Item>第三回講義:　{Lecture5Info["lecture"].liveLectureDate[2].slice(4,6)}月 {Lecture5Info["lecture"].liveLectureDate[2].slice(6,9)}日 11:00-12:30 (オンライン開催)</ListGroup.Item>
-    <ListGroup.Item>第四回講義:　{Lecture5Info["lecture"].liveLectureDate[3].slice(4,6)}月 {Lecture5Info["lecture"].liveLectureDate[3].slice(6,9)}日 11:00-12:30 (オンライン開催)</ListGroup.Item>
+    <ListGroup.Item>第二回講義:　{Lecture5Info["lecture"].liveLectureDate[1].slice(4,6)}月 {Lecture5Info["lecture"].liveLectureDate[1].slice(6,9)}日 11:00-12:45 (オンライン開催)</ListGroup.Item>
+    <ListGroup.Item>第三回講義:　{Lecture5Info["lecture"].liveLectureDate[2].slice(4,6)}月 {Lecture5Info["lecture"].liveLectureDate[2].slice(6,9)}日 11:00-12:45 (オンライン開催)</ListGroup.Item>
+    <ListGroup.Item>第四回講義:　{Lecture5Info["lecture"].liveLectureDate[3].slice(4,6)}月 {Lecture5Info["lecture"].liveLectureDate[3].slice(6,9)}日 11:00-12:45 (オンライン開催)</ListGroup.Item>
   </ListGroup>
 
     let schedule =
@@ -119,16 +119,17 @@ const Lecture5 = () => {
           </div>
           <div className="lecture-detail">
             <h5><u>各講義の内容</u></h5>
-            <p><b>第一回(11月29日)</b></p>
+            <p>本講義では、初回講義が11:00-12:30の90分、第二回講義以降は11:00-12:45の105分となっております。</p>
+            <p><b>第一回(11月29日 11:00-12:30)</b></p>
             <p>
             　まず『詩学』を著したアリストテレスの経歴、およびアリストテレス哲学における『詩学』の位置づけに関して説明をします。さらに、より深い観点から「物語」について考えていく為にも、〈そもそも、人はなぜ物語るのか？〉という問いを補助線として考えていきたいと思います。また、実際に『詩学』を読み進めていく際に〈意識すべき点〉、〈押さえておくべき点〉などを指摘し、受講者の方々への〈道しるべ〉を提示したいと思います。そこで、『詩学』のみならず、哲学書全般を読み進めていくときに必須となる「批判的読解」という方法に関して、解説をしていきたいと思います。
             </p>
-            <p><b>第二回(12月6日)</b></p>
+            <p><b>第二回(12月6日 11:00-12:45)</b></p>
             <p>　『詩学』第一章から第九章までの範囲の講義を行います。まずは、受講者の方々がSlackに投稿した論点や疑問点を踏まえたうえで、今回の講読範囲の要点をまとめます。さらに、批判的読解をするうえで見逃すことのできない次の論点を提示して、受講者の皆さまと議論を深めたいと思います。その論点とは、「模倣」と「人間の本姓」をめぐるものです。</p>
-            <p><b>第三回(12月13日)</b></p>
+            <p><b>第三回(12月13日 11:00-12:45)</b></p>
             <p>　『詩学』第十章から第十八章までの範囲の講義を行います。まずは、受講者の方々がSlackに投稿した論点や疑問点を踏まえたうえで、今回の講読範囲の要点をまとめます。さらに、批判的読解をするうえで見逃すことのできない次の論点を提示して、受講者の皆さまと議論を深めたいと思います。その論点とは、「逆転」と「再認」をめぐるものです。　
             </p>
-            <p><b>第四回(10月31日)</b></p>
+            <p><b>第四回(10月31日 11:00-12:45)</b></p>
             <p>　『詩学』第十九章から第二十六章までの範囲の講義を行います。まずは、受講者の方々がSlackに投稿した論点や疑問点を踏まえたうえで、今回の講読範囲の要点をまとめます。さらに、批判的読解をするうえで見逃すことのできない次の二つの論点を提示して、受講者の皆さまと議論を深めたいと思います。その論点とは、「比喩」と「悲劇の優越」をめぐるものです。
             </p>
           </div>
