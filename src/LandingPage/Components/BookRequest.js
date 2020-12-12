@@ -80,7 +80,7 @@ const BookRequest = () => {
     event.preventDefault();
     const apiURL = process.env.REACT_APP_API_URL
     let book  = {
-          name: ` ${event.target.parentNode.querySelector(".book-name").innerText}`,
+          name: `${event.target.parentNode.querySelector(".book-name").innerText}`,
           author: `${event.target.parentNode.querySelector(".book-author").innerText}`,
           publisher: `${event.target.parentNode.querySelector(".book-publisher").innerText}`,
           img_url: `${event.target.parentNode.querySelector(".book-img-url").innerText}`,

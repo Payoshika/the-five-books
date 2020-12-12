@@ -257,6 +257,14 @@ input[type="radio"]{
   max-width: 55rem;
 }
 
+.searched-items:hover{
+  background-color: #222831eb;
+}
+
+.searched-items > div {
+  pointer-events: none;
+}
+
 /* Regiser area */
 .register{
   max-width: 30rem;

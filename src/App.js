@@ -3,7 +3,7 @@ import Home from "./LandingPage/Home"
 import {Nav, Footer} from "./LandingPage/Components/index.js"
 import {UserRegister, UserPage, UserPage9999, UserProfileEdit, UserPasswordUpdate, UserPasswordRegeneration} from "./UserPage"
 import MyCourse from "./LecturePage/MyCourse/MyCourse"
-import {Lecture1, Lecture2, Lecture3, Lecture4, Lecture5, Lecture9999,  FutureLectures, ComingLectures, BookGuide} from "./LecturePage/index.js"
+import {Lecture1, Lecture2, Lecture3, Lecture4, Lecture5, Lecture9999,  FutureLectures, ComingLectures, BookGuide, LectureCreate} from "./LecturePage/index.js"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import axios from "axios"
@@ -242,6 +242,14 @@ export default class App extends React.Component {
               <Route
                 path="/book_guide"
                 render = {props => (<BookGuide {...props}
+                checkLoginStatus={this.checkLoginStatus}
+                loggedInStatus= {this.state.loggedInStatus}
+                />)}
+                >
+              </Route>
+              <Route
+                path="/lecture_create"
+                render = {props => (<LectureCreate {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
                 />)}
