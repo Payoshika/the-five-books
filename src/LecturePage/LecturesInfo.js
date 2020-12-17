@@ -14,7 +14,7 @@ const LecturesInfo = [
       "degree" : "東京大学大学院 総合文化研究科",
       "affiliation" : "東京大学大学院 総合文化研究科",
       "profile-link" : "https://researchmap.jp/HirokiYamano/?lang=english",
-      "lecturerPhoto": "./img/lecturer_yamano_hiroki.jpg"
+      "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
       },
     lecture:{
       "lectureName" : "テスト　テスト",
@@ -48,7 +48,7 @@ const LecturesInfo = [
       "degree" : "東京大学大学院 総合文化研究科",
       "affiliation" : "東京大学大学院 総合文化研究科",
       "profile-link" : "https://researchmap.jp/HirokiYamano/?lang=english",
-      "lecturerPhoto": "./img/lecturer_yamano_hiroki.jpg"
+      "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
       },
     lecture:{
       "lectureName" : "テスト　テスト",
@@ -81,7 +81,7 @@ const LecturesInfo = [
       "degree" : "慶應義塾大学大学院 社会学研究科",
       "affiliation" : "慶應義塾大学大学院 社会学研究科",
       "profile-link" : "https://researchmap.jp/sseki0403",
-      "lecturerPhoto": "./img/lecturer_seki_shumpei.jpg"
+      "lecturerPhoto": './img/lecturer_seki_shumpei.jpg'
       },
     lecture:{
       "lectureName" : "テスト　テスト",
@@ -114,7 +114,7 @@ const LecturesInfo = [
         "degree" : "京都大学大学院 人間・環境学研究科",
         "affiliation" : "京都大学大学院 人間・環境学研究科",
         "profile-link" : "https://researchmap.jp/HAMADA_TOMOROH",
-        "lecturerPhoto": "./img/lecturer_hamada_tomoro.jpg"
+        "lecturerPhoto": './img/lecturer_hamada_tomoro.jpg'
         },
       lecture:{
         "lectureName" : "テスト　テスト",
@@ -147,7 +147,7 @@ const LecturesInfo = [
         "degree" : "東京大学大学院 総合文化研究科",
         "affiliation" : "東京大学大学院 総合文化研究科",
         "profile-link" : "https://researchmap.jp/HirokiYamano/?lang=english",
-        "lecturerPhoto": "./img/lecturer_yamano_hiroki.jpg"
+        "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
         },
       lecture:{
         "lectureName" : "テスト　テスト",
@@ -180,7 +180,7 @@ const LecturesInfo = [
       "degree" : "東京大学大学院 総合文化研究科",
       "affiliation" : "東京大学大学院 総合文化研究科",
       "profile-link" : "https://researchmap.jp/HirokiYamano/?lang=english",
-      "lecturerPhoto": "./img/lecturer_yamano_hiroki.jpg"
+      "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
       },
     lecture:{
       "lectureName" : "テスト　テスト",
@@ -213,7 +213,7 @@ const LecturesInfo = [
       "degree" : "東京大学大学院 人文社会系研究科",
       "affiliation" : "東京大学大学院 人文社会系研究科",
       "profile-link" : "https://researchmap.jp/junki1129/?lang=ja",
-      "lecturerPhoto": "./img/lecturer_miura_junki.jpg"
+      "lecturerPhoto": './img/lecturer_miura_junki.jpg'
     },
     lecture:{
       "lectureName" : "テスト　テスト",
@@ -246,7 +246,7 @@ const LecturesInfo = [
     "degree" : "慶應義塾大学大学院 社会学研究科",
     "affiliation" : "慶應義塾大学大学院 社会学研究科",
     "profile-link" : "https://researchmap.jp/shingosato",
-    "lecturerPhoto": "./img/lecturer_sato_shingo.jpg"
+    "lecturerPhoto": './img/lecturer_sato_shingo.jpg'
   },
   lecture:{
     "lectureName" : "テスト　テスト",
