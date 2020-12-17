@@ -1,5 +1,5 @@
 import React from "react"
-import {Banner, Story, ServiceDescription, ServiceFlow, LectureLists, BookRequest, Contact, About, Review} from "./Components/index.js"
+import {Banner, Story, ServiceDescription, ServiceFlow, BookRequest, Contact, About} from "./Components/index.js"
 
 const Home = () => {
   return(
@@ -8,7 +8,6 @@ const Home = () => {
       <Story />
       <ServiceDescription />
       <ServiceFlow />
-      <LectureLists />
       <BookRequest />
       <Contact />
       <About />

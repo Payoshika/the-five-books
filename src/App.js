@@ -3,7 +3,7 @@ import Home from "./LandingPage/Home"
 import {Nav, Footer} from "./LandingPage/Components/index.js"
 import {UserRegister, UserPage, UserPage9999, UserProfileEdit, UserPasswordUpdate, UserPasswordRegeneration} from "./UserPage"
 import MyCourse from "./LecturePage/MyCourse/MyCourse"
-import {Lecture1, Lecture2, Lecture3, Lecture4, Lecture5, Lecture9999,  FutureLectures, ComingLectures, BookGuide, LectureCreate} from "./LecturePage/index.js"
+import {Lecture6, Lecture9999, ComingLectures, BookGuide, LectureCreate} from "./LecturePage/index.js"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import axios from "axios"
@@ -160,48 +160,8 @@ export default class App extends React.Component {
                 >
               </Route>
               <Route
-                path="/lecture/1"
-                render = {props => (<Lecture1 {...props}
-                checkLoginStatus={this.checkLoginStatus}
-                loggedInStatus= {this.state.loggedInStatus}
-                name = {this.state.name}
-                email = {this.state.email}
-                />)}
-                >
-              </Route>
-              <Route
-                path="/lecture/2"
-                render = {props => (<Lecture2 {...props}
-                checkLoginStatus={this.checkLoginStatus}
-                loggedInStatus= {this.state.loggedInStatus}
-                name = {this.state.name}
-                email = {this.state.email}
-                />)}
-                >
-              </Route>
-              <Route
-                path="/lecture/3"
-                render = {props => (<Lecture3 {...props}
-                checkLoginStatus={this.checkLoginStatus}
-                loggedInStatus= {this.state.loggedInStatus}
-                name = {this.state.name}
-                email = {this.state.email}
-                />)}
-                >
-              </Route>
-              <Route
-                path="/lecture/4"
-                render = {props => (<Lecture4 {...props}
-                checkLoginStatus={this.checkLoginStatus}
-                loggedInStatus= {this.state.loggedInStatus}
-                name = {this.state.name}
-                email = {this.state.email}
-                />)}
-                >
-              </Route>
-              <Route
-                path="/lecture/5"
-                render = {props => (<Lecture5 {...props}
+                path="/lecture/:id"
+                render = {props => (<Lecture6 {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
                 name = {this.state.name}
@@ -212,16 +172,6 @@ export default class App extends React.Component {
               <Route
                 path="/lecture/9999"
                 render = {props => (<Lecture9999 {...props}
-                checkLoginStatus={this.checkLoginStatus}
-                loggedInStatus= {this.state.loggedInStatus}
-                name = {this.state.name}
-                email = {this.state.email}
-                />)}
-                >
-              </Route>
-              <Route
-                path="/future_lectures"
-                render = {props => (<FutureLectures {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
                 name = {this.state.name}

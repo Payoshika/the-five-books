@@ -1,14 +1,13 @@
-import React, {useState, useEffect, Component} from "react"
+import React, {useState} from "react"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
 import Form from 'react-bootstrap/Form'
 import ListGroup from 'react-bootstrap/ListGroup'
-import Button from 'react-bootstrap/Button'
 import axios from "axios"
-import { CKEditor } from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import {Editor, EditorState} from 'draft-js';
+import 'draft-js/dist/Draft.css';
 
 const LectureCreate = () => {
   const [bookName, setBookName] = useState("")
@@ -33,17 +32,13 @@ const LectureCreate = () => {
   const [minimumSize, setMinimumSize] = useState("")
   const [disclaimer, setDisclaimer] = useState("")
   const [text, setText] = useState("")
+  const [editorState, setEditorState] = React.useState(
+  () => EditorState.createEmpty(),
+);
 
 const editor =
 <div className="editor">
-  <CKEditor
-    editor={ClassicEditor}
-    date={text}
-    onChange={(event,　editor)=>{
-      const data = editor.getData()
-      setText(data)
-    }}
-    />
+  <Editor editorState={editorState} onChange={setEditorState} />
 </div>
 
 const searchBook = (input) => {

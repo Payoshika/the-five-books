@@ -71,11 +71,50 @@ const UserPage = (props) =>{
     })
   }
 
-
 const nameArea =
 <div className="d-flex flex-start mb-3">
   <h2 className="text-center">{name} さん</h2>
 </div>
+
+const lectureVideos1 =
+<div className="video-outer my-3">
+  <p>「おそさ」についてのベルクソン的見解</p>
+  <p>『精神のエネルギー』第一回講義</p>
+  <iframe
+    title="test"
+    src="https://player.vimeo.com/video/469189176"
+      width="100%" height="360"
+      className="video"
+     frameborder="0"
+     allow="autoplay; fullscreen" allowfullscreen>
+  </iframe>
+</div>
+
+const lectureVideos2 =
+<div className="video-outer my-3">
+  <p>シカゴ学派の都市理論とその発展</p>
+  <p>『タクシーダンス・ホール』第三回講義</p>
+  <iframe
+    title="test"
+    src="https://player.vimeo.com/video/469189176"
+      width="100%" height="360"
+      className="video"
+     frameborder="0"
+     allow="autoplay; fullscreen" allowfullscreen>
+  </iframe>
+</div>
+
+const check =
+    <div className="d-flex flex-column justify-content-center align-items-center my-3">
+      <p>The Five Booksでは、現在講義登録・キャンセルなどを<a href="https://the-five-books.peatix.com"><b><u>peatix</u></b></a>にて行っております。2021年5月を目処に、当ウェブサイトマイページで登録ができる体制を整えて参ります。</p>
+      <p class="my-3"><u>The Five Books講義のご紹介</u></p>
+      <div>
+        {lectureVideos1}
+        {lectureVideos2}
+      </div>
+    </div>
+
+
 
   const content =
   <div>
@@ -83,6 +122,7 @@ const nameArea =
       <ListGroup.Item>email: {email}</ListGroup.Item>
       <ListGroup.Item>登録講義: {lectures}</ListGroup.Item>
     </ListGroup>
+    {check}
     <div className="d-flex justify-content-center my-3">
       <Button
         variant="outline-secondary"
@@ -96,56 +136,8 @@ const nameArea =
         onClick= {()=>deleteConfirm()}
         >登録内容を削除
       </Button>
+      {userDelete}
     </div>
-  </div>
-
-  const now_taking =
-  <div className="w-100 d-flex flex-column justify-content-center align-items-start">
-    <div className="d-flex justify-content-center align-items-center my-3">
-      <Image className="mr-3"src={"https://via.placeholder.com/150"} width="130" height="180"/>
-      <div>
-        <p>書籍：『読書について』</p>
-        <p>著者：ショーペンハウエル</p>
-        <p>期間：20年9月5日 ~ 20年9月26日</p>
-        <p>講師：山野弘樹(哲学者)</p>
-      </div>
-    </div>
-    <div className="d-flex justify-content-center align-items-center my-3">
-      <Image className="mr-3"src={"https://via.placeholder.com/150"} width="130" height="180"/>
-      <div>
-        <p>書籍：『読書について』</p>
-        <p>著者：ショーペンハウエル</p>
-        <p>期間：20年9月5日 ~ 20年9月26日</p>
-        <p>講師：山野弘樹(哲学者)</p>
-      </div>
-    </div>
-    <div className="d-flex justify-content-center align-items-center my-3">
-      <Image className="mr-3"src={"https://via.placeholder.com/150"} width="130" height="180"/>
-      <div>
-        <p>書籍：『読書について』</p>
-        <p>著者：ショーペンハウエル</p>
-        <p>期間：20年9月5日 ~ 20年9月26日</p>
-        <p>講師：山野弘樹(哲学者)</p>
-      </div>
-    </div>
-  </div>
-
-  const lecrureInfo =
-  <div >
-    <Tabs
-      defaultActiveKey="now_taking"
-      id="uncontrolled-tab-example"
-      >
-      <Tab eventKey="now_taking" title="　受講中　">
-        {now_taking}
-      </Tab>
-      <Tab eventKey="will_take" title="　受講予定　">
-        {now_taking}
-      </Tab>
-      <Tab eventKey="has_taken" title="　受講後　">
-        {now_taking}
-      </Tab>
-    </Tabs>
   </div>
 
   return(
