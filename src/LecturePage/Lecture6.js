@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import {LecturesInfo} from "./index"
+import {LecturesInfo} from "./index.js"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -16,6 +16,8 @@ const stripePromise = loadStripe('pk_test_51H6qTHKu07P8WqmRl9iLKVCNAvq582vfORpsM
 const Lecture6 = (props) => {
   const {params} = props.match
   const lectureId = parseInt(params.id)-1
+  const bookimg = require(`${LecturesInfo[lectureId]["book"].image}`)
+  const lecturerimg = require(`${LecturesInfo[lectureId]["lecturer"].lecturerPhoto}`)
 
   async function createCheckoutSession () {
     const apiURL = process.env.REACT_APP_API_URL
@@ -36,13 +38,13 @@ const Lecture6 = (props) => {
     const [value, onChange] = useState(LecturesInfo[lectureId].lecture.lectureStartDate);
 
     const lecturePeriod = {
-      startDate: LecturesInfo[lectureId].lecture.lectureStartDate,
-      endDate: LecturesInfo[lectureId].lecture.lectureEndDate,
-      lectureDurationClass : "lecture-duration",
-      lectureDate : {
-        date: LecturesInfo[lectureId].lecture.liveLectureDate,
-        text: LecturesInfo[lectureId].lecture.lectureTime,
-        className: "lecuture-date"
+      "startDate": LecturesInfo[lectureId].lecture.lectureStartDate,
+      "endDate": LecturesInfo[lectureId].lecture.lectureEndDate,
+      "lectureDurationClass" : "lecture-duration",
+      "lectureDate" : {
+        "date": LecturesInfo[lectureId].lecture.liveLectureDate,
+        "text": LecturesInfo[lectureId].lecture.lectureTime,
+        "className": "lecuture-date"
       }
     }
 
@@ -117,6 +119,7 @@ const Lecture6 = (props) => {
         }
       </ListGroup>
 
+
     let schedule =
       <div className="schedule d-none d-md-flex justify-content-center">
         <Calendar
@@ -130,11 +133,11 @@ const Lecture6 = (props) => {
     const content =
       <div className="top-lecture d-flex justify-content-center align-items-center flex-wrap">
         <div className="book-img-container mr-none mr-md-3">
-          <Image src={require(`${LecturesInfo[lectureId]["book"].image}`)} fluid />
+          <Image src={bookimg} fluid />
         </div>
         <div className="lecturer-info d-flex flex-column flex-md-row justify-content-center align-items-center flex-nowrap">
           <div className="lecturer-photo">
-            <Image src={require(`${LecturesInfo[lectureId]["lecturer"].lecturerPhoto}`)} fluid roundedCircle/>
+            <Image src={lecturerimg} fluid roundedCircle/>
           </div>
           <div className="lecturer-info">
               <p>講師: {LecturesInfo[lectureId]["lecturer"]["name"]}</p>
@@ -173,7 +176,7 @@ const Lecture6 = (props) => {
             <h5><u>講師からのメッセージ</u></h5>
             <div className="d-flex justify-content-center">
               <div className="lecturer-photo d-none d-lg-block">
-                <Image src={require(`${LecturesInfo[lectureId]["lecturer"].lecturerPhoto}`)} fluid roundedCircle/>
+                <Image src={lecturerimg} fluid roundedCircle/>
               </div>
               <div className="lecturer-message ml-4">
                 <p><ReactMarkdown source={LecturesInfo[lectureId]["lecture"].message}
