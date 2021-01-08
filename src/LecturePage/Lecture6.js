@@ -36,6 +36,12 @@ const Lecture6 = (props) => {
     })
 }
 
+    const dayOfWeek = (num) => {
+      const dayOfWeekArray = ["日","月", "火", "水", "木", "金", "土"]
+      return dayOfWeekArray[num]
+    }
+
+
     const [value, onChange] = useState(LecturesInfo[lectureId].lecture.lectureStartDate);
 
     const lecturePeriod = {
@@ -54,21 +60,28 @@ const Lecture6 = (props) => {
    }
 
    const getApplyDeadline = (value) => {
-     const dateString = `${value.getFullYear()}${('0' + (value.getMonth() + 1)).slice(-2)}${('0' + value.getDate()).slice(-2)-1}`
+     let dateClone = new Date(value.getTime())
+     const applyDeadlineDate = new Date(dateClone.setDate(dateClone.getDate() - 1))
+     const dateString = `${applyDeadlineDate.getFullYear()}${('0' + (applyDeadlineDate.getMonth() + 1)).slice(-2)}${('0' + applyDeadlineDate.getDate()).slice(-2)}`
     return (
       `${dateString.slice(4,6)}月${dateString.slice(6,8)}日`
     )
   }
 
   const getConductDeadline = (value) => {
-    const dateString = `${value.getFullYear()}${('0' + (value.getMonth() + 1)).slice(-2)}${('0' + value.getDate()).slice(-2)-2}`
+    let dateClone = new Date(value.getTime())
+    const conductDeadlineDate = new Date(dateClone.setDate(dateClone.getDate() - 2))
+    const dateString = `${conductDeadlineDate.getFullYear()}${('0' + (conductDeadlineDate.getMonth() + 1)).slice(-2)}${('0' + conductDeadlineDate.getDate()).slice(-2)}`
    return (
      `${dateString.slice(4,6)}月${dateString.slice(6,8)}日`
    )
  }
 
   const getCancelDeadline = (value) => {
-    const dateString = `${value.getFullYear()}${('0' + (value.getMonth() + 1)).slice(-2)}${('0' + value.getDate()).slice(-2)-7}`
+    let dateClone = new Date(value.getTime())
+    const deadLineDate = new Date(dateClone.setDate(dateClone.getDate() - 7))
+    const dateString =
+    `${deadLineDate.getFullYear()}${('0' + (deadLineDate.getMonth() + 1)).slice(-2)}${('0' + deadLineDate.getDate()).slice(-2)}`
    return (
      `${dateString.slice(4,6)}月${dateString.slice(6,8)}日`
    )
@@ -111,7 +124,7 @@ const Lecture6 = (props) => {
                 <ListGroup.Item>
                 第{index+1}回講義：
                 {getFormatDate(eachDate).slice(4,6)}月
-                {getFormatDate(eachDate).slice(6,8)}日&nbsp;
+                {getFormatDate(eachDate).slice(6,8)}日({dayOfWeek(eachDate.getDay())})&nbsp;
                 {LecturesInfo[lectureId]["lecture"].lectureTime[index]}
                 </ListGroup.Item>
               )
@@ -163,7 +176,7 @@ const Lecture6 = (props) => {
               (each, index) => {
                 return(
                   <>
-                    <p><b>第{index + 1}回({getFormatDate(LecturesInfo[lectureId].lecture.liveLectureDate[index]).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.liveLectureDate[index]).slice(6,9)}日:{LecturesInfo[lectureId]["lecture"].lectureTime[index]})</b></p>
+                    <p><b>第{index + 1}回({getFormatDate(LecturesInfo[lectureId].lecture.liveLectureDate[index]).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.liveLectureDate[index]).slice(6,9)}日({dayOfWeek(LecturesInfo[lectureId].lecture.liveLectureDate[index].getDay())}):{LecturesInfo[lectureId]["lecture"].lectureTime[index]})</b></p>
                     <p><ReactMarkdown source={each}
                     /></p>
                   </>
@@ -219,8 +232,8 @@ const Lecture6 = (props) => {
           <Col xs={12}>
             <h4 className="text-center"><b>『{LecturesInfo[lectureId].book.name}』<br/> {LecturesInfo[lectureId].book.author}&nbsp;著</b></h4>
             <h4 className="text-center">
-            <b>開講期間:&nbsp;{getFormatDate(LecturesInfo[lectureId].lecture.lectureStartDate).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.lectureStartDate).slice(6,9)}日&nbsp;~&nbsp;
-            {getFormatDate(LecturesInfo[lectureId].lecture.lectureEndDate).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.lectureEndDate).slice(6,9)}日
+            <b>開講期間:&nbsp;{getFormatDate(LecturesInfo[lectureId].lecture.lectureStartDate).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.lectureStartDate).slice(6,9)}日({dayOfWeek(LecturesInfo[lectureId].lecture.lectureStartDate.getDay())})&nbsp;~&nbsp;
+            {getFormatDate(LecturesInfo[lectureId].lecture.lectureEndDate).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.lectureEndDate).slice(6,9)}日({dayOfWeek(LecturesInfo[lectureId].lecture.lectureEndDate.getDay())})
             </b>
             </h4>
             <h4 className="text-center">

@@ -2,8 +2,8 @@ import React from 'react';
 import Home from "./LandingPage/Home"
 import {Nav, Footer} from "./LandingPage/Components/index.js"
 import {UserRegister, UserPage, UserPage9999, UserProfileEdit, UserPasswordUpdate, UserPasswordRegeneration} from "./UserPage"
-import MyCourse from "./LecturePage/MyCourse/MyCourse"
-import {Lecture6, Lecture9999, ComingLectures, BookGuide, LectureCreate} from "./LecturePage/index.js"
+import {LectureMyPage} from "./LecturePage/LectureMyPage/index.js"
+import {Lecture6, Lecture9999, ComingLectures, BookGuide, LecturerRegister, LectureCreate} from "./LecturePage/index.js"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import axios from "axios"
@@ -148,8 +148,8 @@ export default class App extends React.Component {
                 >
               </Route>
               <Route
-                path={`/MyCourse`}
-                render = {props => (<MyCourse {...props}
+                path={`/lecturemypage`}
+                render = {props => (<LectureMyPage {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
                 name = {this.state.name}
@@ -200,6 +200,14 @@ export default class App extends React.Component {
               <Route
                 path="/lecture_create"
                 render = {props => (<LectureCreate {...props}
+                checkLoginStatus={this.checkLoginStatus}
+                loggedInStatus= {this.state.loggedInStatus}
+                />)}
+                >
+              </Route>
+              <Route
+                path="/lecturer_register"
+                render = {props => (<LecturerRegister {...props}
                 checkLoginStatus={this.checkLoginStatus}
                 loggedInStatus= {this.state.loggedInStatus}
                 />)}

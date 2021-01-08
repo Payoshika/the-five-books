@@ -79,10 +79,10 @@ const nameArea =
 const lectureVideos1 =
 <div className="video-outer my-3">
   <p>「おそさ」についてのベルクソン的見解</p>
-  <p>『精神のエネルギー』第一回講義</p>
+  <p>『精神のエネルギー』第一回講義より</p>
   <iframe
     title="test"
-    src="https://player.vimeo.com/video/469189176"
+    src="https://player.vimeo.com/video/491946797"
       width="100%" height="360"
       className="video"
      frameborder="0"
@@ -93,10 +93,10 @@ const lectureVideos1 =
 const lectureVideos2 =
 <div className="video-outer my-3">
   <p>シカゴ学派の都市理論とその発展</p>
-  <p>『タクシーダンス・ホール』第三回講義</p>
+  <p>『タクシーダンス・ホール』第三回講義より</p>
   <iframe
     title="test"
-    src="https://player.vimeo.com/video/469189176"
+    src="https://player.vimeo.com/video/492310131"
       width="100%" height="360"
       className="video"
      frameborder="0"
@@ -107,7 +107,9 @@ const lectureVideos2 =
 const check =
     <div className="d-flex flex-column justify-content-center align-items-center my-3">
       <p>The Five Booksでは、現在講義登録・キャンセルなどを<a href="https://the-five-books.peatix.com"><b><u>peatix</u></b></a>にて行っております。2021年5月を目処に、当ウェブサイトマイページで登録ができる体制を整えて参ります。</p>
-      <p class="my-3"><u>The Five Books講義のご紹介</u></p>
+      <p class="mt-3"><u>The Five Books講義のご紹介</u></p>
+      <p>The Five Booksの講義の一部をご紹介させていただきます。講義書籍をお持ち出なくても
+      ご理解いただける内容となっております。</p>
       <div>
         {lectureVideos1}
         {lectureVideos2}

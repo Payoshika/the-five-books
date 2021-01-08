@@ -12,6 +12,12 @@ const ComingLectures = () => {
    return `${value.getFullYear()}${('0' + (value.getMonth() + 1)).slice(-2)}${('0' + value.getDate()).slice(-2)}`;
  }
 
+ const dayOfWeek = (num) => {
+   const dayOfWeekArray = ["日","月", "火", "水", "木", "金", "土"]
+   return dayOfWeekArray[num]
+ }
+
+
   const allContent =
   <Col>
     <h4 className="text-center">開講予定の講座</h4>
@@ -24,13 +30,13 @@ const ComingLectures = () => {
               <div className="book-img-container d-flex  justify-content-center align-contents-center">
                 <Image src={require(`${eachLecture.book.image}`)} fluid />
               </div>
-              <div className="lecturer-info d-flex flex-row justify-content-center align-items-center flex-nowrap">
+              <div className="d-flex flex-row justify-content-center align-items-center flex-nowrap">
                 <div className="lecturer-info">
                     <p>書籍：{eachLecture.book.name}</p>
                     <p>著者：{eachLecture.book.author}</p>
                     <p>講師：{eachLecture.lecturer.name}( {eachLecture.lecturer.affiliation})</p>
-                    <p><b>開講期間：&nbsp;{getFormatDate(eachLecture.lecture.lectureStartDate).slice(4,6)}月{getFormatDate(eachLecture.lecture.lectureStartDate).slice(6,9)}日&nbsp;~&nbsp;
-                    {getFormatDate(eachLecture.lecture.lectureEndDate).slice(4,6)}月{getFormatDate(eachLecture.lecture.lectureEndDate).slice(6,9)}日</b></p>
+                    <p><b>開講期間：&nbsp;{getFormatDate(eachLecture.lecture.lectureStartDate).slice(4,6)}月{getFormatDate(eachLecture.lecture.lectureStartDate).slice(6,9)}日({dayOfWeek(eachLecture.lecture.lectureStartDate.getDay())})&nbsp;~&nbsp;
+                    {getFormatDate(eachLecture.lecture.lectureEndDate).slice(4,6)}月{getFormatDate(eachLecture.lecture.lectureEndDate).slice(6,9)}日({dayOfWeek(eachLecture.lecture.lectureEndDate.getDay())})</b></p>
                 </div>
               </div>
             </div>

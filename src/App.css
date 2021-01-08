@@ -1,6 +1,7 @@
 .wrap {
   overflow: hidden;
 }
+
 body{
   background-color: #f4f4f4;
   color: #222831eb;
@@ -9,6 +10,7 @@ body{
 
 .container-fluid {
   margin: 3rem 0;
+  white-space: pre-wrap;
 }
 
 a, a:hover {
@@ -26,6 +28,16 @@ hr {
  width: 60%;
  border: none;
  margin-top: 3rem;
+}
+
+.form-control {
+  border-radius: 0.5rem !important;
+}
+
+.form-control:focus {
+  color: #222831eb !important;
+  border-color: #f4f4f4 !important;
+  box-shadow: 0 0 0 .2rem rgba(200,200,200,.80) !important;
 }
 
 /* Menu area */
@@ -91,7 +103,8 @@ hr {
 }
 
 .lecturer-info > * {
-  max-width: 25rem;
+  min-width: 15rem;
+  max-width: 20rem;
   margin: 1rem 1rem;
   max-height: 30rem;
 }
@@ -447,6 +460,11 @@ z-index: 0;
   left:8%;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #c7c8ca!important;
+    border-radius: 10px;
+}
+
 /* Book_Guide_Features */
 .feature-contents {
   height: 26rem;
@@ -490,4 +508,86 @@ z-index: 0;
 
 .contact-area > * {
   max-width: 40rem;
+}
+
+/* Lecture Create Page */
+.new-lecture-create > *{
+  max-width: 40rem;
+  min-width: 20rem;
+
+}
+
+.rdrDefinedRangesWrapper {
+  display: none;
+}
+
+.bg-warning {
+  background-color: #c7c8ca !important
+}
+
+.w-40{
+  width: 40rem;
+}
+
+.w-20 {
+  width: 8rem;
+}
+
+.row-scrollable {
+  width: 100%;
+  overflow-x: scroll !important;
+  white-space: nowrap !important;
+}
+
+.book-img-suggestion > * {
+  flex: 1 0 150px;
+  white-space: nowrap;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.hover:hover {
+  background-color: #c7c8ca;
+}
+
+.react-time-picker__clock-button, .react-time-picker__clock {
+  display: none !important;
+}
+.react-time-picker__clear-button{
+  display: none !important;
+}
+
+.rdrDateDisplayWrapper{
+  background-color: #f4f4f4;
+}
+.rdrDateDisplayItemActive{
+  border-color: #c7c8ca;
+}
+.rdrCalendarWrapper, .rdrMonth{
+  width: 40rem;
+}
+
+.rdrSelected, .rdrInRange, .rdrStartEdge, .rdrEndEdge, .rdrDayHovered  {
+  color: #c7c8ca !important;
+}
+
+.rdrDay:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrStartEdge ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrEndEdge ~ .rdrDayNumber span, .rdrDay:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span {
+  color: #222831eb !important;
+}
+
+.rdrDateDisplayItem input{
+  color: #222831eb !important;
+}
+
+textarea {
+  resize: none;
+}
+
+/* LectureMyPage */
+.pagination {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: #c7c8ca;
 }
