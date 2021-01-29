@@ -20,6 +20,8 @@
     "react-calendar": "^3.1.0",
     "react-date-range": "^1.1.3",
     "react-dom": "^16.14.0",
+    "react-dropzone": "^11.2.4",
+    "react-image-crop": "^8.6.6",
     "react-markdown": "^5.0.3",
     "react-native-simple-dialogs": "^1.3.0",
     "react-router-dom": "^5.2.0",
