@@ -200,7 +200,7 @@ const Lecture6 = (props) => {
           </div>
           <div className="lecture-detail mt-4">
             <h5><u>参加料金</u></h5>
-            <h4><b>{LecturesInfo[lectureId].lecture.price}円</b></h4>
+            <h4><b>{LecturesInfo[lectureId].lecture.price}円 ({LecturesInfo[lectureId].lecture.price/LecturesInfo[lectureId].lecture.liveLectureDate.length}円/講義×{LecturesInfo[lectureId].lecture.liveLectureDate.length}回)</b></h4>
           </div>
         </div>
       </div>
