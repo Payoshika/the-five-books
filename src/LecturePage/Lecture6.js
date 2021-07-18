@@ -218,7 +218,7 @@ const Lecture6 = (props) => {
         <li>受講期間の対話ツールには、<a href="https://slack.com/intl/ja-jp/"><u>Slack</u></a>を使用いたします。</li>
         <li>Zoom, Slack共に、本名またはニックネームでご参加いただけます。</li>
         <li>参加登録、お支払いは、peatixページにて行っていただきますようお願い申し上げます。</li>
-        <li>参加申込期限は、<b>{getApplyDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}の20:00</b>となります。また、申込定員(30名)に達し次第受付を締め切らせて頂きます。</li>
+        <li>参加申込期限は、<b>{getApplyDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}の20:00</b>となります。また、申込定員(40名)に達し次第受付を締め切らせて頂きます。</li>
         <li>本講義の最小決行人数は、<b>{LecturesInfo[lectureId].lecture.minimumAtendee}名</b>とさせていただきます。</li>
         <li><b>{getConductDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}の20:00</b>の時点で最小決行人数に達していなかった場合は、本講義をキャンセルさせていただき、参加登録をされた皆様へご返金させていただきます。</li>
         <li>参加ご登録後のキャンセルについては、開講1週間前(<b>{getCancelDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}</b>)まで受付けます。peatixページよりキャンセル申請を行っていただきますようお願いいたします。</li>

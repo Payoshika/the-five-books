@@ -752,7 +752,7 @@ const LecturesInfo = [
               "lectureEndDate" : new Date(2021, 8, 12),
               "liveLectureDate" : [new Date(2021, 7, 15), new Date(2021, 7, 22), new Date(2021, 7, 29), new Date(2021, 8, 5),new Date(2021, 8, 12)],
               "lectureTime" : ["11:00-12:30","11:00-12:30","11:00-12:30","11:00-12:30","11:00-12:30"],
-              "minimumAtendee": 5,
+              "minimumAtendee": 10,
               "price": 8500,
               "prerequisite": "特にありません",
               "courseMaterial": "書籍のみ",
