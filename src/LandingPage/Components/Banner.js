@@ -37,7 +37,7 @@ const Banner = () => {
                       <p>講師: {eachLecture.lecturer.name}</p>
                       <p>専門: {eachLecture.lecturer.expertise}</p>
                       <p>所属: {eachLecture.lecturer.affiliation}</p>
-                      <p>参加人数: 最大30名</p>
+                      <p>参加人数: 最大40名</p>
                       <p><b>開講期間：&nbsp;{getFormatDate(eachLecture.lecture.lectureStartDate).slice(4,6)}月{getFormatDate(eachLecture.lecture.lectureStartDate).slice(6,9)}日&nbsp;~&nbsp;
                       {getFormatDate(eachLecture.lecture.lectureEndDate).slice(4,6)}月{getFormatDate(eachLecture.lecture.lectureEndDate).slice(6,9)}日</b></p>
                     </div>
