@@ -936,7 +936,7 @@ const LecturesInfo = [
               },
             lecturer:{
               "name" : "鶴田 想人",
-              "expertise" : "現代フランス哲学",
+              "expertise" : "科学史・科学論",
               "degree" : "東京大学大学院 総合文化研究科",
               "affiliation" : "東京大学大学院 総合文化研究科",
               "profile-link" : "https://researchmap.jp/tsurutasoto/",
