@@ -17,6 +17,20 @@ const ComingLectures = () => {
    return dayOfWeekArray[num]
  }
 
+const authorInfo = (eachLecture) => {
+  let result =
+    <div>
+      <p>著者：{eachLecture.book.author}</p>
+    </div>
+  if (eachLecture.book.author === ""){
+    result =
+      <div>
+      </div>
+  }
+  return(
+    result
+  )
+}
 
   const allContent =
   <Col>
@@ -33,7 +47,7 @@ const ComingLectures = () => {
               <div className="d-flex flex-row justify-content-center align-items-center flex-nowrap">
                 <div className="lecturer-info">
                     <p>書籍：『{eachLecture.book.name}』</p>
-                    <p>著者：{eachLecture.book.author}</p>
+                    {authorInfo(eachLecture)}
                     <p>講師：{eachLecture.lecturer.name}( {eachLecture.lecturer.affiliation})</p>
                     <p><b>開講期間：&nbsp;{getFormatDate(eachLecture.lecture.lectureStartDate).slice(4,6)}月{getFormatDate(eachLecture.lecture.lectureStartDate).slice(6,9)}日({dayOfWeek(eachLecture.lecture.lectureStartDate.getDay())})&nbsp;~&nbsp;
                     {getFormatDate(eachLecture.lecture.lectureEndDate).slice(4,6)}月{getFormatDate(eachLecture.lecture.lectureEndDate).slice(6,9)}日({dayOfWeek(eachLecture.lecture.lectureEndDate.getDay())})</b></p>

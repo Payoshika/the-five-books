@@ -18,8 +18,7 @@ const Lecture6 = (props) => {
   const lectureId = parseInt(params.id)-1
   const bookimg = LecturesInfo[lectureId]["book"].image
   const lecturerimg = LecturesInfo[lectureId]["lecturer"].lecturerPhoto
-
-
+  const noAuthor = ""
   async function createCheckoutSession () {
     const apiURL = process.env.REACT_APP_API_URL
     const response = await fetch(`${apiURL}/payment/create`);
@@ -226,20 +225,41 @@ const Lecture6 = (props) => {
       </ul>
     </div>
 
+    let lectureMiniTitle =
+      <div>
+        <h4 className="text-center"><b>『{LecturesInfo[lectureId].book.name}』<br/> {LecturesInfo[lectureId].book.author}&nbsp;著</b></h4>
+        <h4 className="text-center">
+        <b>開講期間:&nbsp;{getFormatDate(LecturesInfo[lectureId].lecture.lectureStartDate).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.lectureStartDate).slice(6,9)}日({dayOfWeek(LecturesInfo[lectureId].lecture.lectureStartDate.getDay())})&nbsp;~&nbsp;
+        {getFormatDate(LecturesInfo[lectureId].lecture.lectureEndDate).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.lectureEndDate).slice(6,9)}日({dayOfWeek(LecturesInfo[lectureId].lecture.lectureEndDate.getDay())})
+        </b>
+        </h4>
+        <h4 className="text-center">
+        <b>講義時間:&nbsp;{LecturesInfo[lectureId]["lecture"].lectureTime[0]}
+        </b>
+        </h4>
+      </div>
+
+      if (LecturesInfo[lectureId].book.author === ""){
+        lectureMiniTitle =
+        <div>
+          <h4 className="text-center"><b>『{LecturesInfo[lectureId].book.name}』</b></h4>
+          <h4 className="text-center">
+          <b>開講期間:&nbsp;{getFormatDate(LecturesInfo[lectureId].lecture.lectureStartDate).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.lectureStartDate).slice(6,9)}日({dayOfWeek(LecturesInfo[lectureId].lecture.lectureStartDate.getDay())})&nbsp;~&nbsp;
+          {getFormatDate(LecturesInfo[lectureId].lecture.lectureEndDate).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.lectureEndDate).slice(6,9)}日({dayOfWeek(LecturesInfo[lectureId].lecture.lectureEndDate.getDay())})
+          </b>
+          </h4>
+          <h4 className="text-center">
+          <b>講義時間:&nbsp;{LecturesInfo[lectureId]["lecture"].lectureTime[0]}
+          </b>
+          </h4>
+        </div>
+      }
+
     return(
       <Container fluid>
         <Row>
           <Col xs={12}>
-            <h4 className="text-center"><b>『{LecturesInfo[lectureId].book.name}』<br/> {LecturesInfo[lectureId].book.author}&nbsp;著</b></h4>
-            <h4 className="text-center">
-            <b>開講期間:&nbsp;{getFormatDate(LecturesInfo[lectureId].lecture.lectureStartDate).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.lectureStartDate).slice(6,9)}日({dayOfWeek(LecturesInfo[lectureId].lecture.lectureStartDate.getDay())})&nbsp;~&nbsp;
-            {getFormatDate(LecturesInfo[lectureId].lecture.lectureEndDate).slice(4,6)}月{getFormatDate(LecturesInfo[lectureId].lecture.lectureEndDate).slice(6,9)}日({dayOfWeek(LecturesInfo[lectureId].lecture.lectureEndDate.getDay())})
-            </b>
-            </h4>
-            <h4 className="text-center">
-            <b>講義時間:&nbsp;{LecturesInfo[lectureId]["lecture"].lectureTime[0]}
-            </b>
-            </h4>
+            {lectureMiniTitle}
           </Col>
           <Col xs={12}>
             {content}
