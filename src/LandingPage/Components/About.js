@@ -17,7 +17,7 @@ const About = () => {
       <Image src={founder_photo}
         width="200" height="200" className="d-block d-md-none" fluid roundedCircle alt="profile-photo"/>
       <h5 className="d-md-none">Founder：大石 航平</h5>
-      <p>大学卒業後スタートアップで海外市場開拓・営業に従事し、インド・フィリピンに赴任。その後、国際協力機構(JICA)で国際協力に携わり、アジア・東欧・中米の低所得者向け家計管理・金融サービス利用向上プロジェクトを実施。<br/>JICAを退職し、香港のプログラミングコース「Altcademy」を修了、The Five Booksを立ち上げる。愛読する古典は『生物から見た世界』、『道徳感情論』。
+      <p>大学卒業後スタートアップで海外市場開拓・営業に従事し、インド・フィリピンに赴任。その後、国際協力機構(JICA)で、アジア・東欧・中米の低所得者向け家計管理・金融サービス利用向上プロジェクトに携わる。<br/>JICAを退職し、2020年8月よりThe Five Booksを立ち上げる。好きな古典は『生物から見た世界』、『道徳感情論』。
       </p>
     </div>
   </div>
