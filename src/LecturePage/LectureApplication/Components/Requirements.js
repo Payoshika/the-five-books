@@ -14,14 +14,14 @@ const Requirements = () => {
         <Image className="description-img" src={femaleLecturer} width="100" height="100" rounded/>
         <div className="requirements-detail d-flex flex-column justify-content-start align-items-center">
           <h4><b>研究者である</b></h4>
-          <p>博士課程の研究者、大学講師・教員、学外で研究活動を行う方など
+          <p>博士課程の研究者、大学講師・教員、学外で研究活動を行う方で、学会誌等で論文を査読付で掲載された実績があること。
           </p>
         </div>
       </div>
       <div className="requirements d-flex flex-column justify-content-center align-items-center my-3 mx-5">
         <Image className="description-img" src={teachingExperience} width="100" height="100" rounded/>
         <div className="requirements-detail d-flex flex-column justify-content-start align-items-center">
-          <h4><b>講義経験を持つ</b></h4>
+          <h4><b>講義経験を有する</b></h4>
           <p>学内・学外での講義・講演の経験をお持ちの方。(高校での出張講義経験やオンラインでのイベントへの登壇なども含みます。)
           </p>
         </div>

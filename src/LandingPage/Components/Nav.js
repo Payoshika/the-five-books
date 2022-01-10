@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import logo from "./img/logo.png"
 
 const Nav = (props) => {
   const [hide, setHide] = useState(true);

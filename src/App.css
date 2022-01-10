@@ -117,10 +117,10 @@ hr {
 
 /* Register area */
 .btn {
-  border: 0.5px solid #222831eb !important;
+  border: 0.5px solid #ced4da !important;
 }
 .btn:hover {
-  background-color: #c7c8ca;
+  background-color: #ced4da;
   border: 0.5px solid transparent !important;
 }
 
@@ -270,8 +270,17 @@ input[type="radio"]{
   max-width: 55rem;
 }
 
+.delete-area {
+  background: #c7c8ca;
+}
+.delete-area:hover {
+  background: #c7c8ca;
+  color : white;
+  cursor: pointer;
+}
+
 .searched-items:hover{
-  background-color: #222831eb;
+  background-color: #c7c8ca;
 }
 
 .searched-items > div {
@@ -393,6 +402,11 @@ input[type="radio"]{
   justify-content: center;
 }
 
+.past-lecture {
+  width:50rem;
+  height: 30rem;
+}
+
 .coming-lectures >*:hover{
   background-color:rgba(199,200,202,0.3);
   transition: 0.5s;
@@ -436,29 +450,10 @@ input[type="radio"]{
 
 /* Book_GUide */
 .book_guide_banner {
-  background-image: url("./LecturePage/LectureApplication/img/book_guide_banner.png");
-  background-size: cover;
+  background: #f4f4f4;
   width: 100%;
-  padding-top: 25%;
+  padding-top: 15%;
   position: relative;
-}
-
-.book_guide_banner::before{
-content: '';
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-background-color: rgba(0,0,0,0.1);
-z-index: 0;
-}
-
-.book_guide_banner h3{
-  font-size: 1.5rem;
-  position: absolute;
-  top:15%;
-  left:8%;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {

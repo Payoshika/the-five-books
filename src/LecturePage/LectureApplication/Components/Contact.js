@@ -101,7 +101,7 @@ const Contact = () => {
         />
     </Form.Group>
     <Form.Group controlId="researchMap" required>
-      <Form.Label>reseachmap URL</Form.Label>
+      <Form.Label>reseachmap URL (ご経歴が閲覧可能であるURL)</Form.Label>
       <Form.Control
         type="text"
         name="researchMap"

@@ -7,6 +7,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import ListGroup from 'react-bootstrap/ListGroup'
 import axios from "axios"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
 
 const BookRequest = () => {
   const [input, setInput] = useState("")
@@ -40,6 +42,12 @@ const BookRequest = () => {
     }
   }
 
+  const deleteSerach = (event) => {
+    event.preventDefault();
+    setSearchResult(<div></div>)
+    setInput("")
+  }
+
   const searchBook = () => {
     if (input && input.length >= 2){
       let searchUrl = encodeURI(`https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=1025599016601623375&title=${input}`)
@@ -51,25 +59,30 @@ const BookRequest = () => {
           </div>
         ):
         setSearchResult(
-        response.data["Items"].slice(0,8).map(books => {
-          return(
-          <ListGroup.Item
-          key={books["Item"]["title"]}
-          className="searched-items d-flex justify-content-start flex-nowrap　overflow-hidden"
-          >
-          <div className="book-name"><p>{books["Item"]["title"]}</p></div>
-          <div className="book-author"><p>{books["Item"]["author"]}</p></div>
-          <div className="book-publisher"><p>{books["Item"]["publisherName"]}</p></div>
-          <div className="book-img-url d-none"><p>{books["Item"]["largeImageUrl"]}</p></div>
-          <div className="book-url d-none"><p>{books["Item"]["itemUrl"]}</p></div>
-          <Button
-            variant="outline-secondary"
-            className="text-nowrap ml-auto"
-            onClick={(event)　=> requestBook(event)}
-            >リクエスト
-          </Button>
-        </ListGroup.Item>
-      )})
+          <div className="border rounded-top rounded-bottom">
+            <div className="border-0 delete-area d-flex align-contents-right justify-content-center"  onClick={(event)　=> deleteSerach(event)}>
+              <p className="h3 pt-2"> <FontAwesomeIcon icon={faCaretUp}/></p>
+            </div>
+            {response.data["Items"].slice(0,8).map(books => {
+              return(
+                <ListGroup.Item
+                key={books["Item"]["title"]}
+                className="border-0 searched-items d-flex justify-content-start flex-nowrap　overflow-hidden"
+                >
+                <div className="book-name"><p>{books["Item"]["title"]}</p></div>
+                <div className="book-author"><p>{books["Item"]["author"]}</p></div>
+                <div className="book-publisher"><p>{books["Item"]["publisherName"]}</p></div>
+                <div className="book-img-url d-none"><p>{books["Item"]["largeImageUrl"]}</p></div>
+                <div className="book-url d-none"><p>{books["Item"]["itemUrl"]}</p></div>
+                <Button
+                  variant="outline-secondary"
+                  className="text-nowrap ml-auto"
+                  onClick={(event)　=> requestBook(event)}
+                  >リクエスト
+                </Button>
+              </ListGroup.Item>
+          )})}
+          </div>
       )
       }
       )

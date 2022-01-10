@@ -56,8 +56,7 @@ const Contact = () => {
         <Form.Control as="select"  name="inquiry_genre">
           <option value="サービスの利用に関して">サービスの利用に関して</option>
           <option value="講師登録について">講師登録に関して</option>
-          <option value="メディアからのお問い合わせ">メディアからのお問い合わせ</option>
-          <option value="採用に関して">採用に関して</option>
+          <option value="その他のお問い合わせ">その他のお問い合わせ</option>
         </Form.Control>
       </Form.Group>
       <Form.Group controlId="email" required>
