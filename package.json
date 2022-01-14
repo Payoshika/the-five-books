@@ -25,7 +25,7 @@
     "react-markdown": "^5.0.3",
     "react-native-simple-dialogs": "^1.3.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.1",
     "react-stripe-checkout": "^2.6.3"
   },
   "scripts": {
@@ -50,7 +50,7 @@
     ]
   },
   "engines": {
-    "node": "13.12.0",
-    "npm": "6.14.4"
+    "node": "17.3.1",
+    "npm": "8.3.0"
   }
 }
