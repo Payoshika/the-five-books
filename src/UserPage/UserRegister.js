@@ -57,13 +57,13 @@ const UserRegister = (props) => {
       </Form.Group>
       <Form.Group className= {`d-flex justify-content-center`}>
         <Button
-          className="register-btn"
-          variant="dark"
+          className="the-five-books-btn"
           type="submit"
           onClick={(event)=>userRegistration(event)}
-          >登録する
+          >  登録する
         </Button>
         <Button
+          className="the-five-books-btn cancel"
           variant="outline-secondary"
           type="submit"
           ><Link to="./">キャンセル</Link>
@@ -97,13 +97,13 @@ const UserRegister = (props) => {
       </Form.Group>
       <Form.Group className= {`d-flex justify-content-center`}>
         <Button
-          className="login-btn"
-          variant="light"
+          className="the-five-books-btn"
           type="submit"
           onClick={(event)=>userLogin(event)}
-          >ログイン
+          >  ログイン
         </Button>
         <Button
+          className="the-five-books-btn cancel"
           variant="outline-secondary"
           type="submit"
           ><Link to="./">キャンセル</Link>
