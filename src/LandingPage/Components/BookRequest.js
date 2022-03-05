@@ -26,6 +26,7 @@ const BookRequest = () => {
         />
       <InputGroup.Prepend>
         <Button
+          className="ml-1"
           variant="outline-secondary"
           onClick={()=>searchBook()}
           >探す</Button>

@@ -123,12 +123,25 @@ hr {
   height: auto;
 }
 
+.book-url > * {
+  border: 1px solid #222831eb;
+  border-radius: 20px;
+}
+
+.book-url :hover {
+  border-radius: 20px;
+  background-color: #c7c8ca;
+}
+
+
 /* Register area */
 .btn {
-  border: 0.5px solid #ced4da !important;
+  border: 1px solid #222831eb;
+  border-radius: 10px !important;
 }
 .btn:hover {
-  background-color: #f4f4f4;
+  background-color: white;
+  /* f4f4f4 */
   border: 0.5px solid #222831eb !important;
   color: #222831eb
 }
@@ -223,20 +236,16 @@ input[type="radio"]{
 }
 
 .lecuture-date{
-  background-color: #63a6d1;
+  background-color: #666666;
   color: white;
 }
 
 .lecuture-date:enabled:hover{
-  background-color: #63a6d1;
+  background-color: #555555 !important;
   color: white;
 }
 
 .lecture-duration{
-  background-color: #e4e3e3;
-  color: #222831eb;
-}
-.lecture-duration:enabled:hover{
   background-color: #e4e3e3;
   color: #222831eb;
 }
@@ -360,6 +369,15 @@ input[type="radio"]{
   border: 1px solid #f4f4f4;
   font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.125em !important;
+}
+
+.react-calendar__tile--now:enabled, .react-calendar__tile--now:enabled {
+  background-color: #c7c8ca !important;
+  color: white;
+}
+
+.react-calendar__tile--now:enabled:hover, .react-calendar__tile--now:enabled:focus {
+  background-color: #c7c8ca !important;
 }
 
 .lecture-detail{

@@ -7,6 +7,10 @@ const LecturesInfo = [
       "author" : "ショーペンハウエル",
       "publisher" : "岩波文庫",
       "image" : "./img/読書について.jpg",
+      "isbn":"978-4003363225",
+      "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F113330%2F",
+      "amazonAffiliateUrl":"https://amzn.to/35GLFnI",
+      "calilUrl":"https://calil.jp/book/9784003363225"
       },
     lecturer:{
       "name" : "山野 弘樹",
@@ -41,6 +45,10 @@ const LecturesInfo = [
       "author" : "プラトン",
       "publisher" : "岩波文庫",
       "image" : "./img/Theaitetos.jpg",
+      "isbn":"978-4003580028",
+      "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13058474%2F",
+      "amazonAffiliateUrl":"https://amzn.to/35jZOYl",
+      "calilUrl":"https://calil.jp/book/9784003580028"
       },
     lecturer:{
       "name" : "山野 弘樹",
@@ -74,6 +82,10 @@ const LecturesInfo = [
       "author" : "ポール・G・クレッシー",
       "publisher" : "ハーベスト社",
       "image" : "./img/taxidancehall.jpg",
+      "isbn":"978-4863390935",
+      "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15217792%2F",
+      "amazonAffiliateUrl":"https://amzn.to/3tp4ofG",
+      "calilUrl":"https://calil.jp/book/9784863390935"
       },
     lecturer:{
       "name" : "関 駿平",
@@ -107,6 +119,9 @@ const LecturesInfo = [
         "author" : "H.ベルクソン",
         "publisher" : "平凡社",
         "image" : "./img/精神のエネルギー.jpg",
+        "isbn":"978-4476011999",
+        "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F527900%2F",
+        "amazonAffiliateUrl":"https://amzn.to/3MjpC7r","calilUrl":"https://calil.jp/book/9784476011999"
         },
       lecturer:{
         "name" : "濱田 明日郎",
@@ -140,6 +155,10 @@ const LecturesInfo = [
         "author" : "アリストテレス",
         "publisher" : "光文社",
         "image" : "./img/詩学.jpg",
+        "isbn":"978-4334753979",
+        "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15830836%2F",
+        "amazonAffiliateUrl":"https://amzn.to/3Mg5FOO",
+        "calilUrl":"https://calil.jp/book/9784334753979"
         },
       lecturer:{
         "name" : "山野 弘樹",
@@ -173,6 +192,10 @@ const LecturesInfo = [
       "author" : "ショーペンハウエル",
       "publisher" : "岩波文庫",
       "image" : "./img/読書について.jpg",
+      "isbn":"978-4003363225",
+      "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F113330%2F",
+      "amazonAffiliateUrl":"https://amzn.to/35GLFnI",
+      "calilUrl":"https://calil.jp/book/9784003363225"
       },
     lecturer:{
       "name" : "山野 弘樹",
@@ -206,6 +229,10 @@ const LecturesInfo = [
     "author" : "ルネ・デカルト",
     "publisher" : "岩波文庫",
     "image" : "./img/方法序説.jpg",
+    "isbn":"978-4003361313",
+    "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F901509%2F",
+    "amazonAffiliateUrl":"https://amzn.to/3HR1iGJ",
+    "calilUrl":"https://calil.jp/book/9784003361313"
     },
     lecturer:{
       "name" : "三浦 隼暉",
@@ -239,6 +266,10 @@ const LecturesInfo = [
   "author" : "W.リップマン",
   "publisher" : "岩波文庫",
   "image" : "./img/世論.jpg",
+  "isbn":"978-4003422212",
+  "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F271562%2F",
+  "amazonAffiliateUrl":"https://amzn.to/3hxm6rS",
+  "calilUrl":"https://calil.jp/book/9784003422212"
   },
   lecturer:{
     "name" : "佐藤 信吾",
@@ -273,6 +304,10 @@ const LecturesInfo = [
   "author" : "イマヌエル・カント",
   "publisher" : "中央公論新社",
   "image" : "./img/人倫の形而上学の基礎づけ.jpg",
+  "isbn":"978-4121600769",
+  "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F1771515%2F",
+  "amazonAffiliateUrl":"https://amzn.to/3IE6wqs",
+  "calilUrl":"https://calil.jp/book/9784121600769"
   },
   lecturer:{
     "name" : "髙木 裕貴",
@@ -306,6 +341,10 @@ const LecturesInfo = [
       "author" : "E.H.カー",
       "publisher" : "岩波新書",
       "image" : "./img/歴史とは何か.jpg",
+      "isbn":"978-4004130017",
+      "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F96441%2F",
+      "amazonAffiliateUrl":"https://amzn.to/3C89Ozy",
+      "calilUrl":"https://calil.jp/book/9784004130017"
       },
     lecturer:{
       "name" : "山野 弘樹",
@@ -339,6 +378,10 @@ const LecturesInfo = [
         "author" : "H.ベルクソン",
         "publisher" : "平凡社",
         "image" : "./img/思考と動き.jpg",
+        "isbn":"978-4582767841",
+        "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F12254382%2F",
+        "amazonAffiliateUrl":"https://amzn.to/3szfiQN",
+        "calilUrl":"https://calil.jp/book/9784582767841"
         },
       lecturer:{
         "name" : "濱田 明日郎",
@@ -372,6 +415,10 @@ const LecturesInfo = [
         "author" : "プラトン",
         "publisher" : "岩波書店/光文社",
         "image" : "./img/メノン.jpg",
+        "isbn":"978-4334752446",
+        "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F11562563%2F",
+        "amazonAffiliateUrl":"https://amzn.to/3MmdZwA",
+        "calilUrl":"https://calil.jp/book/9784334752446"
         },
       lecturer:{
         "name" : "山野 弘樹",
@@ -405,6 +452,10 @@ const LecturesInfo = [
         "author" : "ハーマン・メルヴィル",
         "publisher" : "光文社",
         "image" : "./img/書記バートルビー.jpg",
+        "isbn":"978-4334753160",
+        "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13377957%2F",
+        "amazonAffiliateUrl":"https://amzn.to/3vQFeJZ",
+        "calilUrl":"https://calil.jp/book/9784334753160"
         },
       lecturer:{
         "name" : "冨塚 亮平",
@@ -438,6 +489,10 @@ const LecturesInfo = [
         "author" : "九鬼周造",
         "publisher" : "岩波書店",
         "image" : "./img/「いき」の構造.jpg",
+        "isbn":"978-4003314616",
+        "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F4069%2F",
+        "amazonAffiliateUrl":"https://amzn.to/3IEvjKN",
+        "calilUrl":"https://calil.jp/book/9784003314616"
         },
       lecturer:{
         "name" : "岡田 悠汰",
@@ -471,6 +526,10 @@ const LecturesInfo = [
         "author" : "スピノザ",
         "publisher" : "岩波書店",
         "image" : "./img/知性改善論.jpg",
+        "isbn":"978-4003361535",
+        "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F1613772%2F",
+        "amazonAffiliateUrl":"https://amzn.to/3HEW8NV",
+        "calilUrl":"https://calil.jp/book/9784003361535"
         },
       lecturer:{
         "name" : "三浦 隼暉",
@@ -504,6 +563,10 @@ const LecturesInfo = [
         "author" : "アリストテレス",
         "publisher" : "光文社",
         "image" : "./img/詩学.jpg",
+        "isbn":"978-4334753979",
+        "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15830836%2F",
+        "amazonAffiliateUrl":"https://amzn.to/3Mg5FOO",
+        "calilUrl":"https://calil.jp/book/9784334753979"
         },
       lecturer:{
         "name" : "山野 弘樹",
@@ -537,6 +600,10 @@ const LecturesInfo = [
     "author" : "イマヌエル・カント",
     "publisher" : "光文社",
     "image" : "./img/永遠平和のために.jpg",
+    "isbn":"978-4334751081",
+    "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F4123230%2F",
+    "amazonAffiliateUrl":"https://amzn.to/3tqM7yz",
+    "calilUrl":"https://calil.jp/book/9784334751081"
     },
     lecturer:{
       "name" : "髙木 裕貴",
@@ -570,6 +637,10 @@ const LecturesInfo = [
     "author" : "ヴァルター・ベンヤミン",
     "publisher" : "晶文社",
     "image" : "./img/複製技術時代の芸術.jpg",
+    "isbn":"978-4794912664",
+    "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F1105269%2F",
+    "amazonAffiliateUrl":"https://amzn.to/35rF0Ou",
+    "calilUrl":"https://calil.jp/book/9784794912664"
     },
     lecturer:{
       "name" : "松本 理沙",
@@ -603,6 +674,10 @@ const LecturesInfo = [
           "author" : "H.ベルクソン",
           "publisher" : "平凡社",
           "image" : "./img/時間と自由.jpg",
+          "isbn":"978-4480087058",
+          "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F1453366%2F",
+          "amazonAffiliateUrl":"https://amzn.to/35KS80K",
+          "calilUrl":"https://calil.jp/book/9784480087058"
           },
         lecturer:{
           "name" : "濱田 明日郎",
@@ -636,6 +711,10 @@ const LecturesInfo = [
       "author" : "ピーター・バーガー",
       "publisher" : "新曜社",
       "image" : "./img/現実の社会的構成.jpg",
+      "isbn":"978-4788508392",
+      "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F1533906%2F",
+      "amazonAffiliateUrl":"https://amzn.to/3MijNam",
+      "calilUrl":"https://calil.jp/book/9784788508392"
       },
       lecturer:{
         "name" : "佐藤 信吾",
@@ -669,6 +748,10 @@ const LecturesInfo = [
             "author" : "E.H.カー",
             "publisher" : "岩波新書",
             "image" : "./img/歴史とは何か.jpg",
+            "isbn":"978-4004130017",
+            "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F96441%2F",
+            "amazonAffiliateUrl":"https://amzn.to/3C89Ozy",
+            "calilUrl":"https://calil.jp/book/9784004130017"
             },
           lecturer:{
             "name" : "山野 弘樹",
@@ -702,6 +785,10 @@ const LecturesInfo = [
               "author" : "本居宣長",
               "publisher" : "岩波文庫",
               "image" : "./img/石上私淑言.jpg",
+              "isbn":"978-4003510117",
+              "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F1538282%2F",
+              "amazonAffiliateUrl":"https://amzn.to/3KcqgBHH",
+              "calilUrl":"https://calil.jp/book/9784003510117"
               },
             lecturer:{
               "name" : "藤井 嘉章",
@@ -735,6 +822,10 @@ const LecturesInfo = [
               "author" : "ライプニッツ",
               "publisher" : "岩波書店",
               "image" : "./img/モナドロジー.jpg",
+              "isbn":"978-4121600745",
+              "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F1751284%2F",
+              "amazonAffiliateUrl":"https://amzn.to/3K7wP8w",
+              "calilUrl":"https://calil.jp/book/9784121600745"
               },
             lecturer:{
               "name" : "三浦 隼暉",
@@ -768,6 +859,10 @@ const LecturesInfo = [
               "author" : "アリストテレス",
               "publisher" : "光文社",
               "image" : "./img/ニコマコス倫理学上.jpg",
+              "isbn":"978-4334753221",
+              "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13499624%2F",
+              "amazonAffiliateUrl":"https://amzn.to/3IDSXad",
+              "calilUrl":"https://calil.jp/book/9784334753221"
               },
             lecturer:{
               "name" : "山野 弘樹",
@@ -801,6 +896,10 @@ const LecturesInfo = [
               "author" : "マルティン・ハイデガー",
               "publisher" : "平凡社ライブラリー",
               "image" : "./img/技術への問い.jpg",
+              "isbn":"978-4582768008",
+              "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F12506453%2F",
+              "amazonAffiliateUrl":"https://amzn.to/3vALBRw",
+              "calilUrl":"https://calil.jp/book/9784582768008"
               },
             lecturer:{
               "name" : "岡田 悠汰",
@@ -834,6 +933,10 @@ const LecturesInfo = [
           "author" : "マイケル・サンデル",
           "publisher" : "ナカニシヤ出版",
           "image" : "./img/完全な人間を目指さなくてもよい理由.jpg",
+          "isbn":"978-4779504761",
+          "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F6756934%2F",
+          "amazonAffiliateUrl":"https://amzn.to/3pvcd277",
+          "calilUrl":"https://calil.jp/book/9784779504761"
           },
           lecturer:{
             "name" : "髙木 裕貴",
@@ -867,6 +970,10 @@ const LecturesInfo = [
           "author" : "クレア・ビショップ",
           "publisher" : "フィルムアート社",
           "image" : "./img/人工地獄.jpg",
+          "isbn":"978-4845915750",
+          "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14243879%2F",
+          "amazonAffiliateUrl":"https://amzn.to/3tsbmRe",
+          "calilUrl":"https://calil.jp/book/9784845915750"
           },
           lecturer:{
             "name" : "松本 理沙",
@@ -900,6 +1007,10 @@ const LecturesInfo = [
               "author" : "野家啓一",
               "publisher" : "岩波書店",
               "image" : "./img/物語の哲学.jpg",
+              "isbn":"978-4006001391",
+              "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F1764357%2F",
+              "amazonAffiliateUrl":"https://amzn.to/3IAqn9Q",
+              "calilUrl":"https://calil.jp/book/9784006001391"
               },
             lecturer:{
               "name" : "山野 弘樹",
@@ -933,6 +1044,10 @@ const LecturesInfo = [
               "author" : "トーマス・クーン",
               "publisher" : "みすず書房",
               "image" : "./img/科学革命の構造.jpg",
+              "isbn":"978-4622016670",
+              "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F14313%2F",
+              "amazonAffiliateUrl":"https://amzn.to/3vABY52",
+              "calilUrl":"https://calil.jp/book/9784622016670"
               },
             lecturer:{
               "name" : "鶴田 想人",
@@ -966,6 +1081,10 @@ const LecturesInfo = [
                 "author" : "",
                 "publisher" : "岩波文庫",
                 "image" : "./img/新古今和歌集.jpg",
+                "isbn":"978-4044001025",
+                "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F4339078%2F",
+                "amazonAffiliateUrl":"https://amzn.to/34cErHM",
+                "calilUrl":"https://calil.jp/book/9784044001025"
                 },
               lecturer:{
                 "name" : "藤井 嘉章",
@@ -999,6 +1118,10 @@ const LecturesInfo = [
                   "author" : "H.ベルクソン",
                   "publisher" : "講談社",
                   "image" : "./img/物質と記憶.jpg",
+                  "isbn":"978-4065156377",
+                  "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F15862308%2F",
+                  "amazonAffiliateUrl":"https://amzn.to/3IGQvQz",
+                  "calilUrl":"https://calil.jp/book/9784065156377"
                   },
                 lecturer:{
                   "name" : "濱田 明日郎",
@@ -1032,6 +1155,10 @@ const LecturesInfo = [
                     "author" : "スタンレー・ミルグラム",
                     "publisher" : "河出文庫",
                     "image" : "./img/服従の心理.jpg",
+                    "isbn":"9784309244549",
+                    "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F5910344%2F",
+                    "amazonAffiliateUrl":"https://amzn.to/3tlxZ9Q",
+                    "calilUrl":"https://calil.jp/book/9784309244549"
                     },
                   lecturer:{
                     "name" : "仲嶺 真",
@@ -1065,6 +1192,9 @@ const LecturesInfo = [
                     "author" : "アリストテレス",
                     "publisher" : "光文社",
                     "image" : "./img/二コマコス倫理学下.jpg",
+                    "isbn":"978-4334753221","rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F13499624%2F",
+                    "amazonAffiliateUrl":"https://amzn.to/3IDSXad",
+                    "calilUrl":"https://calil.jp/book/9784334753221"
                     },
                   lecturer:{
                     "name" : "山野 弘樹",
@@ -1131,6 +1261,10 @@ const LecturesInfo = [
                       "author" : "H.ベルクソン",
                       "publisher" : "平凡社",
                       "image" : "./img/精神のエネルギー.jpg",
+                      "isbn":"978-4476011999",
+                      "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F527900%2F",
+                      "amazonAffiliateUrl":"https://amzn.to/3MjpC7r",
+                      "calilUrl":"https://calil.jp/book/9784476011999"
                       },
                     lecturer:{
                       "name" : "濱田 明日郎",
@@ -1165,6 +1299,10 @@ const LecturesInfo = [
                       "author" : "マイケル・ポランニー",
                       "publisher" : "ちくま学芸文庫",
                       "image" : "./img/暗黙知の次元.jpg",
+                      "isbn":"978-4480088161",
+                      "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F1624041%2F",
+                      "amazonAffiliateUrl":"https://amzn.to/3CcIDE4",
+                      "calilUrl":"https://calil.jp/book/9784480088161"
                       },
                     lecturer:{
                       "name" : "鶴田 想人",
@@ -1198,6 +1336,9 @@ const LecturesInfo = [
                         "author" : "",
                         "publisher" : "岩波書店",
                         "image" : "./img/唐詩選.jpg",
+                        "isbn":"978-4044072162",
+                        "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F6807709%2F","amazonAffiliateUrl":"https://amzn.to/3CaUoL6",
+                        "calilUrl":"https://calil.jp/book/9784044072162"
                         },
                       lecturer:{
                         "name" : "藤井嘉章",
@@ -1230,6 +1371,10 @@ const LecturesInfo = [
     "author" : "イマヌエル・カント",
     "publisher" : "中央公論新社",
     "image" : "./img/人倫の形而上学の基礎づけ.jpg",
+    "isbn":"978-4121600769",
+    "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F1771515%2F",
+    "amazonAffiliateUrl":"https://amzn.to/3IE6wqs",
+    "calilUrl":"https://calil.jp/book/9784121600769"
     },
     lecturer:{
       "name" : "髙木 裕貴",
@@ -1268,6 +1413,10 @@ const LecturesInfo = [
     "author" : "ルネ・デカルト",
     "publisher" : "ちくま学芸文庫",
     "image" : "./img/省察.jpg",
+    "isbn":"978-4480089656",
+    "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F3985050%2F",
+    "amazonAffiliateUrl":"https://amzn.to/35Ooqbc",
+    "calilUrl":"https://calil.jp/book/9784480089656"
     },
     lecturer:{
       "name" : "三浦 隼暉",
@@ -1300,7 +1449,11 @@ const LecturesInfo = [
   "name" : "感性的なもののパルタージュ:美学と政治",
   "author" : "ジャック ランシエール",
   "publisher" : "法政大学出版局",
-  "image" : "./img/感性的なもののパルタージュ.jpg"
+  "image" : "./img/感性的なもののパルタージュ.jpg",
+  "isbn":"978-4588009310",
+  "rakutenAffiliateUrl":"https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F6281151%2F",
+  "amazonAffiliateUrl":"https://amzn.to/3sFx44U",
+  "calilUrl":"https://calil.jp/book/9784588009310"
   },
   lecturer:{
     "name" : "松本 理沙",

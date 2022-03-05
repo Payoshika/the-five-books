@@ -19,6 +19,7 @@ const Lecture6 = (props) => {
   const bookimg = LecturesInfo[lectureId]["book"].image
   const lecturerimg = LecturesInfo[lectureId]["lecturer"].lecturerPhoto
   const noAuthor = ""
+
   async function createCheckoutSession () {
     const apiURL = process.env.REACT_APP_API_URL
     const response = await fetch(`${apiURL}/payment/create`);
@@ -132,7 +133,6 @@ const Lecture6 = (props) => {
         }
       </ListGroup>
 
-
     let schedule =
       <div className="schedule d-none d-md-flex justify-content-center">
         <Calendar
@@ -142,6 +142,26 @@ const Lecture6 = (props) => {
           tileClassName = {(value)=>getTileClassName(value.date)}
         />
       </div>
+
+
+      const lectureBookUrlinfo = {
+        "rakuten": LecturesInfo[lectureId].book.rakutenAffiliateUrl,
+        "amazon": LecturesInfo[lectureId].book.amazonAffiliateUrl,
+        "calil": LecturesInfo[lectureId].book.calilUrl
+        }
+
+    const bookPurchasePageUrl =
+    <div className="d-flex flex-row book-url">
+      <a className="mr-2 my-1" href={lectureBookUrlinfo.amazon}>
+      <p className="mb-0 mx-2 p-1"><b>Amazon</b></p>
+      </a>
+      <a className="mr-2 my-1" href={lectureBookUrlinfo.rakuten}>
+      <p className="mb-0 mx-2 p-1"><b>楽天ブックス</b></p>
+      </a>
+      <a className="mr-2 my-1" href={lectureBookUrlinfo.calil}>
+      <p className="mb-0 mx-2 p-1"><b>カーリル</b></p>
+      </a>
+    </div>
 
     const content =
       <div className="top-lecture d-flex justify-content-center align-items-center flex-wrap">
@@ -200,6 +220,12 @@ const Lecture6 = (props) => {
           <div className="lecture-detail mt-4">
             <h5><u>参加料金</u></h5>
             <h4><b>{LecturesInfo[lectureId].lecture.price}円 ({LecturesInfo[lectureId].lecture.price/LecturesInfo[lectureId].lecture.liveLectureDate.length}円/講義×{LecturesInfo[lectureId].lecture.liveLectureDate.length}回)</b></h4>
+          </div>
+          <div className="lecture-detail mt-4">
+            <h5><u>書籍を用意する</u></h5>
+            <div className="d-flex">
+              {bookPurchasePageUrl}
+            </div>
           </div>
         </div>
       </div>

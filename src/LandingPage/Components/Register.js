@@ -47,7 +47,8 @@ const Register = () => {
           onChange={(event)=>setEmail(event.target.value)}/>
         <InputGroup.Prepend>
           <Button
-            variant="outline-secondary"
+            className="ml-1"
+            variant="outline-dark"
             onClick={()=>subscribe()}
             >登録</Button>
         </InputGroup.Prepend>
