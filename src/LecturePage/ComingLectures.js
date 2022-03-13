@@ -33,7 +33,7 @@ const authorInfo = (eachLecture) => {
   )
 }
 
-const lectureReverseOrder = LecturesInfo.reverse()
+const lectureReverseOrder = [...LecturesInfo].reverse()
 
 const pastLecture =
   lectureReverseOrder.map((eachLecture, index) => {
