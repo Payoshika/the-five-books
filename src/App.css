@@ -132,7 +132,16 @@ hr {
   border-radius: 20px;
   background-color: #c7c8ca;
 }
+/* PastLectures area */
+.book-info {
+  width: auto;
+  height: auto;
+}
 
+.book-container {
+  min-width: 30vh;
+  max-width: 40vh;
+}
 
 /* Register area */
 .btn {

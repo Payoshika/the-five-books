@@ -3,7 +3,7 @@ import Home from "./LandingPage/Home"
 import {Nav, Footer} from "./LandingPage/Components/index.js"
 import {UserRegister, UserPage, UserPage9999, UserProfileEdit, UserPasswordUpdate, UserPasswordRegeneration} from "./UserPage"
 import {LectureMyPage} from "./LecturePage/LectureMyPage/index.js"
-import {Lecture6, Lecture9999, ComingLectures, BookGuide, LecturerRegister, LectureCreate} from "./LecturePage/index.js"
+import {Lecture6, PastLectures, Lecture9999, ComingLectures, BookGuide, LecturerRegister, LectureCreate} from "./LecturePage/index.js"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css"
 import axios from "axios"
@@ -186,6 +186,14 @@ export default class App extends React.Component {
                 loggedInStatus= {this.state.loggedInStatus}
                 name = {this.state.name}
                 email = {this.state.email}
+                />)}
+                >
+              </Route>
+              <Route
+                path="/past_lectures"
+                render = {props => (<PastLectures {...props}
+                checkLoginStatus={this.checkLoginStatus}
+                loggedInStatus= {this.state.loggedInStatus}
                 />)}
                 >
               </Route>

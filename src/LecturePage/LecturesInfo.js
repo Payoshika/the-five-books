@@ -2,7 +2,7 @@ import React from "react"
 
 
 const LecturesInfo = [
-  {
+  { id :1,
     book: {
       "name": "読書について",
       "author": "ショーペンハウエル",
@@ -40,7 +40,7 @@ const LecturesInfo = [
     }
   }
   ,
-  {
+  { id :2,
     book: {
       "name": "テアイテトス",
       "author": "プラトン",
@@ -77,7 +77,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-theaetetus.peatix.com"
     }
   },
-  {
+  { id :3,
     book: {
       "name": "タクシーダンス・ホール",
       "author": "ポール・G・クレッシー",
@@ -114,7 +114,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-taxi-dancehall-cressey.peatix.com"
     }
   },
-  {
+  { id :4,
     book: {
       "name": "精神のエネルギー",
       "author": "H.ベルクソン",
@@ -150,7 +150,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-bergson.peatix.com"
     }
   },
-  {
+  { id :5,
     book: {
       "name": "詩学",
       "author": "アリストテレス",
@@ -187,7 +187,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-schopenhauer.peatix.com/"
     }
   },
-  {
+  { id :6,
     book: {
       "name": "読書について",
       "author": "ショーペンハウエル",
@@ -224,7 +224,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-schopenhauer-books.peatix.com"
     }
   },
-  {
+  { id :7,
     book: {
       "name": "方法序説",
       "author": "ルネ・デカルト",
@@ -261,7 +261,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-discourse-on-the-method.peatix.com"
     }
   },
-  {
+  { id :8,
     book: {
       "name": "世論(上・下)",
       "author": "W.リップマン",
@@ -299,7 +299,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-public-opinion.peatix.com"
     }
   },
-  {
+  { id :9,
     book: {
       "name": "人倫の形而上学の基礎づけ",
       "author": "イマヌエル・カント",
@@ -336,7 +336,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-kant-metaphics-of-morals.peatix.com"
     }
   },
-  {
+  { id :10,
     book: {
       "name": "歴史とは何か",
       "author": "E.H.カー",
@@ -373,7 +373,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-on-history.peatix.com"
     }
   },
-  {
+  { id :11,
     book: {
       "name": "思考と動き",
       "author": "H.ベルクソン",
@@ -410,7 +410,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-bergson-the-creative-mind.peatix.com"
     }
   },
-  {
+  { id :12,
     book: {
       "name": "メノン",
       "author": "プラトン",
@@ -447,7 +447,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-plato-menon.peatix.com"
     }
   },
-  {
+  { id :13,
     book: {
       "name": "書記バートルビー",
       "author": "ハーマン・メルヴィル",
@@ -484,7 +484,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-bartleby-the-scrivener.peatix.com"
     }
   },
-  {
+  { id :14,
     book: {
       "name": "「いき」の構造",
       "author": "九鬼周造",
@@ -521,7 +521,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-the-structure-of-iki.peatix.com"
     }
   },
-  {
+  { id :15,
     book: {
       "name": "知性改善論",
       "author": "スピノザ",
@@ -558,7 +558,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-Improvement-of-the-Understanding.peatix.com"
     }
   },
-  {
+  { id :16,
     book: {
       "name": "詩学",
       "author": "アリストテレス",
@@ -595,7 +595,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-on-poetics-2.peatix.com/"
     }
   },
-  {
+  { id :17,
     book: {
       "name": "永遠平和のために",
       "author": "イマヌエル・カント",
@@ -632,7 +632,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-kant-perpetual-peace.peatix.com"
     }
   },
-  {
+  { id :18,
     book: {
       "name": "複製技術時代の芸術",
       "author": "ヴァルター・ベンヤミン",
@@ -669,7 +669,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-art-in-mecanical-reproduction.peatix.com"
     }
   },
-  {
+  { id :19,
     book: {
       "name": "時間と自由",
       "author": "H.ベルクソン",
@@ -706,7 +706,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-bergson-time-and-free-will.peatix.com"
     }
   },
-  {
+  { id :20,
     book: {
       "name": "現実の社会的構成：知識社会学論考",
       "author": "ピーター・バーガー",
@@ -743,7 +743,7 @@ const LecturesInfo = [
       "peatixURL": "https://peatix.com/event/1948445"
     }
   },
-  {
+  { id :21,
     book: {
       "name": "歴史とは何か",
       "author": "E.H.カー",
@@ -780,7 +780,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-on-history-2.peatix.com"
     }
   },
-  {
+  { id :22,
     book: {
       "name": "石上私淑言",
       "author": "本居宣長",
@@ -817,7 +817,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-on-motoori-norinaga.peatix.com"
     }
   },
-  {
+  { id :23,
     book: {
       "name": "モナドロジー",
       "author": "ライプニッツ",
@@ -854,7 +854,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-monadology.peatix.com"
     }
   },
-  {
+  { id :24,
     book: {
       "name": "ニコマコス倫理学（上巻）",
       "author": "アリストテレス",
@@ -891,7 +891,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-on-nicomachean-ethics-1.peatix.com/"
     }
   },
-  {
+  { id :25,
     book: {
       "name": "技術への問い",
       "author": "マルティン・ハイデガー",
@@ -928,7 +928,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-question-concerning-technology.peatix.com"
     }
   },
-  {
+  { id :26,
     book: {
       "name": "完全な人間を目指さなくてもよい理由",
       "author": "マイケル・サンデル",
@@ -965,7 +965,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-the-case-against-perfection.peatix.com"
     }
   },
-  {
+  { id :27,
     book: {
       "name": "人工地獄",
       "author": "クレア・ビショップ",
@@ -1002,7 +1002,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-artificial-hells.peatix.com"
     }
   },
-  {
+  { id :28,
     book: {
       "name": "物語の哲学",
       "author": "野家啓一",
@@ -1039,7 +1039,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-philosophy-of-narrative.peatix.com/"
     }
   },
-  {
+  { id :29,
     book: {
       "name": "科学革命の構造",
       "author": "トーマス・クーン",
@@ -1076,7 +1076,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-structure-of-scientific-revolutions.peatix.com/"
     }
   },
-  {
+  { id :30,
     book: {
       "name": "新古今和歌集",
       "author": "",
@@ -1113,7 +1113,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-shin-kokin-wakashu.peatix.com"
     }
   },
-  {
+  { id :31,
     book: {
       "name": "物質と記憶",
       "author": "H.ベルクソン",
@@ -1150,7 +1150,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-bergson-matter-and-memory.peatix.com"
     }
   },
-  {
+  { id :32,
     book: {
       "name": "服従の心理",
       "author": "スタンレー・ミルグラム",
@@ -1187,7 +1187,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-milgram-obedience-to-authority.peatix.com"
     }
   },
-  {
+  { id :33,
     book: {
       "name": "二コマコス倫理学(下巻)",
       "author": "アリストテレス",
@@ -1223,7 +1223,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-on-nicomachean-ethics-2.peatix.com"
     }
   },
-  {
+  { id :34,
     book: {
       "name": "方法序説",
       "author": "ルネ・デカルト",
@@ -1256,7 +1256,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-discourse-on-the-method-2.peatix.com"
     }
   },
-  {
+  { id :35,
     book: {
       "name": "精神のエネルギー",
       "author": "H.ベルクソン",
@@ -1294,7 +1294,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-bergson-mind-energy-2.peatix.com"
     }
   },
-  {
+  { id :36,
     book: {
       "name": "暗黙知の次元",
       "author": "マイケル・ポランニー",
@@ -1331,7 +1331,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-tacit-knowledge.peatix.com"
     }
   },
-  {
+  { id :37,
     book: {
       "name": "唐詩選",
       "author": "",
@@ -1367,7 +1367,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-tang-poems.peatix.com"
     }
   },
-  {
+  { id :38,
     book: {
       "name": "プロレゴメナ",
       "author": "イマヌエル・カント",
@@ -1409,7 +1409,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-kant-prolegomena.peatix.com"
     }
   },
-  {
+  { id :39,
     book: {
       "name": "省察",
       "author": "ルネ・デカルト",
@@ -1446,7 +1446,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-descartes-meditations-on-first-philosophy.peatix.com"
     }
   },
-  {
+  { id :40,
     book: {
       "name": "感性的なもののパルタージュ:美学と政治",
       "author": "ジャック ランシエール",
@@ -1483,7 +1483,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-le-partage-du-sensible.peatix.com"
     }
   },
-  {
+  { id :41,
     book: {
       "name": "我々みんなが科学の専門家なのか?",
       "author": "ハリー・コリンズ",
@@ -1520,7 +1520,7 @@ const LecturesInfo = [
       "peatixURL": "https://the-five-books-are-we-all-scientific-experts-now.peatix.com"
     }
   },
-{
+{ id :42,
   book: {
     "name": "エチカ",
     "author": "スピノザ",
@@ -1551,11 +1551,48 @@ const LecturesInfo = [
     "price": 7500,
     "prerequisite": "特にありません",
     "courseMaterial": "書籍は参加者各自でご用意ください。",
-    "lectureOverview": `スピノザの主著のタイトルである『エチカ』（原題：Ethica）とは、ラテン語で「倫理学」という意味です。ごく大まかに言えば、倫理学は「人がよく生きるための学」だと考えられています。では、『エチカ』の書き出しをご存じでしょうか。\n\n　定義1：自己原因とは、本質が存在を含むもののことである・・・[以下略]。\n\nこのあとも「実体」や「属性」といった、あまり日常に馴染みのないものの定義がしばらく続きます。「幾何学的順序で証明された」という副題の示す通り、以下ずっとこの調子で定義、公理、定理とその証明……と続いていく。はて、これの一体どこが「倫理学」の書物なのだろう、と疑問に思われるかもしれません。あるいは、「この本の著者であるスピノザは、危険思想のカムフラージュのためにあえてわかりづらい書き方をしているのだろうか？」と、邪推したくもなるかも。しかし、じつは『エチカ』はちゃんと倫理学の本で、このちょっと面食らうような書き出しにも理由があります。ただしそれは、「あれをやれ」「これをやるな」と命令や禁止を押し付けてくるようなイメージからはまったくかけ離れた倫理学です。『エチカ』はむしろ、外から押し付けられた規範から私たちを自由にしてくれる力を持っていると思います（ドゥルーズの言葉を借りれば、「道徳ではなく倫理」なのです）。\n\nさて、この講義では「倫理学」としての読み筋を軸にするつもりですが、とはいえ『エチカ』はそれ以外の多様な読み方も許す、話題豊富な著作でもあります。その豊かさゆえに、スピノザは歴史上さまざまな思想運動においてアイコンとしての役割を果たしてきました（ドイツ観念論、唯物論、フランス現代思想etc.）。違った角度から光を当てられるその度ごとに新しい発見を与えてくれる『エチカ』という著作を、さまざまな背景や経験を持ったかたと一緒に読むというのは、講師にとっても稀有な機会です。なので、参加者のみなさんの関心をなるべく汲み取りつつ、脱線も楽しみながら進めていきたいと思います。\n\n今回の講義は、内容豊富かつしばしば「難解」と評される『エチカ』を、なんと1ヶ月強で読破してしまおうという強行スケジュールです。なので、著作の内容をすべて理解するといった不可能な目標ははじめから放棄して、「**理解できそうな定理を見つけて、それを味わってみる**」ことを、まずは目標にしたいと思います。さいわい、『エチカ』は数百もの「主張のリスト」のような形式を持っており、部分的に読むということがやりやすい本です。語句はこちらで解説しますので、前提知識もとくに必要ありません。スピノザや形而上学に興味のあるかたはもちろん、感情との付き合い方に悩んでいるかた、心身問題に興味のあるかた、自由について考えたいかた、ちょっと変わった形式の本を読んでみたいかたなど、どなたでもご参加ください。ぜひ、一緒に読みましょう。\n\n*書籍は参加者各自でご用意ください。『エチカ(上・下)』(畠中 尚志 訳 岩波文庫)、『エティカ』(工藤 喜作 訳 中公クラシックス)のどちらの訳書でご参加いただいても構いません。岩波文庫については上下巻に分かれておりますので、どちらもご用意ください。
-`,
+    "lectureOverview": `スピノザの主著のタイトルである『エチカ』（原題：Ethica）とは、ラテン語で「倫理学」という意味です。ごく大まかに言えば、倫理学は「人がよく生きるための学」だと考えられています。では、『エチカ』の書き出しをご存じでしょうか。\n\n　定義1：自己原因とは、本質が存在を含むもののことである・・・[以下略]。\n\nこのあとも「実体」や「属性」といった、あまり日常に馴染みのないものの定義がしばらく続きます。「幾何学的順序で証明された」という副題の示す通り、以下ずっとこの調子で定義、公理、定理とその証明……と続いていく。はて、これの一体どこが「倫理学」の書物なのだろう、と疑問に思われるかもしれません。あるいは、「この本の著者であるスピノザは、危険思想のカムフラージュのためにあえてわかりづらい書き方をしているのだろうか？」と、邪推したくもなるかも。しかし、じつは『エチカ』はちゃんと倫理学の本で、このちょっと面食らうような書き出しにも理由があります。ただしそれは、「あれをやれ」「これをやるな」と命令や禁止を押し付けてくるようなイメージからはまったくかけ離れた倫理学です。『エチカ』はむしろ、外から押し付けられた規範から私たちを自由にしてくれる力を持っていると思います（ドゥルーズの言葉を借りれば、「道徳ではなく倫理」なのです）。\n\nさて、この講義では「倫理学」としての読み筋を軸にするつもりですが、とはいえ『エチカ』はそれ以外の多様な読み方も許す、話題豊富な著作でもあります。その豊かさゆえに、スピノザは歴史上さまざまな思想運動においてアイコンとしての役割を果たしてきました（ドイツ観念論、唯物論、フランス現代思想etc.）。違った角度から光を当てられるその度ごとに新しい発見を与えてくれる『エチカ』という著作を、さまざまな背景や経験を持ったかたと一緒に読むというのは、講師にとっても稀有な機会です。なので、参加者のみなさんの関心をなるべく汲み取りつつ、脱線も楽しみながら進めていきたいと思います。\n\n今回の講義は、内容豊富かつしばしば「難解」と評される『エチカ』を、なんと1ヶ月強で読破してしまおうという強行スケジュールです。なので、著作の内容をすべて理解するといった不可能な目標ははじめから放棄して、「**理解できそうな定理を見つけて、それを味わってみる**」ことを、まずは目標にしたいと思います。さいわい、『エチカ』は数百もの「主張のリスト」のような形式を持っており、部分的に読むということがやりやすい本です。語句はこちらで解説しますので、前提知識もとくに必要ありません。スピノザや形而上学に興味のあるかたはもちろん、感情との付き合い方に悩んでいるかた、心身問題に興味のあるかた、自由について考えたいかた、ちょっと変わった形式の本を読んでみたいかたなど、どなたでもご参加ください。ぜひ、一緒に読みましょう。\n\n*書籍は参加者各自でご用意ください。『エチカ(上・下)』(畠中 尚志 訳 岩波文庫)、『エティカ』(工藤 喜作 訳 中公クラシックス)のどちらの訳書でご参加いただいても構いません。岩波文庫については上下巻に分かれておりますので、どちらもご用意ください。`,
     "eachLectureDetail": [`第1部「神について」を読みます。決して長くはない記述に、スピノザの形而上学の骨子がぎゅっと詰まったパートです。実体とは、このただひとつの宇宙そのものであり、同時に神でもある、という独特の宇宙観が示されます。まだ人間は出てきません。`, `第2部「精神の本性および起源について」を読みます。第1部で示された宇宙に、ようやく人間が登場します。ここでは、人間精神と身体の関係や、精神がどのように正しくあるいは間違って認識するのかが議論されます。いわゆる「平行論」が主張されるのもこの部です。`, `第3部「感情の起源および本性について」を読みます。ようやく倫理学らしい話題に入り、人間の感情が欲望・喜び・悲しみという3つの基本的感情を起点に論じられます。その論じ方は、「線・面および立体を研究する場合と同じように考察する」という独特なものです。`, `第4部「人間の隷属あるいは感情の力について」を読みます。ここでは、その人の完全性が増大したり減少したりする移行にもとづいて、善悪の概念が導入されます。また、社会や他人という観点が導入され、私たちに身近で具体的な問題が扱われるのもこの部の特徴です。`, `第5部「知性の能力あるいは人間の自由について」を読みます。いよいよスピノザ流の倫理学のメインテーマである「自由」が論じられます。普通の意味での「自由意志」をまやかしだと看破するスピノザは、人間の自由をどのように考えているのでしょうか。`],
     "message": `京都大学で哲学史研究をしている榮福真穂です。スピノザ・デカルトを中心とする西欧近世の哲学を専門にしています。\n\n17世紀はしばしば「天才の世紀」と呼ばれ、独創的な思想を展開した哲学者たちが数多くいる時代です。他方で、彼らが生きていた当時のヨーロッパは、宗教戦争や内乱が絶えず、既存の価値観や秩序が根底から揺るがされた「危機の時代」でもありました。17世紀の哲学はその常識にとらわれない突き詰めた思考で時代を問わずわたしたちを魅了しますが、同時に、何を信じれば良いかわからない中で「自分の頭で考える」ことを求められる現代との重なるところの多さも、いつも興味深く感じます。\n\nそういうわけで、今回取り上げる『エチカ』も400年前に、しかも異なる言語・文化圏で書かれた本ですが、わたしたちとの距離はじつはそう遠くないように思います。その手前にそびえ立っている（ように見える）、見かけ上の障壁をできるだけ取り除くのがこの講義での私の役割だと思っています。みなさまのご参加お待ちしております。`,
     "peatixURL": "https://the-five-books-spinoza-ethica.peatix.com"
+  }
+},
+{ id :43,
+  book: {
+    "name": "形而上学叙説",
+    "author": "ライプニッツ",
+    "publisher": "平凡社",
+    "image": "./img/形而上学叙説.jpg",
+    "isbn": "978-4480089656",
+    "rakutenAffiliateUrl": "https://hb.afl.rakuten.co.jp/hgc/g00q0727.r6wwg6f0.g00q0727.r6wwh868/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Frb%2F12383669%2F",
+    "amazonAffiliateUrl": "https://amzn.to/3pDQup5",
+    "calilUrl": "https://calil.jp/book/9784582767940"
+  },
+  lecturer: {
+    "name": "三浦 隼暉",
+    "expertise": "哲学",
+    "degree": "東京大学大学院 人文社会系研究科",
+    "affiliation": "東京大学大学院 人文社会系研究科",
+    "profile-link": "https://researchmap.jp/junki1129/?lang=ja",
+    "lecturerPhoto": './img/lecturer_miura_junki.jpg'
+  },
+  lecture: {
+    "lectureName": "テスト　テスト",
+    "lectureSubtitle": "テスト　テスト",
+    "lecturePurpose": "テスト　テスト",
+    "lectureStartDate": new Date(2022, 4, 9),
+    "lectureEndDate": new Date(2022, 5, 6),
+    "liveLectureDate": [new Date(2022, 4, 9), new Date(2022, 4, 16), new Date(2022, 4, 23), new Date(2022, 4, 30), new Date(2022, 5, 6)],
+    "lectureTime": ["20:00-21:30", "20:00-21:30", "20:00-21:30", "20:00-21:30", "20:00-21:30", "20:00-21:30"],
+    "minimumAtendee": 15,
+    "price": 8500,
+    "prerequisite": "特にありません",
+    "courseMaterial": "書籍は、参加者各自でご用意ください。",
+    "lectureOverview": `1646年、三十年戦争の最中、ドイツ中央に位置するザクセン地方の中心地ライプツィヒで、天才哲学者**ゴットフリート・ヴィルヘルム・ライプニッツ**が彗星の如く誕生しました。彼こそ、のちに微分法を打ち立て、計算機の先駆と評される二進法の重要性に着目し、ヴェルフェン家史を調査・執筆し、ハルツ鉱山計画に参加して独自のポンプを考案し、教会再合同のためにカトリックとプロテスタントの間を奔走し、さまざまな政治家や学者たちと交流し、そして何より、それまで誰一人辿り着かなかった「**モナドロジー**」と呼ばれる哲学に至った人物です。その哲学は現代においても新しさを失っておらず、多くの思想家や文筆家、芸術家、他の分野の学者たちにも参照され続けています（例えば最近だと「**アクターネットワーク理論**」という社会学理論を提唱している**ブリュノ・ラトゥール**への影響などが知られています）。\n\n今回の講義では、ライプニッツ哲学を考える上で避けることのできない著作『**形而上学叙説** Discours de métaphysique』を扱うことになります。1686年頃、短い休暇をつかって書かれたこの著作は、ライプニッツ哲学の重要なテーゼたちを体系立てて論じたもので、**ライプニッツ哲学への入門**としても最適だと思われます。世界の最善性や、個体が宇宙の全体を含んでいるという主張など、彼独自の哲学が存分に展開されている点でとても面白い著作になっています。\n\n『形而上学叙説』の校訂版を編纂したル・ロワは、この著作の構造を「満ち潮と引き潮」という美しい比喩で表現しています。というのも〈神から被造物へ〉〈被造物から神へ〉という議論の満ち引きが、この著作では繰り返されているというのです。「神」や「被造物」という言葉に驚かれる方もいらっしゃるかもしれません。たしかにキリスト教的な含みもある言葉ではありますが、「**世界のうちに在るもの**」と「**世界の背後にあるシステム**」**とを往復する**という意味で、現代にも通じる議論としても私たちは受け取ることができます。\n\n本講義では、最新のライプニッツ研究なども踏まえて本格的な議論も紹介しつつ、**初めて哲学書を読まれる方や、この時代の哲学に今まで触れたことのない方**にも配慮しながら講義を進めたいと考えています。現代の私たちには馴染みのない言葉や概念が多く登場するかもしれませんが、講義外の時間でも Slack（チャットや掲示板のようなものです）での「講師への質問」や「講師からの問いかけ」などを用いつつ、皆さんの読書をできる限りのサポートをいたします。\n\n**参加者の皆さんにライプニッツ哲学の面白さを知っていただくこと**、これが私の願いです。みなさんのご参加をお待ちしております！\n\n※講義で準拠するテクストとしては、ライプニッツ『形而上学叙説・ライプニッツ－アルノー往復書簡』（平凡社ライブラリー）を用いる予定です。電子版、紙版、どちらでも問題ありません。また、中公クラシックス版や岩波文庫版での参加でも問題ありません。`,
+    "eachLectureDetail": [`初回の講義ではライプニッツの『形而上学叙説』を読み進めていくための準備運動を行います。デカルトやスピノザ、マルブランシュなどとの関係も含め、どういった時代状況のなかで書かれた本なのか、そしてライプニッツはこの本を通して何を論じようとしたのか、という点について丁寧に解説します。また、哲学書を読み進める際のコツや、質問の仕方、哲学的な文章の書き方などについても簡単に紹介します。`, `第1節から第7節を扱います。冒頭から世界の最善性などに関する議論が始まり、戸惑うことがあるかもしれません。そうした点をうまく消化しながら読み進めていっていただけるように、議論の背景なども含めて丁寧に解説する予定です。`, `第8節から第16節を扱います。本著作の重要な主張のひとつである完足個体概念が登場します。それぞれの個体が宇宙の全体を含み込むという議論を正確に理解することを目指します。ライプニッツ哲学の独特な部分が浮かび上がってくることになります。`, `第17節から第29節を扱います。前半（第17節から第22節）では、ライプニッツ哲学のなかで「自然法則」や「目的因」がどのように扱われるかが論じられます。後半（第23節から第29節）では、私たちがもっている「観念」について主題的に論じられることになります。`, `第30節から第37節を扱います。複数のものが合一してひとつのものを構成するということについて論じられていきます。心身関係や社会関係、人間と超越的なものの関係などについて扱い、最終的に、より善い世界を目指す私たちの道徳についても議論が及びます。`],
+    "message": `こんにちは。東京大学大学院で哲学を研究している三浦隼暉（みうらじゅんき）です。The Five Books での講義も二年目となりました。これまで、多くの参加者の方々と一緒にデカルトやスピノザ、ライプニッツの著作を読み進めてまいりました。\n\nしばしば「哲学研究って何をしているの？」と聞かれることがあります。研究の進め方は人によって様々ですが、私の場合、300–400年前のヨーロッパで書かれた文章を読みながら、その内容を、時代も文化も異なる現代の我々にも理解できるような仕方で提示し直すような研究をしています。\n\n私が目指しているのは「哲学は留保なしに愉しい」と感じてもらえるような講義を作ることです。一緒に哲学書を紐解くことで、そのような愉しさを経験するお手伝いができればと考えています。最後に、私の恩師が残した言葉を送ります。「本は一人で読むものですが、ときには窓を開けて一緒に哲学をしましょう」。
+`,
+    "peatixURL": "https://the-five-books-leibniz-discourse-on-metaphysics.peatix.com"
   }
 }
 ]
