@@ -165,13 +165,15 @@ const Lecture6 = (props) => {
 
     const content =
       <div className="top-lecture d-flex justify-content-center align-items-center flex-wrap">
-        <div className="book-img-container mr-none mr-md-3">
-          <Image src={require(`${bookimg}`)} fluid />
+        <div className="book-img-container amazon-url mr-none mr-md-3">
+          <a href={lectureBookUrlinfo.amazon} >
+            <Image src={require(`${bookimg}`)} fluid />
+          </a>
         </div>
         <div className="lecturer-info d-flex flex-column flex-md-row justify-content-center align-items-center flex-nowrap">
-          <div className="lecturer-photo">
-            <Image src={require(`${lecturerimg}`)} fluid roundedCircle/>
-          </div>
+            <div className="lecturer-photo">
+              <Image src={require(`${lecturerimg}`)} fluid roundedCircle/>
+            </div>
           <div className="lecturer-info">
               <p>講師: {LecturesInfo[lectureId]["lecturer"]["name"]}</p>
               <p>専門: {LecturesInfo[lectureId]["lecturer"]["expertise"]}</p>

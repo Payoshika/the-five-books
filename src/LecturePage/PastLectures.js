@@ -10,6 +10,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import Pagination from 'react-bootstrap/Pagination'
 import PageItem from 'react-bootstrap/PageItem'
 import ReactMarkdown from 'react-markdown'
+import axios from "axios"
 
 const PastLectures = (props) => {
   const {params} = props.match
@@ -39,6 +40,27 @@ const PastLectures = (props) => {
 
   const randomeOrderLectures = shuffle(filteredLectures)
 
+
+  // 書籍リクエストの機能をBookRequestから持ってくる。
+  const requestBook = (event, targetBook) => {
+    event.preventDefault();
+    const apiURL = process.env.REACT_APP_API_URL
+    let book  = {
+          name: `${targetBook.name}`,
+          author: `${targetBook.author}`,
+          publisher: `${""}`,
+          img_url: `${""}`,
+          book_url: `${""}`
+        }
+    axios.post(`${apiURL}/book_create`, {book: book})
+    .then(
+      response => console.log(response.data),
+      event.target.innerText = "リクエスト完了",
+      event.target.className = "btn after-request")
+    .catch(error => console.log(error))
+  }
+
+
   // LecturesInfoより講義のリストを作成する。
   const lectureList =
   <div className="d-flex justify-content-center flex-wrap">
@@ -51,9 +73,9 @@ const PastLectures = (props) => {
                 <Image src={require(`${eachLecture.book.image}`)} fluid />
               </div>
             </Link>
-            <div className="book-info">
+            <div className="book-info mx-3">
               <div className="d-flex flex-column justify-content-center align-items-center flex-wrap">
-                <div className="mb-2"><span><b>『{eachLecture.book.name}』</b></span></div>
+                <div className="mt-1 mb-2"><span><b>『{eachLecture.book.name}』</b></span></div>
                 <Link className="mb-2" to= {`/lecture/${eachLecture.id}`}>
                   <Button
                     variant=""
@@ -74,6 +96,7 @@ const PastLectures = (props) => {
                   <Button
                     variant=""
                     className="text-nowrap ml-auto"
+                    onClick={(event)　=> requestBook(event, eachLecture.book)}
                     >講義リクエスト
                   </Button>
                 </div>
@@ -85,27 +108,12 @@ const PastLectures = (props) => {
     }
   </div>
 
-  let active = 2;
-let items = [];
-for (let number = 1; number <= 5; number++) {
-  items.push(
-    <Pagination.Item key={number} active={number === active}>
-      {number}
-    </Pagination.Item>,
-  );
-}
-
-  const pageNationStructure =
-  <div>
-   <Pagination>{items}</Pagination>
-  </div>
-
     return(
       <Container fluid>
         <Row>
           <Col>
+          <h4 className="text-center my-4">過去の講義一覧</h4>
           {lectureList}
-          {pageNationStructure}
           </Col>
         </Row>
       </Container>

@@ -40,7 +40,7 @@ const pastLecture =
       return (
         (eachLecture.lecture.lectureStartDate < new Date())?
         <Carousel.Item>
-          <Link to= {`/lecture/${index+1}`}>
+          <Link to= {`/lecture/${eachLecture.id}`}>
             <div className="top-lecture d-flex flex-column flex-xl-row justify-content-center align-items-center">
               <div className="book-img-container d-flex align-contents-center">
                 <Image src={require(`${eachLecture.book.image}`)}  fluid/>

@@ -27,7 +27,10 @@ let name = (props.name === "")? <div></div> :<div ><Link to="/userpage">{props.n
              {name}
            <p onClick ={() => setHide(true)}><a href="/#home">Top</a></p>
            <p onClick ={() => setHide(true)}>
-             <Link to="/coming_lectures">講義一覧</Link>
+             <Link to="/coming_lectures">開講中</Link>
+           </p>
+           <p onClick ={() => setHide(true)}>
+             <Link to="/past_lectures">過去講義一覧</Link>
            </p>
            <p onClick ={() => setHide(true)}>
              <Link to="/book_guide">講師になる</Link>
@@ -43,7 +46,10 @@ let name = (props.name === "")? <div></div> :<div ><Link to="/userpage">{props.n
     <p>{registerMenu}</p>
     <p><a href="/#home">Top</a></p>
     <p>
-      <Link to="/coming_lectures">講義一覧</Link>
+      <Link to="/coming_lectures">開講中</Link>
+    </p>
+    <p>
+      <Link to="/past_lectures">過去講義一覧</Link>
     </p>
     <p>
       <Link to="/book_guide">講師になる</Link>

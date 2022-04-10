@@ -108,7 +108,19 @@ hr {
 .book-img-container{
   width: 200px;
   height: auto;
+  opacity: 1.0 ;
+  transition: 1s ;
 }
+
+.amazon-url:hover{
+  opacity: 0.5 ;
+  transition: 0.7s ;
+}
+
+.after-request{
+  background-color: #666666;
+}
+
 
 .lecturer-info > * {
   min-width: 15rem;
@@ -134,7 +146,7 @@ hr {
 }
 /* PastLectures area */
 .book-info {
-  width: auto;
+  width: 30vh;
   height: auto;
 }
 
