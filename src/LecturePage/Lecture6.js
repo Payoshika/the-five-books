@@ -10,6 +10,8 @@ import Calendar from 'react-calendar'
 import './styles/calender.css';
 import { loadStripe } from '@stripe/stripe-js';
 import ReactMarkdown from 'react-markdown'
+import {Link} from "react-router-dom"
+
 
 const stripePromise = loadStripe('pk_test_51H6qTHKu07P8WqmRl9iLKVCNAvq582vfORpsMwBXe5D0tKyvjdNyse5W3rmuDarSfEX7JcA6otvmW8PcJXHir5Ys00bqyudH0R');
 
@@ -252,6 +254,9 @@ const Lecture6 = (props) => {
         <li><b>{getConductDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}の20:00</b>の時点で最小決行人数に達していなかった場合は、本講義をキャンセルさせていただき、参加登録をされた皆様へご返金させていただきます。</li>
         <li>参加ご登録後のキャンセルについては、開講1週間前(<b>{getCancelDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}</b>)まで受付けます。peatixページよりキャンセル申請を行っていただきますようお願いいたします。</li>
         <li>その他のお問い合わせについては、トップページのお問い合わせ欄よりご連絡いただきますようお願い致します。</li>
+        <Link to= {`/purchase_provisions`}>
+        <li>The Five Booksが実施する講義の特定商取引法に基づく表示は<u><b>こちら</b></u>よりご確認いただけます。</li>
+        </Link>
       </ul>
     </div>
 

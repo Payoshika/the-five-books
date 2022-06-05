@@ -1,4 +1,5 @@
 export {default as Lecture6} from "./Lecture6"
+export {default as PurchaseProvisions} from "./PurchaseProvisions"
 export {default as PastLectures} from "./PastLectures"
 export {default as LecturesInfo} from "./LecturesInfo"
 export {default as Lecture9999} from "./Lecture9999"
