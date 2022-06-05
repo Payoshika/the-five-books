@@ -15,7 +15,7 @@
     />
     <meta
       name="keyword"
-      content="古典 哲学 文学 歴史 解説 対話 講義"
+      content="古典 哲学 文学 歴史 解説 対話 講義 オンライン 学術書 人文"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -29,6 +29,15 @@
     <title>The Five Books</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174547298-1">
+    </script>
+    <script src=`https://www.google.com/recaptcha/api.js?render=${process.env.reCAPTCHA_site_key}`></script>
+    <script>
+            grecaptcha.ready(function () {
+                grecaptcha.execute(`${process.env.reCAPTCHA_site_key}`, { action: 'contact' }).then(function (token) {
+                    var recaptchaResponse = document.getElementById('recaptchaResponse');
+                    recaptchaResponse.value = token;
+                });
+            });
     </script>
     <script>
       window.dataLayer = window.dataLayer || [];

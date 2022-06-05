@@ -94,6 +94,7 @@ const Contact = () => {
         <Col id="contact" className="contact d-flex flex-column align-items-center justify-content-center">
           <h4 className="text-center"><u>お問い合わせ</u></h4>
           {content}
+          <input type="hidden" name="recaptcha_response" id="recaptchaResponse" />
         </Col>
       </Row>
     </Container>
