@@ -30,10 +30,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174547298-1">
     </script>
-    <script src=`https://www.google.com/recaptcha/api.js?render=${process.env.reCAPTCHA_site_key}`></script>
+    <script src='https://www.google.com/recaptcha/api.js?render=6LdK5kUgAAAAAK4r6GS3hzhY64isN_9QxFPjHnqy'>
+    </script>
     <script>
             grecaptcha.ready(function () {
-                grecaptcha.execute(`${process.env.reCAPTCHA_site_key}`, { action: 'contact' }).then(function (token) {
+                grecaptcha.execute('6LdK5kUgAAAAAK4r6GS3hzhY64isN_9QxFPjHnqy', { action: 'contact' }).then(function (token) {
                     var recaptchaResponse = document.getElementById('recaptchaResponse');
                     recaptchaResponse.value = token;
                 });
