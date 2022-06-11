@@ -79,6 +79,15 @@ const Lecture6 = (props) => {
    )
  }
 
+ const getOneWeekConductDeadline = (value) => {
+   let dateClone = new Date(value.getTime())
+   const conductDeadlineDate = new Date(dateClone.setDate(dateClone.getDate() - 7))
+   const dateString = `${conductDeadlineDate.getFullYear()}${('0' + (conductDeadlineDate.getMonth() + 1)).slice(-2)}${('0' + conductDeadlineDate.getDate()).slice(-2)}`
+  return (
+    `${dateString.slice(4,6)}月${dateString.slice(6,8)}日`
+  )
+}
+
   const getCancelDeadline = (value) => {
     let dateClone = new Date(value.getTime())
     const deadLineDate = new Date(dateClone.setDate(dateClone.getDate() - 7))
@@ -185,6 +194,23 @@ const Lecture6 = (props) => {
         </div>
       </div>
 
+      let lecturerIntroVideo =
+      <div className="video-outer my-3">
+        <p>The Five Books自己紹介({LecturesInfo[lectureId]["lecturer"]["name"]})</p>
+        <iframe
+          title="test"
+          src={LecturesInfo[lectureId]["lecture"]["infoVideoUrl"]}
+            width="100%" height="360"
+            className="video"
+           frameborder="0"
+           allow="autoplay; fullscreen" allowfullscreen>
+        </iframe>
+      </div>
+
+      if (LecturesInfo[lectureId]["lecture"]["lecturePurpose"] === ""){
+        lecturerIntroVideo = <div></div>
+      }
+
     const lectureDetail =
       <div>
         <div className="d-flex flex-column">
@@ -218,6 +244,7 @@ const Lecture6 = (props) => {
               <div className="lecturer-message ml-4">
                 <p><ReactMarkdown source={LecturesInfo[lectureId]["lecture"].message}
                 /></p>
+                {lecturerIntroVideo}
               </div>
             </div>
           </div>
@@ -235,6 +262,17 @@ const Lecture6 = (props) => {
       </div>
 
     const courseMaterial =  LecturesInfo[lectureId].lecture.courseMaterial
+    let ConductDeadlineMessage = <div><b>
+      {getConductDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}の20:00
+    </b>の時点で最小決行人数に達していなかった場合は、本講義をキャンセルさせていただき、参加登録をされた皆様へご返金させていただきます。
+    </div>
+    if(LecturesInfo[lectureId].lecture.conductDeadLine === 7){
+      ConductDeadlineMessage =
+      <div><b>
+        {getOneWeekConductDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}の20:00
+      </b>の時点で最小決行人数に達していなかった場合は、本講義をキャンセルさせていただき、参加登録をされた皆様へご返金させていただきます。
+      </div>
+    }
 
     const disclaimer =
     <div className="lecture-detail d-flex flex-column">
@@ -251,7 +289,7 @@ const Lecture6 = (props) => {
         <li>参加登録、お支払いは、peatixページにて行っていただきますようお願い申し上げます。</li>
         <li>参加申込期限は、<b>{getApplyDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}の20:00</b>となります。また、申込定員(40名)に達し次第受付を締め切らせて頂きます。</li>
         <li>本講義の最小決行人数は、<b>{LecturesInfo[lectureId].lecture.minimumAtendee}名</b>とさせていただきます。</li>
-        <li><b>{getConductDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}の20:00</b>の時点で最小決行人数に達していなかった場合は、本講義をキャンセルさせていただき、参加登録をされた皆様へご返金させていただきます。</li>
+        <li>{ConductDeadlineMessage}</li>
         <li>参加ご登録後のキャンセルについては、開講1週間前(<b>{getCancelDeadline(LecturesInfo[lectureId].lecture.lectureStartDate)}</b>)まで受付けます。peatixページよりキャンセル申請を行っていただきますようお願いいたします。</li>
         <li>その他のお問い合わせについては、トップページのお問い合わせ欄よりご連絡いただきますようお願い致します。</li>
         <Link to= {`/purchase_provisions`}>

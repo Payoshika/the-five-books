@@ -22,9 +22,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2020, 8, 5),
       "lectureEndDate": new Date(2020, 8, 26),
       "liveLectureDate": [new Date(2020, 8, 5), new Date(2020, 8, 12), new Date(2020, 8, 19), new Date(2020, 8, 26)],
@@ -60,9 +60,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2020, 9, 10),
       "lectureEndDate": new Date(2020, 10, 7),
       "liveLectureDate": [new Date(2020, 9, 10), new Date(2020, 9, 17), new Date(2020, 9, 24), new Date(2020, 9, 31), new Date(2020, 10, 7)],
@@ -97,9 +97,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_seki_shumpei.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2020, 10, 4),
       "lectureEndDate": new Date(2020, 10, 25),
       "liveLectureDate": [new Date(2020, 10, 4), new Date(2020, 10, 11), new Date(2020, 10, 18), new Date(2020, 10, 25)],
@@ -133,9 +133,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_hamada_tomoro.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2020, 10, 21),
       "lectureEndDate": new Date(2020, 11, 12),
       "liveLectureDate": [new Date(2020, 10, 21), new Date(2020, 10, 28), new Date(2020, 11, 5), new Date(2020, 11, 12)],
@@ -170,9 +170,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2020, 10, 29),
       "lectureEndDate": new Date(2020, 11, 20),
       "liveLectureDate": [new Date(2020, 10, 29), new Date(2020, 11, 6), new Date(2020, 11, 13), new Date(2020, 11, 20)],
@@ -207,9 +207,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 0, 13),
       "lectureEndDate": new Date(2021, 1, 3),
       "liveLectureDate": [new Date(2021, 0, 13), new Date(2021, 0, 20), new Date(2021, 0, 27), new Date(2021, 1, 3)],
@@ -244,9 +244,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_miura_junki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 0, 16),
       "lectureEndDate": new Date(2021, 1, 6),
       "liveLectureDate": [new Date(2021, 0, 16), new Date(2021, 0, 23), new Date(2021, 0, 30), new Date(2021, 1, 6)],
@@ -281,9 +281,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_sato_shingo.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 1, 13),
       "lectureEndDate": new Date(2021, 2, 13),
       "liveLectureDate": [new Date(2021, 1, 13), new Date(2021, 1, 20), new Date(2021, 1, 27), new Date(2021, 2, 6), new Date(2021, 2, 13)],
@@ -319,9 +319,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_takaki_yuki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 1, 7),
       "lectureEndDate": new Date(2021, 2, 7),
       "liveLectureDate": [new Date(2021, 1, 7), new Date(2021, 1, 14), new Date(2021, 1, 21), new Date(2021, 1, 28), new Date(2021, 2, 7)],
@@ -356,9 +356,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 1, 17),
       "lectureEndDate": new Date(2021, 2, 10),
       "liveLectureDate": [new Date(2021, 1, 17), new Date(2021, 1, 24), new Date(2021, 2, 3), new Date(2021, 2, 10)],
@@ -393,9 +393,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_hamada_tomoro.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 2, 27),
       "lectureEndDate": new Date(2021, 3, 24),
       "liveLectureDate": [new Date(2021, 2, 27), new Date(2021, 3, 3), new Date(2021, 3, 10), new Date(2021, 3, 17), new Date(2021, 3, 24)],
@@ -430,9 +430,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 2, 30),
       "lectureEndDate": new Date(2021, 3, 20),
       "liveLectureDate": [new Date(2021, 2, 30), new Date(2021, 3, 6), new Date(2021, 3, 13), new Date(2021, 3, 20)],
@@ -467,9 +467,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_tomizuka_ryohei.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 3, 7),
       "lectureEndDate": new Date(2021, 3, 28),
       "liveLectureDate": [new Date(2021, 3, 7), new Date(2021, 3, 14), new Date(2021, 3, 21), new Date(2021, 3, 28)],
@@ -504,9 +504,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_okada_yuta.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 3, 25),
       "lectureEndDate": new Date(2021, 4, 23),
       "liveLectureDate": [new Date(2021, 3, 25), new Date(2021, 4, 2), new Date(2021, 4, 9), new Date(2021, 4, 16), new Date(2021, 4, 23)],
@@ -541,9 +541,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_miura_junki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 4, 8),
       "lectureEndDate": new Date(2021, 5, 5),
       "liveLectureDate": [new Date(2021, 4, 8), new Date(2021, 4, 15), new Date(2021, 4, 22), new Date(2021, 4, 29), new Date(2021, 5, 5)],
@@ -578,9 +578,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 4, 18),
       "lectureEndDate": new Date(2021, 5, 8),
       "liveLectureDate": [new Date(2021, 4, 18), new Date(2021, 4, 25), new Date(2021, 5, 1), new Date(2021, 5, 8)],
@@ -615,9 +615,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_takaki_yuki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 4, 30),
       "lectureEndDate": new Date(2021, 5, 27),
       "liveLectureDate": [new Date(2021, 4, 30), new Date(2021, 5, 6), new Date(2021, 5, 13), new Date(2021, 5, 20), new Date(2021, 5, 27)],
@@ -652,9 +652,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_matsumoto_risa.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 5, 19),
       "lectureEndDate": new Date(2021, 6, 17),
       "liveLectureDate": [new Date(2021, 5, 19), new Date(2021, 5, 26), new Date(2021, 6, 3), new Date(2021, 6, 10), new Date(2021, 6, 17)],
@@ -689,9 +689,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_hamada_tomoro.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 6, 4),
       "lectureEndDate": new Date(2021, 7, 1),
       "liveLectureDate": [new Date(2021, 6, 4), new Date(2021, 6, 11), new Date(2021, 6, 18), new Date(2021, 6, 25), new Date(2021, 7, 1)],
@@ -726,9 +726,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_sato_shingo.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 6, 28),
       "lectureEndDate": new Date(2021, 7, 25),
       "liveLectureDate": [new Date(2021, 6, 28), new Date(2021, 7, 4), new Date(2021, 7, 11), new Date(2021, 7, 18), new Date(2021, 7, 25)],
@@ -763,9 +763,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 6, 6),
       "lectureEndDate": new Date(2021, 6, 27),
       "liveLectureDate": [new Date(2021, 6, 6), new Date(2021, 6, 13), new Date(2021, 6, 20), new Date(2021, 6, 27)],
@@ -800,9 +800,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_fujii_yoshiaki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 6, 31),
       "lectureEndDate": new Date(2021, 7, 28),
       "liveLectureDate": [new Date(2021, 6, 31), new Date(2021, 7, 7), new Date(2021, 7, 14), new Date(2021, 7, 21), new Date(2021, 7, 28)],
@@ -837,9 +837,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_miura_junki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 7, 15),
       "lectureEndDate": new Date(2021, 8, 12),
       "liveLectureDate": [new Date(2021, 7, 15), new Date(2021, 7, 22), new Date(2021, 7, 29), new Date(2021, 8, 5), new Date(2021, 8, 12)],
@@ -874,9 +874,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 7, 17),
       "lectureEndDate": new Date(2021, 8, 14),
       "liveLectureDate": [new Date(2021, 7, 17), new Date(2021, 7, 24), new Date(2021, 7, 31), new Date(2021, 8, 7), new Date(2021, 8, 14)],
@@ -911,9 +911,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_okada_yuta.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 8, 1),
       "lectureEndDate": new Date(2021, 8, 29),
       "liveLectureDate": [new Date(2021, 8, 1), new Date(2021, 8, 8), new Date(2021, 8, 15), new Date(2021, 8, 22), new Date(2021, 8, 29)],
@@ -948,9 +948,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_takaki_yuki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 8, 4),
       "lectureEndDate": new Date(2021, 8, 25),
       "liveLectureDate": [new Date(2021, 8, 4), new Date(2021, 8, 11), new Date(2021, 8, 18), new Date(2021, 8, 25)],
@@ -985,9 +985,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_matsumoto_risa.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 8, 19),
       "lectureEndDate": new Date(2021, 9, 10),
       "liveLectureDate": [new Date(2021, 8, 19), new Date(2021, 8, 26), new Date(2021, 9, 3), new Date(2021, 9, 10)],
@@ -1022,9 +1022,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 9, 5),
       "lectureEndDate": new Date(2021, 10, 2),
       "liveLectureDate": [new Date(2021, 9, 5), new Date(2021, 9, 12), new Date(2021, 9, 19), new Date(2021, 9, 26), new Date(2021, 10, 2)],
@@ -1059,9 +1059,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_tsuruta_soto.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 9, 14),
       "lectureEndDate": new Date(2021, 10, 11),
       "liveLectureDate": [new Date(2021, 9, 14), new Date(2021, 9, 21), new Date(2021, 9, 28), new Date(2021, 10, 4), new Date(2021, 10, 11)],
@@ -1096,9 +1096,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_fujii_yoshiaki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 10, 7),
       "lectureEndDate": new Date(2021, 11, 5),
       "liveLectureDate": [new Date(2021, 10, 7), new Date(2021, 10, 14), new Date(2021, 10, 21), new Date(2021, 10, 28), new Date(2021, 11, 5)],
@@ -1133,9 +1133,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_hamada_tomoro.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 10, 10),
       "lectureEndDate": new Date(2021, 11, 8),
       "liveLectureDate": [new Date(2021, 10, 10), new Date(2021, 10, 17), new Date(2021, 10, 24), new Date(2021, 11, 1), new Date(2021, 11, 8)],
@@ -1170,9 +1170,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_nakamine_shin.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 10, 20),
       "lectureEndDate": new Date(2021, 11, 11),
       "liveLectureDate": [new Date(2021, 10, 20), new Date(2021, 10, 27), new Date(2021, 11, 4), new Date(2021, 11, 11)],
@@ -1206,9 +1206,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2021, 10, 23),
       "lectureEndDate": new Date(2021, 11, 21),
       "liveLectureDate": [new Date(2021, 10, 23), new Date(2021, 10, 30), new Date(2021, 11, 7), new Date(2021, 11, 14), new Date(2021, 11, 21)],
@@ -1239,9 +1239,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_miura_junki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2022, 0, 13),
       "lectureEndDate": new Date(2022, 1, 3),
       "liveLectureDate": [new Date(2022, 0, 13), new Date(2022, 0, 20), new Date(2022, 0, 27), new Date(2022, 1, 3)],
@@ -1276,9 +1276,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_hamada_tomoro.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2022, 0, 22),
       "lectureEndDate": new Date(2022, 1, 12),
       "liveLectureDate": [new Date(2022, 0, 22), new Date(2022, 0, 29), new Date(2022, 1, 5), new Date(2022, 1, 12)],
@@ -1314,9 +1314,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_tsuruta_soto.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2022, 0, 21),
       "lectureEndDate": new Date(2022, 1, 11),
       "liveLectureDate": [new Date(2022, 0, 21), new Date(2022, 0, 28), new Date(2022, 1, 4), new Date(2022, 1, 11)],
@@ -1350,9 +1350,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_fujii_yoshiaki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2022, 1, 6),
       "lectureEndDate": new Date(2022, 2, 6),
       "liveLectureDate": [new Date(2022, 1, 6), new Date(2022, 1, 13), new Date(2022, 1, 20), new Date(2022, 1, 27), new Date(2022, 2, 6)],
@@ -1387,9 +1387,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_takaki_yuki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2022, 1, 19),
       "lectureEndDate": new Date(2022, 2, 19),
       "liveLectureDate": [new Date(2022, 1, 19), new Date(2022, 1, 26), new Date(2022, 2, 5), new Date(2022, 2, 12), new Date(2022, 2, 19)],
@@ -1429,9 +1429,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_miura_junki.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2022, 1, 24),
       "lectureEndDate": new Date(2022, 2, 31),
       "liveLectureDate": [new Date(2022, 1, 24), new Date(2022, 2, 3), new Date(2022, 2, 10), new Date(2022, 2, 17), new Date(2022, 2, 24), new Date(2022, 2, 31)],
@@ -1466,9 +1466,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_matsumoto_risa.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2022, 2, 16),
       "lectureEndDate": new Date(2022, 3, 6),
       "liveLectureDate": [new Date(2022, 2, 16), new Date(2022, 2, 23), new Date(2022, 2, 30), new Date(2022, 3, 6)],
@@ -1503,9 +1503,9 @@ const LecturesInfo = [
       "lecturerPhoto": './img/lecturer_tsuruta_soto.jpg'
     },
     lecture: {
-      "lectureName": "テスト　テスト",
-      "lectureSubtitle": "テスト　テスト",
-      "lecturePurpose": "テスト　テスト",
+      "lectureName": "",
+      "conductDeadLine": 1,
+      "infoVideoUrl": "",
       "lectureStartDate": new Date(2022, 3, 7),
       "lectureEndDate": new Date(2022, 4, 5),
       "liveLectureDate": [new Date(2022, 3, 7), new Date(2022, 3, 14), new Date(2022, 3, 21), new Date(2022, 3, 28), new Date(2022, 4, 5)],
@@ -1540,9 +1540,9 @@ const LecturesInfo = [
     "lecturerPhoto": './img/lecturer_eifuku_maho.jpg'
   },
   lecture: {
-    "lectureName": "テスト　テスト",
-    "lectureSubtitle": "テスト　テスト",
-    "lecturePurpose": "テスト　テスト",
+    "lectureName": "",
+    "conductDeadLine": 1,
+    "infoVideoUrl": "",
     "lectureStartDate": new Date(2022, 3, 9),
     "lectureEndDate": new Date(2022, 4, 7),
     "liveLectureDate": [new Date(2022, 3, 9), new Date(2022, 3, 16), new Date(2022, 3, 23), new Date(2022, 3, 30), new Date(2022, 4, 7)],
@@ -1577,9 +1577,9 @@ const LecturesInfo = [
     "lecturerPhoto": './img/lecturer_miura_junki.jpg'
   },
   lecture: {
-    "lectureName": "テスト　テスト",
-    "lectureSubtitle": "テスト　テスト",
-    "lecturePurpose": "テスト　テスト",
+    "lectureName": "",
+    "conductDeadLine": 1,
+    "infoVideoUrl": "",
     "lectureStartDate": new Date(2022, 4, 9),
     "lectureEndDate": new Date(2022, 5, 6),
     "liveLectureDate": [new Date(2022, 4, 9), new Date(2022, 4, 16), new Date(2022, 4, 23), new Date(2022, 4, 30), new Date(2022, 5, 6)],
@@ -1615,9 +1615,9 @@ const LecturesInfo = [
     "lecturerPhoto": './img/lecturer_hamada_tomoro.jpg'
   },
   lecture: {
-    "lectureName": "テスト　テスト",
-    "lectureSubtitle": "テスト　テスト",
-    "lecturePurpose": "テスト　テスト",
+    "lectureName": "",
+    "conductDeadLine": 1,
+    "infoVideoUrl": "",
     "lectureStartDate": new Date(2022, 4, 11),
     "lectureEndDate": new Date(2022, 5, 1),
     "liveLectureDate": [new Date(2022, 4, 11), new Date(2022, 4, 18), new Date(2022, 4, 25), new Date(2022, 5, 1)],
@@ -1652,9 +1652,9 @@ const LecturesInfo = [
     "lecturerPhoto": './img/lecturer_yamano_hiroki.jpg'
   },
   lecture: {
-    "lectureName": "テスト　テスト",
-    "lectureSubtitle": "テスト　テスト",
-    "lecturePurpose": "テスト　テスト",
+    "lectureName": "",
+    "conductDeadLine": 1,
+    "infoVideoUrl": "",
     "lectureStartDate": new Date(2022, 4, 10),
     "lectureEndDate": new Date(2022, 5, 7),
     "liveLectureDate": [new Date(2022, 4, 10), new Date(2022, 4, 17), new Date(2022, 4, 24), new Date(2022, 4, 31),new Date(2022, 5, 7)],
@@ -1689,9 +1689,9 @@ const LecturesInfo = [
     "lecturerPhoto": './img/lecturer_fujii_yoshiaki.jpg'
   },
   lecture: {
-    "lectureName": "テスト　テスト",
-    "lectureSubtitle": "テスト　テスト",
-    "lecturePurpose": "テスト　テスト",
+    "lectureName": "",
+    "conductDeadLine": 1,
+    "infoVideoUrl": "",
     "lectureStartDate": new Date(2022, 4, 22),
     "lectureEndDate": new Date(2022, 5, 19),
     "liveLectureDate": [new Date(2022, 4, 22), new Date(2022,4, 29), new Date(2022, 5, 5), new Date(2022, 5, 12), new Date(2022, 5, 19)],
@@ -1726,9 +1726,9 @@ const LecturesInfo = [
     "lecturerPhoto": './img/lecturer_takaki_yuki.jpg'
   },
   lecture: {
-    "lectureName": "テスト　テスト",
-    "lectureSubtitle": "テスト　テスト",
-    "lecturePurpose": "テスト　テスト",
+    "lectureName": "",
+    "conductDeadLine": 1,
+    "infoVideoUrl": "",
     "lectureStartDate": new Date(2022, 5, 26),
     "lectureEndDate": new Date(2022, 6, 24),
     "liveLectureDate": [new Date(2022, 5, 26), new Date(2022, 6, 3), new Date(2022, 6, 10), new Date(2022, 6, 17), new Date(2022, 6, 24)],
@@ -1763,9 +1763,9 @@ const LecturesInfo = [
     "lecturerPhoto": './img/lecturer_hamada_tomoro.jpg'
   },
   lecture: {
-    "lectureName": "テスト　テスト",
-    "lectureSubtitle": "テスト　テスト",
-    "lecturePurpose": "テスト　テスト",
+    "lectureName": "",
+    "conductDeadLine": 1,
+    "infoVideoUrl": "",
     "lectureStartDate": new Date(2022, 6, 2),
     "lectureEndDate": new Date(2022, 6, 30),
     "liveLectureDate": [new Date(2022, 6, 2), new Date(2022, 6, 9), new Date(2022, 6, 16), new Date(2022, 6, 23), new Date(2022, 6, 30)],
@@ -1778,6 +1778,43 @@ const LecturesInfo = [
     "eachLectureDetail": [`イントロダクション——初回の講義では読解の準備作業を行います。ベルクソン自身について簡単に紹介を行い、『時間と自由』及び『意識に直接与えられたものについての試論』という謎めいたタイトルについて一考したのちには、「自由」に関する哲学的議論についての現代的な整理を行いつつ、『時間と自由』第3章の「導入」としての第1章・第2章の議論について、手短に要約します。`, `決定論の諸相（pp.160-194）——装備は整いました。出発しましょう。第3章を1/3ほど読み進め、「決定論」の立場と、それに対して自由を擁護する立場の論争状況を確かめるとともに、それらには解消されない、ベルクソン自身の「自由」に関する立場を見極めます。専門的な議論が続きますが、参加者のSlack上でも随時質問を受け付けつつ、皆さんの読書を全力でサポートさせていただきます！`, `「分岐図」のイメージと未来（pp.195-219）——ここでは、自由を表現するイメージについて考えます。批判的な対象となるのは「分かれ道」のイメージ、分岐図のイメージです。「分岐点に立ってAかBかを思い悩み、どちらかを選択する」。たいへん常識的なこうしたイメージの批判を通じて、ベルクソンは未来の「予想」の可能性に関する独特な議論を展開します。さまざまに応用が効くような「おいしい」哲学的議論ですから、Zoom授業という特性を生かしつつ、さまざまなトピックについて議論が行えたらと考えています。`, `「因果」の概念。小括（pp.219-243）——第3章を読み終えます。ベルクソンは、これもきわめて日常的なものである「原因」と「結果」の概念についても批判的に切り込み、その常識を揺るがしていきます。自然科学や数学における秩序のあり方に関心のある向きにも、興味深い論点となるはずです。最後の数ページを読みつつわれわれは、ベルクソンの自由の問題に対する批判と、彼なりの自由概念の表現を小括しておきます。`, `ターブル・ロンド——この頃になると、「自由」についての様々な見解を共有したことで、Slackでの議論も深まりつつあるのではないかと思います。そこでわれわれの講義の最終回では、本論に付された「結論」及び「訳者解説」なども参考にしつつ、「自由」に関する議論を行ったり、参加者の皆様の疑問にお答えしたりする場を設けることといたします。せっかくのクローズドな場ですから、皆様のご関心も伺いつつ、様々にお話ができたらと思っています。`],
     "message": `はじめまして。京都大学の濱田明日郎と申します。\nふだんは、アンリ・ベルクソンというフランスの哲学者の著作の解釈を通じて、哲学研究に携わっております。とりわけ、上でも挙げた〈創造〉の話題に関心があります。\n\nベルクソンの思考のおもしろいところは、ある問題について論争中の両陣営がともに立っている前提そのものを突き崩し、その問題がもはや問題とならないような、別の地平を開いてしまうことです。その結果として得られる、世界の見方が一新されるような経験には、何物にも代えがたい、長続きする喜びがあります。もしそのような喜びが少しでも共有できたら、本当に素晴らしいことです。\n\n皆様のご参加を心よりお待ちしております。`,
     "peatixURL": "https://the-five-books-bergson-time-and-free-will2.peatix.com"
+  }
+},
+{ id :49,
+  book: {
+    "name": "ものはなぜ見えるのか：マルブランシュの自然的判断理論",
+    "author": "木田直人",
+    "publisher": "中公新書",
+    "image": "./img/ものはなぜ見えるのか.jpg",
+    "isbn": "978-4121019813",
+    "rakutenAffiliateUrl": "https://a.r10.to/h5qyqI",
+    "amazonAffiliateUrl": "https://amzn.to/3L8BGHH",
+    "calilUrl": "https://calil.jp/book/978-4121019813"
+  },
+  lecturer: {
+    "name": "三浦 隼暉",
+    "expertise": "哲学",
+    "degree": "東京大学大学院 人文社会系研究科",
+    "affiliation": "東京大学大学院 人文社会系研究科",
+    "profile-link": "https://researchmap.jp/junki1129/?lang=ja",
+    "lecturerPhoto": './img/lecturer_miura_junki.jpg'
+  },
+  lecture: {
+    "lectureName": "",
+    "conductDeadLine": 7,
+    "infoVideoUrl": "https://player.vimeo.com/video/719340657?h=064ab19c6b",
+    "lectureStartDate": new Date(2022, 6, 11),
+    "lectureEndDate": new Date(2022, 7, 1),
+    "liveLectureDate": [new Date(2022, 6, 11), new Date(2022, 6, 18), new Date(2022, 6, 25), new Date(2022, 7, 1)],
+    "lectureTime": ["20:00-21:30","20:00-21:30","20:00-21:30","20:00-21:30"],
+    "minimumAtendee": 20,
+    "price": 6500,
+    "prerequisite": "特にありません",
+    "courseMaterial": "講義で扱う書籍『ものはなぜ見えるのか』は現在多くの書店で品切れとなっており、さらに古本でも値段が高騰してしまっています。「カーリル」というサイトで、お住まいの地域の図書館を横断検索することができます。図書館で借りてご参加されることを推奨します。",
+    "lectureOverview": `17世紀哲学の書物を紐解いてみると、しばしば登場してくる哲学者の一人として**ニコラ・マルブランシュ**（**1638–1715**）という人物がいます。日本では十分に紹介されているとは言い難い哲学者ではありますが、「**神の内に見る**」や「**機会原因論**」という言葉に代表されるような彼人の独特な哲学は、当時からデカルトやスピノザ、ライプニッツの哲学にも劣らないインパクトを持っていました。さらにいえば、18世紀の啓蒙思想においてもその哲学の影響は強く残りつづけ、新たな時代の思想を導くものとしても働くことにもなりました。**それは、宗教と形而上学の究極的な一致を目指す哲学であり、またデカルト主義を押し進めた理性の哲学ともいうことができるでしょう**。\n\n今回の講義では、マルブランシュ哲学のもっとも大きなテーマのひとつでもある「認識」ということにスポットを当てた新書『**ものはなぜ見えるのか：マルブランシュの自然的判断理論**』（**木田直人著**）を取り上げます。「私の見ている湯呑は存在しないのかもしれない。夢なのかもしれない」（3頁）という不安を、考えるだけ無駄だと切り捨てるのではなく、もし大真面目に考えようとするなら、私たちはどこから手を付けることができるのでしょうか。この講義ではマルブランシュの思索を通して、この問題に対するアプローチを探ることになります。\n\n**デカルト哲学を引き継ぎつつ、しかしスピノザやライプニッツとは大きく異なった哲学を打ち立てたマルブランシュ**。「神」という伝統的な哲学の要素を自らの理論の核として引き受けつつも、「感覚」に存する「自然的判断」という契機を導入することによって、その理論は生命原理にも通ずるダイナミックなものへと進んでいくことになります。\n\nマルブランシュの哲学と認識をめぐる議論を、ときに楽しみ、ときに当惑しながら（！？）、一緒に読み解いていきましょう。みなさんのご参加をお待ちしております。\n\n**※図書館利用のススメ**\n講義で扱う書籍『ものはなぜ見えるのか』は現在多くの書店で品切れとなっており、さらに古本でも値段が高騰してしまっています。**それでも、あえてこうした書籍を選ぶのは、みなさんにぜひ図書館を利用して欲しいと考えているからです**。世の中には無数の書籍が存在しており、その全てを自分のものとして所有することは普通の個人には無理なことです。でも実は、図書館を利用すれば、自分の持っていない様々な本にアクセスすることが可能なのです。この機会にぜひ図書館という知の泉を利用して本を読むことを検討してみてください。\n\n「カーリル」というサイトで、お住まいの地域の図書館を横断検索することができます。\n\n[『**ものはなぜ見えるのか：マルブランシュの自然的判断理論**』**を借りられる図書館を調べる**](https://calil.jp/book/4121019814)`,
+    "eachLectureDetail": [`**イントロダクションと問題意識の確認**\n講読範囲：第1章第1節（〜26頁）\n最初の講義では、『ものはなぜ見えるのか』を読み進めるための準備作業を行います。マルブランシュが生きた17世紀という時代の紹介、さらに「ものはなぜ見えるのか？」という問いを考える上で前提となる問題意識を掴むために、デカルトやライプニッツの議論なども詳しく紹介する予定です。`, `「**すべてのものを神の内に見る**」**とはいかなることなのか？**\n講読範囲：第1章第2節（〜59頁）\nマルブランシュの有名なテーゼである「神の内に見る」ということが、果たして何を意味しているのか、第2回の講義で確認していきましょう。この理論を通して、ものが見えることに関する一般的理論が明らかになります。`, `**具体的な物体を認識するための条件を探る**\n講読範囲：第2章第1節から第2節（〜103頁）\n第2回で確認したのは一般的な認識の理論でした。具体的な「湯呑」の認識に至るためにはこの一般的な議論では不十分です。第3回では、具体的認識に至るための準備として、物体の空間規定とはいかなるものであるのか、そして物体の形状の前提となる「延長そのもの」の内実について確認していきましょう。`, `**自然的判断をめぐるダイナミックな転回**\n講読範囲：第2章第3節から終章（〜183頁）\n具体的認識に至る最後の議論として「自然的判断」を扱います。この概念は、マルブランシュ自身の著作が版を重ねるなかで発展し、やがて生命原理へと接続されていくこととなります。最終回では、このダイナミックな運動を通して著者とともに「ものはなぜ見えるのか」という問いを考えていきましょう。`],
+    "message": `こんにちは。東京大学大学院で哲学を研究している三浦隼暉（みうらじゅんき）です。The Five Books での講義も二年目となりました。これまで、多くの参加者の方々と一緒にデカルトやスピノザ、ライプニッツの著作を読み進めてまいりました。\n\n私が目指しているのは「哲学は留保なしに愉しい」と感じてもらえるような講義を作ることです。一緒に哲学書を紐解くことで、そのような愉しさを経験するお手伝いができればと考えています。最後に、私の恩師が残した言葉を送ります。「本は一人で読むものですが、ときには窓を開けて一緒に哲学をしましょう」。\n\n以前の講義中での自己紹介を切り抜いてみました。講師の雰囲気を知りたい方はご覧ください\n[https://vimeo.com/719340657/064ab19c6b](https://vimeo.com/719340657/064ab19c6b)`,
+    "peatixURL": "https://the-five-books-malebranche-epistemology.peatix.com"
   }
 }
 ]
