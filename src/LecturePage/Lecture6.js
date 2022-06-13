@@ -207,7 +207,7 @@ const Lecture6 = (props) => {
         </iframe>
       </div>
 
-      if (LecturesInfo[lectureId]["lecture"]["lecturePurpose"] === ""){
+      if (LecturesInfo[lectureId]["lecture"]["infoVideoUrl"] === ""){
         lecturerIntroVideo = <div></div>
       }
 
