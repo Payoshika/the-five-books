@@ -1842,7 +1842,7 @@ const LecturesInfo = [
     "infoVideoUrl": "",
     "lectureStartDate": new Date(2022, 6, 6),
     "lectureEndDate": new Date(2022, 7, 3),
-    "liveLectureDate": [new Date(2022, 6, 6), new Date(2022, 6, 13), new Date(2022, 6, 20), new Date(2022, 6, 27),new Date(2022, 8, 3)],
+    "liveLectureDate": [new Date(2022, 6, 6), new Date(2022, 6, 13), new Date(2022, 6, 20), new Date(2022, 6, 27),new Date(2022, 7, 3)],
     "lectureTime": ["20:00-21:30","20:00-21:30","20:00-21:30","20:00-21:30","20:00-21:30"],
     "minimumAtendee": 10,
     "price": 8000,
