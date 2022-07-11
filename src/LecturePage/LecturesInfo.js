@@ -1894,7 +1894,7 @@ const LecturesInfo = [
 { id :52,
   book: {
     "name": "永遠平和のために",
-    "author": "エマヌエル・カント",
+    "author": "イマヌエル・カント",
     "publisher": "岩波書店",
     "image": "./img/永遠平和のために_岩波.jpg",
     "isbn": "978-4003362594",
