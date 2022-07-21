@@ -166,9 +166,6 @@ const Lecture6 = (props) => {
       <a className="mr-2 my-1" href={lectureBookUrlinfo.amazon}>
       <p className="mb-0 mx-2 p-1"><b>Amazon</b></p>
       </a>
-      <a className="mr-2 my-1" href={lectureBookUrlinfo.rakuten}>
-      <p className="mb-0 mx-2 p-1"><b>楽天ブックス</b></p>
-      </a>
       <a className="mr-2 my-1" href={lectureBookUrlinfo.calil}>
       <p className="mb-0 mx-2 p-1"><b>カーリル</b></p>
       </a>
@@ -277,6 +274,8 @@ const Lecture6 = (props) => {
     const disclaimer =
     <div className="lecture-detail d-flex flex-column">
       <ul>
+        <li>The Five Booksは、Amazon アソシエイト・プログラムに参加しています。講義に参加ご予定の皆さまが上記amazonURLより書籍をご購入されると、The Five Booksに一定割合の報酬が支払われます。The Five Booksでは、この収入を運営事務に係る経費の支払に充てています。</li>
+        <li>The Five Booksは、大学図書館・公共図書館のご利用をお勧めしています。「カーリル」では、全国の図書館蔵書を検索できるサービスです。皆さまがお住まいの都道府県の図書館蔵書も一覧できますので、ぜひご利用ください。</li>
         <li>{courseMaterial}</li>
         <li>講義にはWeb会議サービスの<a href="https://zoom.us/jp-jp/meetings.html"><u>Zoom</u></a>を使用いたします。
         </li>
@@ -347,7 +346,7 @@ const Lecture6 = (props) => {
               {lectureDetail}
           </Col>
           <Col xs={12} className="d-flex flex-column align-items-center justify-content-center mt-3">
-            <h4 className="text-center"><u>注意事項</u></h4>
+            <h4 className="text-center"><u>ご案内事項</u></h4>
               {disclaimer}
           </Col>
           <Col>
