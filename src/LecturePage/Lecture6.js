@@ -193,7 +193,7 @@ const Lecture6 = (props) => {
 
       let lecturerIntroVideo =
       <div className="video-outer my-3">
-        <p>The Five Books自己紹介({LecturesInfo[lectureId]["lecturer"]["name"]})</p>
+        <p>The Five Books紹介動画({LecturesInfo[lectureId]["lecturer"]["name"]})</p>
         <iframe
           title="test"
           src={LecturesInfo[lectureId]["lecture"]["infoVideoUrl"]}
