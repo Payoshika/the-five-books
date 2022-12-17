@@ -2512,7 +2512,7 @@ const LecturesInfo = [
       "conductDeadLine": 1,
       "infoVideoUrl": "https://player.vimeo.com/video/734898848?h=cf25791bcd",
       "lectureStartDate": new Date(2023, 0, 16),
-      "lectureEndDate": new Date(2023, 1, 10),
+      "lectureEndDate": new Date(2023, 1, 13),
       "liveLectureDate": [new Date(2023, 0, 16), new Date(2023, 0, 23), new Date(2023, 0, 30), new Date(2023, 1, 6),new Date(2023, 1, 13)],
       "lectureTime": ["20:00-21:30", "20:00-21:30", "20:00-21:30", "20:00-21:30","20:00-21:30"],
       "minimumAtendee": 10,
