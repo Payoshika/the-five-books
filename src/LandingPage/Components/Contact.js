@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import axios from "axios"
-axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 
 const Contact = () => {
   const [name, setName] = useState("")
