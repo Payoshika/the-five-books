@@ -32,14 +32,14 @@
     </script>
     <script src='https://www.google.com/recaptcha/api.js?render=6LdK5kUgAAAAAK4r6GS3hzhY64isN_9QxFPjHnqy'>
     </script>
-    <script>
-            grecaptcha.ready(function () {
-                grecaptcha.execute('6LdK5kUgAAAAAK4r6GS3hzhY64isN_9QxFPjHnqy', { action: 'contact' }).then(function (token) {
-                    var recaptchaResponse = document.getElementById('recaptchaResponse');
-                    recaptchaResponse.value = token;
-                });
+<script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LdK5kUgAAAAAK4r6GS3hzhY64isN_9QxFPjHnqy', { action: 'contact' }).then(function (token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
             });
-    </script>
+        });
+</script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -49,6 +49,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script src="https://js.stripe.com/v3/"></script>
-  </body>
+<!--     <script src="https://js.stripe.com/v3/"></script>
+   -->  </body>
 </html>

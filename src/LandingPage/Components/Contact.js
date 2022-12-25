@@ -10,16 +10,22 @@ const Contact = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [input, setInput] = useState("")
-
   const submitInquiry = (event) => {
     document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "送信しています..."
+    const headers = {
+      "Access-Control-Allow-Origin":"http://localhost:3001",
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Methods": "POST",
+      "Content-Type":"application/json;charset=UTF-8",
+      withCredentials: true
+    }
     const apiURL = process.env.REACT_APP_API_URL
-    axios.post(`${apiURL}/contact`, {user:{
+    axios.post(`${apiURL}`,{user:{
       name: name,
       email: email,
       content: input,
       contact_genre: document.getElementById("contact-genre").value
-    }})
+    }},{headers})
     .then(response => {
         if (response.data.contacted === true) {
           document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "お問い合わせを送信いたしました"

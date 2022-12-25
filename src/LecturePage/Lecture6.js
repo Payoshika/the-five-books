@@ -13,7 +13,7 @@ import ReactMarkdown from 'react-markdown'
 import {Link} from "react-router-dom"
 
 
-const stripePromise = loadStripe('pk_test_51H6qTHKu07P8WqmRl9iLKVCNAvq582vfORpsMwBXe5D0tKyvjdNyse5W3rmuDarSfEX7JcA6otvmW8PcJXHir5Ys00bqyudH0R');
+// const stripePromise = loadStripe('pk_test_51H6qTHKu07P8WqmRl9iLKVCNAvq582vfORpsMwBXe5D0tKyvjdNyse5W3rmuDarSfEX7JcA6otvmW8PcJXHir5Ys00bqyudH0R');
 
 const Lecture6 = (props) => {
   const {params} = props.match
@@ -30,13 +30,13 @@ const Lecture6 = (props) => {
     return sessionID
   }
 
-  const stripePayment = async (event) => {
-    const session_Id = await createCheckoutSession();
-    const stripe = await stripePromise;
-    stripe.redirectToCheckout({
-      sessionId: session_Id.session_id
-    })
-}
+//   const stripePayment = async (event) => {
+//     const session_Id = await createCheckoutSession();
+//     const stripe = await stripePromise;
+//     stripe.redirectToCheckout({
+//       sessionId: session_Id.session_id
+//     })
+// }
 
     const dayOfWeek = (num) => {
       const dayOfWeekArray = ["日","月", "火", "水", "木", "金", "土"]
