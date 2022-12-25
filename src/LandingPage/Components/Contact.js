@@ -5,44 +5,73 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import axios from "axios"
+const headers = {
+  mode: 'no-cors',
+'Access-Control-Allow-Origin': 'https://www.the-five-books.com',
+'Content-Type': "application/x-www-form-urlencoded",
+withCredentials: true,
+credentials: 'same-origin',
+}
 
 const Contact = () => {
+
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [input, setInput] = useState("")
+
   const submitInquiry = (event) => {
     document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "送信しています..."
-    const headers = {
-      "Access-Control-Allow-Origin":"http://localhost:3001",
-      "Access-Control-Allow-Credentials": true,
-      "Access-Control-Allow-Methods": "POST",
-      "Content-Type":"application/json;charset=UTF-8",
-      withCredentials: true
-    }
-    const apiURL = process.env.REACT_APP_API_URL
-    axios.post(`${apiURL}`,{user:{
+    const data = {user:{
       name: name,
       email: email,
       content: input,
       contact_genre: document.getElementById("contact-genre").value
-    }},{headers})
-    .then(response => {
-        if (response.data.contacted === true) {
-          document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "お問い合わせを送信いたしました"
-          setName("")
-          setEmail("")
-          setInput("")
+    }}
+    const apiURL = "https://script.google.com/macros/s/AKfycbyoSn2vON2Flfz8y_QRsPKYltT_IR8yTH8hiPUIOrLyLUrBziUPx77h3F5GCmkG0Y7x/exec"
+    var postparam =
+      {
+        "method"     : "POST",
+        "mode"       : "no-cors",
+        "Content-Type" : "application/x-www-form-urlencoded",
+        "body" : JSON.stringify(data)
+      };
+      fetch(apiURL, postparam)
+      .then(response => {
+          if (response) {
+            document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "お問い合わせを送信いたしました"
+            setName("")
+            setEmail("")
+            setInput("")
+          }
+          else if (response.data.subscribed === false){
+              document.querySelector(".register-text").innerHTML = `</p>${response.data.message}<p>`
+          }
         }
-        else if (response.data.subscribed === false){
-            document.querySelector(".register-text").innerHTML = `</p>${response.data.message}<p>`
-        }
-      }
-    )
-    .catch(error =>{
-      console.log(error);
-    })
-    event.preventDefault()
-    event.stopPropagation()
+      )
+      .catch(error =>{
+        console.log(error);
+      })
+      event.preventDefault()
+      event.stopPropagation()
+
+    // axios.post(`${apiURL}`,{headers},testData)
+    // .then(response => {
+    //     if (response.data.contacted === true) {
+    //       document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "お問い合わせを送信いたしました"
+    //       setName("")
+    //       setEmail("")
+    //       setInput("")
+    //     }
+    //     else if (response.data.subscribed === false){
+    //         document.querySelector(".register-text").innerHTML = `</p>${response.data.message}<p>`
+    //     }
+    //   }
+    // )
+    // .catch(error =>{
+    //   console.log(error);
+    // })
+    // event.preventDefault()
+    // event.stopPropagation()
   }
 
   const content =

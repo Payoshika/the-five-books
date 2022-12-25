@@ -9,7 +9,13 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import axios from "axios"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
-
+const headers = {
+  mode: 'no-cors',
+'Access-Control-Allow-Origin': 'https://www.the-five-books.com',
+'Content-Type': "application/x-www-form-urlencoded",
+withCredentials: true,
+credentials: 'same-origin',
+}
 const BookRequest = () => {
   const [input, setInput] = useState("")
   const [searchResult, setSearchResult] = useState(<div></div>)
@@ -89,19 +95,25 @@ const BookRequest = () => {
       )
     }
   }
-
+  // axios.post(`${apiURL}/book_create`, {book: book})
   const requestBook = (event) => {
     event.preventDefault();
-    const apiURL = process.env.REACT_APP_API_URL
-    let book  = {
-          name: `${event.target.parentNode.querySelector(".book-name").innerText}`,
-          author: `${event.target.parentNode.querySelector(".book-author").innerText}`,
-          publisher: `${event.target.parentNode.querySelector(".book-publisher").innerText}`,
-          img_url: `${event.target.parentNode.querySelector(".book-img-url").innerText}`,
-          book_url: `${event.target.parentNode.querySelector(".book-url").innerText
-          }`
-        }
-    axios.post(`${apiURL}/book_create`, {book: book})
+    let book = {book:{
+      name: `${event.target.parentNode.querySelector(".book-name").innerText}`,
+      author: `${event.target.parentNode.querySelector(".book-author").innerText}`,
+      publisher: `${event.target.parentNode.querySelector(".book-publisher").innerText}`,
+      img_url: `${event.target.parentNode.querySelector(".book-img-url").innerText}`,
+      book_url: `${event.target.parentNode.querySelector(".book-url").innerText}`
+    }}
+    const apiURL = process.env.CUSTOMER_INQUIRY_URL
+    var postparam =
+      {
+        "method"     : "POST",
+        "mode"       : "no-cors",
+        "Content-Type" : "application/x-www-form-urlencoded",
+        "body" : JSON.stringify(book)
+      };
+    fetch(apiURL, postparam)
     .then(
       response => console.log(response.data),
       event.target.parentNode.innerText = "リクエストしました。")

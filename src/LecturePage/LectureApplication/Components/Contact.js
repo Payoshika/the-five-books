@@ -5,7 +5,13 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import axios from "axios"
-
+const headers = {
+  mode: 'no-cors',
+'Access-Control-Allow-Origin': "https://www.the-five-books.com",
+'Content-Type': "application/x-www-form-urlencoded",
+withCredentials: true,
+credentials: 'same-origin',
+}
 const Contact = () => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
@@ -25,8 +31,7 @@ const Contact = () => {
     }
     else {
       document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "送信しています..."
-      const apiURL = process.env.REACT_APP_API_URL
-      axios.post(`${apiURL}/lecturer_inquiery`, {user:{
+      const data = {lecturer:{
         name: name,
         email: email,
         contact_genre: "講師登録に関して",
@@ -34,9 +39,27 @@ const Contact = () => {
         affiliation: affiliation,
         research_map_url: researchMap,
         content: books
-      }})
+      }}
+      const apiURL = "https://script.google.com/macros/s/AKfycbyoSn2vON2Flfz8y_QRsPKYltT_IR8yTH8hiPUIOrLyLUrBziUPx77h3F5GCmkG0Y7x/exec"
+      var postparam =
+        {
+          "method"     : "POST",
+          "mode"       : "no-cors",
+          "Content-Type" : "application/x-www-form-urlencoded",
+          "body" : JSON.stringify(data)
+        };
+        fetch(apiURL, postparam)
+      // axios.post(`${apiURL}/lecturer_inquiery`, {user:{
+      //   name: name,
+      //   email: email,
+      //   contact_genre: "講師登録に関して",
+      //   expertise: expertise,
+      //   affiliation: affiliation,
+      //   research_map_url: researchMap,
+      //   content: books
+      // }})
       .then(response => {
-          if (response.data.contacted === true) {
+          if (response) {
             document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "資料請求を行いました。"
             setName("")
             setEmail("")

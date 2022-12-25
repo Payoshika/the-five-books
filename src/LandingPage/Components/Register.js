@@ -13,11 +13,21 @@ const Register = () => {
   const subscribe = () => {
     document.querySelector(".register-text").innerHTML =
     "<p>登録しています...</p>"
-    const apiURL = process.env.REACT_APP_API_URL
-    axios.post(`${apiURL}/subscribe`, {email:{email: email}})
+    // const apiURL = process.env.REACT_APP_API_URL
+    // axios.post(`${apiURL}/subscribe`, {email:{email: email}})
+    const apiURL = "https://script.google.com/macros/s/AKfycbyoSn2vON2Flfz8y_QRsPKYltT_IR8yTH8hiPUIOrLyLUrBziUPx77h3F5GCmkG0Y7x/exec"
+    const data = {email: email}
+    var postparam =
+      {
+        "method"     : "POST",
+        "mode"       : "no-cors",
+        "Content-Type" : "application/x-www-form-urlencoded",
+        "body" : JSON.stringify(data)
+      };
+    fetch(apiURL, postparam)
     .then(response => {
-      console.log(response.data.subscribed);
-        if (response.data.subscribed === true) {
+      console.log(response);
+        if (response) {
           document.querySelector(".register-text").innerHTML = "<p>ニュースレターの登録が完了しました。メールをご確認ください。</p>"
           setEmail("")
         }
@@ -28,7 +38,6 @@ const Register = () => {
     )
     .catch(error =>{
       console.log(error);
-
     })
     }
 
