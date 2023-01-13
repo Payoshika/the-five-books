@@ -1,4 +1,4 @@
-import React, {ReactDOM, useState} from "react"
+import React, {useState} from "react"
 import {LecturesInfo} from "./index.js"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -8,7 +8,6 @@ import Button from 'react-bootstrap/Button'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Calendar from 'react-calendar'
 import './styles/calender.css';
-import { loadStripe } from '@stripe/stripe-js';
 import ReactMarkdown from 'react-markdown'
 import {Link} from "react-router-dom"
 
@@ -20,15 +19,14 @@ const Lecture6 = (props) => {
   const lectureId = parseInt(params.id)-1
   const bookimg = LecturesInfo[lectureId]["book"].image
   const lecturerimg = LecturesInfo[lectureId]["lecturer"].lecturerPhoto
-  const noAuthor = ""
 
-  async function createCheckoutSession () {
-    const apiURL = process.env.REACT_APP_API_URL
-    const response = await fetch(`${apiURL}/payment/create`);
-    const sessionID = await response.json()
-    console.log(sessionID.session_id);
-    return sessionID
-  }
+  // async function createCheckoutSession () {
+  //   const apiURL = process.env.REACT_APP_API_URL
+  //   const response = await fetch(`${apiURL}/payment/create`);
+  //   const sessionID = await response.json()
+  //   console.log(sessionID.session_id);
+  //   return sessionID
+  // }
 
 //   const stripePayment = async (event) => {
 //     const session_Id = await createCheckoutSession();

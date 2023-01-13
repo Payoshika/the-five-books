@@ -1,4 +1,4 @@
-import React, {ReactDOM, useState} from "react"
+import React from "react"
 import {Link} from "react-router-dom"
 import {LecturesInfo} from "./index.js"
 import Container from 'react-bootstrap/Container';
@@ -6,15 +6,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image'
 import Button from 'react-bootstrap/Button'
-import ListGroup from 'react-bootstrap/ListGroup'
-import Pagination from 'react-bootstrap/Pagination'
-import PageItem from 'react-bootstrap/PageItem'
-import ReactMarkdown from 'react-markdown'
+
 import axios from "axios"
 
 const PastLectures = (props) => {
   const {params} = props.match
-  const pageId = parseInt(params.id)
 
   // 講義の重複を除いたarrayを作成
   let multipleArray = []

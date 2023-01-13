@@ -12,7 +12,6 @@ const LecturerRegister = (props) => {
   const [expertise, setExpertise] = useState("")
   const [affiliation, setAffiliation] = useState("")
   const [profileLink, setProfileLink] = useState("")
-  const [lecturerPhoto, setLecturerPhoto] = useState("")
   const [password, setPassword] = useState("")
   const [password_confirmation, setPasswordConfirmation] = useState("")
 
