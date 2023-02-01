@@ -7,6 +7,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import axios from "axios"
 import ListGroupItem from "react-bootstrap";
 import Calendar from 'react-calendar'
+import Form from 'react-bootstrap/Form'
 
 const LectureSchedule = (props) => {
   const [resultData, setResultData] =  useState(<div></div>); //　講義データ
@@ -14,6 +15,10 @@ const LectureSchedule = (props) => {
   const [tileContentValue, setTileContentValue] = useState();
   const [tileStyleValue, setTileStyleValue] = useState();
   const [calendarItSelf, setCalendarItSelf] = useState(<div></div>);
+  const [name, setName] = useState("")
+  const [title, setTitle] = useState("")
+  const [startDate, setStartDate] = useState("")
+  const [endDate, setEndDate] = useState("")
 
   useEffect(() => {
     let apiUrl = (`https://script.google.com/macros/s/AKfycbwRCEJ-o9FZ5urBq1Y6KvmgsK7m0QVZOwPQMN-cK0SYMHXXTN-SvqchtpQx7HzJsShGUQ/exec`)
@@ -36,7 +41,7 @@ const LectureSchedule = (props) => {
           const lectureNames = Object.keys(month)
           lectureNames.forEach(name => {
             month[name]["lectureDates"].forEach(dates=>{
-              lectureCalList.push(getFormatDate(new Date(dates)), month[name])
+              lectureCalList.push([getFormatDate(new Date(dates)), month[name]])
             })
           })
         })
@@ -53,7 +58,7 @@ const LectureSchedule = (props) => {
                     {Object.keys(month).map(name=>{
                       return(
                       <ListGroup.Item>
-                        『{month[name]["lectureName"]}』講師:{month[name]["lecturerName"]} 期間:{month[name]["lectureDuration"]}
+                        {`『${month[name]["lectureName"]}』講師:${month[name]["lecturerName"]} \n期間:${month[name]["lectureDuration"]}`}
                       </ListGroup.Item>
                       )
                     })}
@@ -94,20 +99,130 @@ const getTileContent = (value, tileContentValue) => {
   const day = getFormatDate(value.date)
   // titleContentValueの日程
   if (tileContentValue != undefined){
-    return(
-      <p className="text-break">
-        {tileContentValue.includes(day)?
-          `『${tileContentValue[(tileContentValue.indexOf(day)+1)]["lectureName"]}』\n講師:${tileContentValue[(tileContentValue.indexOf(day)+1)]["lecturerName"]}\n${tileContentValue[(tileContentValue.indexOf(day)+1)]["lectureTime"]}`: `  \n  \n  \n`
-        }
+    // console.log(tileContentValue)
+    // その日の日付を含む講義をfilterで取り出す。
+    let sameDayLecture = tileContentValue.filter(lecture => lecture[0] === day)
+    // 講義が一つの場合
+    if(sameDayLecture.length === 1){
+      return(
+        <p className="text-break">
+          {`『${sameDayLecture[0][1]["lectureName"]}』\n講師:${sameDayLecture[0][1]["lecturerName"]}\n${sameDayLecture[0][1]["lectureTime"]}`}
       </p>
       )
+    }
+    // 講義が二つ以上ある場合
+    else if(sameDayLecture.length >1){
+      console.log(sameDayLecture)
+      // 二つ以上講義がある場合は時間が先のものから表示するため、arrayの順番を講義時間でソート
+      sameDayLecture.sort((lecture1,lecture2) => {
+        return lecture1[1]["lectureTime"] > lecture2[1]["lectureTime"] ? 1: -1
+      })
+      console.log(sameDayLecture)
+      let lectureDescription = ``
+      sameDayLecture.forEach(lecture => {
+        {lectureDescription += `『${lecture[1]["lectureName"]}』\n${lecture[1]["lectureTime"]}\n`
+        }
+      })
+      return(
+        <p className="text-break">
+          {lectureDescription}
+      </p>
+      )
+    }
+    else{
+      return(
+      <p className="text-break">
+      {`\n  \n  \n`}
+      </p>
+      )
+    }
   }
   }
 
- const getTileClassName = (value) => {
-   return("test")
-}
-  
+  const lectureRegister = (event) => {
+    // document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "送信しています..."
+    // const data = {user:{
+    //   name: name,
+    //   email: email,
+    //   content: input,
+    //   contact_genre: document.getElementById("contact-genre").value
+    // }}
+    // const apiURL = "https://script.google.com/macros/s/AKfycbyoSn2vON2Flfz8y_QRsPKYltT_IR8yTH8hiPUIOrLyLUrBziUPx77h3F5GCmkG0Y7x/exec"
+    // var postparam =
+    //   {
+    //     "method"     : "POST",
+    //     "mode"       : "no-cors",
+    //     "Content-Type" : "application/x-www-form-urlencoded",
+    //     "body" : JSON.stringify(data)
+    //   };
+    //   fetch(apiURL, postparam)
+    //   .then(response => {
+    //       if (response) {
+    //         document.querySelector(".contact").getElementsByTagName("button")["0"].innerText = "お問い合わせを送信いたしました"
+    //         setName("")
+    //         setEmail("")
+    //         setInput("")
+    //       }
+    //       else if (response.data.subscribed === false){
+    //           document.querySelector(".register-text").innerHTML = `</p>${response.data.message}<p>`
+    //       }
+    //     }
+    //   )
+    //   .catch(error =>{
+    //     console.log(error);
+    //   })
+      event.preventDefault()
+      event.stopPropagation()
+  }
+
+  const newLectureRegister = 
+  <Form className="form-input">
+    <Form.Group controlId="name" required>
+      <Form.Label>お名前</Form.Label>
+      <Form.Control
+        type="text"
+        name="name"
+        value={name}
+        placeholder="講師名"
+        onChange={(event) => setName(event.target.value)}
+        />
+    </Form.Group>
+    <Form.Group controlId="name" required>
+      <Form.Label>書籍タイトル</Form.Label>
+      <Form.Control
+        type="text"
+        name="title"
+        value={title}
+        placeholder="書籍名をご記入ください。選定中の場合は選定中とご記入ください。"
+        onChange={(event) => setTitle(event.target.value)}
+        />
+    </Form.Group>
+    <Form.Group controlId="startDate" required>
+      <Form.Label>講義開始予定日</Form.Label>
+      <Form.Control
+        type="date"
+        name="startDate"
+        value={startDate}
+        onChange={(event) => setStartDate(event.target.value)}
+        />
+    </Form.Group>
+    <Form.Group controlId="endDate" required>
+      <Form.Label>講義終了予定日</Form.Label>
+      <Form.Control
+        type="date"
+        name="endDate"
+        value={endDate}
+        onChange={(event) => setEndDate(event.target.value)}
+        />
+    </Form.Group>
+    <Form.Group className="d-flex justify-content-center">
+      <Button
+        variant="outline-secondary"
+        onClick={(event)=>lectureRegister(event)}
+        >送信
+      </Button>
+    </Form.Group>
+  </Form>
 
       return(
         <Container fluid>
@@ -121,7 +236,15 @@ const getTileContent = (value, tileContentValue) => {
           </Row>
           <Row>
             <Col>
+            <h4 className="text-center"><u><b>講義カレンダー</b></u></h4>
             {calendarItSelf}
+            </Col>
+          </Row>
+          <Row>
+            <Col id="contact" className="contact d-flex flex-column align-items-center justify-content-center">
+            <h4 className="text-center"><u><b>新規講義登録申請</b></u></h4>
+            <p className="text-center">講義書籍と予定日をご記入いただき、送信してください。開講可能である場合、一両日以内に運営よりご連絡いたします。</p>
+            {newLectureRegister}
             </Col>
           </Row>
         </Container>
