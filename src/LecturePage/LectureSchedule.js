@@ -19,12 +19,15 @@ const LectureSchedule = (props) => {
   const [title, setTitle] = useState("")
   const [startDate, setStartDate] = useState("")
   const [endDate, setEndDate] = useState("")
-
+  const [pastLecture, setPastLecture] =  useState(<div></div>); //　過去講義データ
+  
   useEffect(() => {
     let apiUrl = (`https://script.google.com/macros/s/AKfycbwRCEJ-o9FZ5urBq1Y6KvmgsK7m0QVZOwPQMN-cK0SYMHXXTN-SvqchtpQx7HzJsShGUQ/exec`)
+    let pastLectureApiUrl = ("https://script.google.com/macros/s/AKfycbwGxKz4MQ02-klhpXwAhKDJ5LxUgp8Nrcrx67bVDs_HTR7yFJTTYXriwabJDa6uMRTTfQ/exec")
     let monthList
     let eachMonthList
     let lectureNum
+    let pastLectureList
   
     const listLectures = () => {
       axios.get(apiUrl).then(response =>  {
@@ -74,6 +77,32 @@ const LectureSchedule = (props) => {
       })
     }
     listLectures()
+    // 講義参加人数を追加するaxiosを再度使う。
+    const getPastLectures=()=>{
+      axios.get(pastLectureApiUrl).then(response =>  {
+        pastLectureList = response.data
+        console.log(pastLectureList)
+
+      // 各講義をリストに並べる
+      setPastLecture(
+        <div>
+              <div>
+                <ListGroup>
+                    {Object.keys(pastLectureList).map(lecture=>{
+                      return(
+                        <ListGroup.Item>
+                        『{lecture}』講義:{pastLectureList[lecture]["次回想定参加者"]}人
+                        </ListGroup.Item>
+                      )
+                    })
+                    }
+                </ListGroup>
+              </div>
+        </div>
+      )
+      })
+    }
+    getPastLectures()
   }, []);
 
   useEffect(() => {
@@ -175,6 +204,8 @@ const getTileContent = (value, tileContentValue) => {
       event.stopPropagation()
   }
 
+  const attendeeEstimate = <div></div>
+
   const newLectureRegister = 
   <Form className="form-input">
     <Form.Group controlId="name" required>
@@ -238,6 +269,12 @@ const getTileContent = (value, tileContentValue) => {
             <Col>
             <h4 className="text-center"><u><b>講義カレンダー</b></u></h4>
             {calendarItSelf}
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+            <h4 className="text-center"><u><b>過去講義リスト</b></u></h4>
+            {pastLecture}
             </Col>
           </Row>
           <Row>
