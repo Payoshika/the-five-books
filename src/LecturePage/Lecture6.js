@@ -184,7 +184,7 @@ const Lecture6 = (props) => {
               <p>講師: {LecturesInfo[lectureId]["lecturer"]["name"]}</p>
               <p>専門: {LecturesInfo[lectureId]["lecturer"]["expertise"]}</p>
               <p>所属: {LecturesInfo[lectureId]["lecturer"]["degree"]}</p>
-              <p>経歴： <a href={LecturesInfo[lectureId]["lecturer"]["profile-link"]}><u>researchmap</u>を見る</a></p>
+              <p>来歴： <a href={LecturesInfo[lectureId]["lecturer"]["profile-link"]}><u>講師の来歴</u>を見る</a></p>
           </div>
         </div>
       </div>
